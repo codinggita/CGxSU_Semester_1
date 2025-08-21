@@ -60,12 +60,12 @@ The look and feel of the interface. It helps create **first impressions** and **
   - Provide quick, universal meaning at a glance.  
   - Example:  
     - 🔍 Magnifying glass = Search.  
-    - 🛒 Cart = Shopping.  
+    - 🛒 Cart = forcefully shoppping.  
     - ✉️ Envelope = Message/Email.  
   - **Best Practices:**  
     - Keep them **simple, minimal, and consistent** across the app.  
     - Don’t mix styles.  
-    - Use icons with **labels** if meaning might be unclear. 
+    - Use icons with **labels** if meaning might be clear 
 
 
 ### **Interactive Elements**
