@@ -24,7 +24,7 @@ Many beginners confuse UI with just "making things look pretty." But UI is also 
 - **Instagram**: Minimal UI that puts focus on photos/videos, not on menus.
 
  In short: **UI = the face of the product.** It combines visuals, structure, and interactivity to make technology **usable, trustworthy, and enjoyable** for humans.
-
+hi
 ---
 
 ## **Key Elements of UI**
