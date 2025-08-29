@@ -132,8 +132,7 @@ UI makes users *want to try* the app, while UX makes them *want to stay*. A grea
   - Once the mobile version works well, scale it up for tablets and desktops.  
   - This ensures both **UI and UX** remain intact across devices.  
 
-**Key Takeaway:** Good design = Smooth **flows (UX)** + Helpful **visuals (UI)**, tested and refined until they work for everyone.  
-
+**Key Takeaway:** Good design = Smooth **flows (UX)** + Helpful **visuals (UI)**, tested and refined until they work for everyone.
 
 
 ---
