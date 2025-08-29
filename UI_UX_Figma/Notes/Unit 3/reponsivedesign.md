@@ -92,11 +92,9 @@ This ensures the app is **easy to use, fast, and visually clear**, no matter the
 
 - **Auto Layout**:  
   Use Figma’s *Auto Layout* to make containers flexible. For example, buttons or cards can automatically resize when the screen width changes, making your design responsive.  
-  
 
 - **Device Testing**:  
-  Preview designs on device frames like iPhone SE (360px) or iPad to check how layouts and buttons adapt to budget and tablet screens.  
- 
+  Preview designs on device frames like iPhone SE (360px) or iPad to check how layouts and buttons adapt to budget and tablet screens.
 
 - **Version Control**:  
   Keep multiple responsive layout versions in Figma (desktop, tablet, mobile) to track changes and ensure consistency. 

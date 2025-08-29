@@ -68,6 +68,7 @@ By using hierarchy well, designers help users **focus on the most important info
 
 5. **Mobile-Friendly Hierarchy**:  
    Always check that the most important item (e.g., search bar or CTA button) is visible **without scrolling**, so users can take action immediately.
+   
 ---
 
 **In short**:  
