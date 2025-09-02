@@ -1,8 +1,13 @@
 # Icons and Imagery in UI/UX
 
+<img src="https://i.postimg.cc/3xDZ6pPS/Visual-Processing.png" alt="Visual-Processing" width="400"/>
+
 ## **Overview**
+<img src="https://i.postimg.cc/nL4GVxVq/twitter.png" alt="twitter" width="400"/>
 
 **Icons and Imagery in UI/UX** are essential design elements that combine aesthetics with functionality. They are not merely decorative but act as a **visual communication system**, making interfaces easier to navigate and more engaging for users.
+
+Whenever users scan any website or app, they actually look at the layout, navigation, and content along with the way each of these is presented. In research, it is found that “Humans process images and visual content 10x faster than text content."
 
 - **In UI (User Interface):** Icons and images add **visual appeal and brand personality**. A consistent icon style (outline, filled, or two-tone) strengthens brand identity, while carefully chosen images or illustrations create emotional connections and make designs memorable.  
 
@@ -50,7 +55,9 @@ To create intuitive and accessible interfaces, designers must apply icons and im
   - **Envelope icon** for messages.  
   - **Home icon** for the main screen.  
 - Source icons from free libraries like **Flaticon, Material Icons, or IconScout**.  
-- Maintain a size of around **24x24px** for tap-friendly interaction on small screens.  
+- Maintain a size of around **24x24px** for tap-friendly interaction on small screens.
+- <img src="https://i.postimg.cc/BQbpTRNG/conventionnal.png" alt="conventionnal" width="400"/>
+- <img src="https://i.postimg.cc/CMmJfwGN/resemblence-icon.avif" alt="resemblence-icon" width="400"/>  
 
 ---
 
@@ -65,13 +72,16 @@ To create intuitive and accessible interfaces, designers must apply icons and im
 - Create a **consistent visual language** for icons and imagery inside Figma.  
 - Icons: Decide on a uniform style (e.g., outline vs. filled).  
 - Imagery: Apply similar filters (e.g., vibrant, warm tones) so screens look cohesive.  
-- Example: Google Pay maintains a consistent icon style (clean outlines + familiar symbols) across its app.  
+- Example: Google Pay maintains a consistent icon style (clean outlines + familiar symbols) across its app.
+- <img src="https://i.postimg.cc/hPYrpM3Q/consistency.png" alt="consistency" width="400"/>
+- <img src="https://i.postimg.cc/HLDtCnmp/strokes-and-fills.avif" alt="strokes-and-fills" width="400"/>  
 
 
 ### **4. Test for Accessibility**
 - Ensure usability for **all users**, including those with low vision or older devices.  
 - Best practices:  
-  - Maintain **contrast ratio of at least 4.5:1** between icons and background.  
+  - Maintain **contrast ratio of at least 4.5:1** between icons and background.
+  - <img src="https://i.postimg.cc/vTqzRvYj/contrast.png" alt="contrast" width="400"/>  
   - Add **alt text** to all images for screen reader compatibility.  
   - Test layouts on **small devices (360px width)** to confirm visibility.  
 - Example: The **rupee (₹) icon** in UPI apps is bold and high-contrast, ensuring clarity on dim screens.  
@@ -81,13 +91,14 @@ To create intuitive and accessible interfaces, designers must apply icons and im
 - Example:  
   - Heart icon → empty (default), filled (liked).  
   - Loading animations → rotating dots or image placeholder until content loads.  
-- These cues **reduce confusion and reassure users** that their action is recognized.  
+- These cues **reduce confusion and reassure users** that their action is recognized.
+- <img src="https://i.postimg.cc/cC4m5zSw/conflicting-icons.png" alt="conflicting-icons" width="400"/>  
 
 ### **6. Iterate with Feedback**
 - Share your designs with peers or test with real users for improvements.  
 - Refine:  
   - Icons → replace confusing ones with simpler alternatives.  
-  - Imagery → swap irrelevant stock photos for **locally relatable visuals** (e.g., Indian street food instead of burgers for a food app).  
+  - Imagery → swap irrelevant stock photos for **locally relatable visuals**.  
 - Iteration ensures the final product is **usable, relatable, and user-approved**.   
 
 ---
