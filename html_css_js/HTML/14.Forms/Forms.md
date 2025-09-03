@@ -21,7 +21,6 @@ The `<form>` element defines a form for user input.
 | method         | Specifies the HTTP method for sending data (GET or POST).                   | `<form method="post">` |
 | name           | Names the form for scripting or reference.                                  | `<form name="userForm">` |
 | novalidate     | Disables form validation on submission.                                     | `<form novalidate>` |
-| rel            | Specifies the relationship between the current document and the linked resource (e.g., external, nofollow). | `<form rel="external">` |
 | target         | Specifies where to display the response (e.g., _blank, _self).             | `<form target="_blank">` |
 
 ### Examples of `<form>`
