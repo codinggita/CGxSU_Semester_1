@@ -54,7 +54,7 @@ To create intuitive and accessible interfaces, designers must apply icons and im
   - **Cart icon** for checkout.  
   - **Envelope icon** for messages.  
   - **Home icon** for the main screen.  
-- Source icons from free libraries like **Flaticon, Material Icons, or IconScout**.  
+- Source icons from free libraries.  
 - Maintain a size of around **24x24px** for tap-friendly interaction on small screens.
 - <img src="https://i.postimg.cc/BQbpTRNG/conventionnal.png" alt="conventionnal" width="400"/>
 - <img src="https://i.postimg.cc/CMmJfwGN/resemblence-icon.avif" alt="resemblence-icon" width="400"/>  
