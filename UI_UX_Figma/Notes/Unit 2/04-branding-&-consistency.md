@@ -162,5 +162,4 @@ By leveraging these Figma tools and resources, designers can **lock in branding,
 
 ---
 
-
 > **Note**: Branding and consistency in UI/UX are like a signature style—distinct visuals (UI) and predictable interactions (UX) create a trustworthy, seamless experience for all users, from smartphone users to urban desktop enthusiasts.
