@@ -1,0 +1,117 @@
+# ⚠️ Naming/Labeling Stashes (git stash save "msg") – 
+
+## 📌 What is Naming/Labeling Stashes?
+
+When you stash changes, you can give the stash a descriptive name or message to remember what it contains. This makes it easier to identify stashes later, especially if you have multiple stashes.
+
+**Analogy**: Instead of tossing your study notes into a drawer with no label, you write “HTML Notes” on the folder so you know exactly what’s inside when you need it later.
+
+---
+
+## 🛠 The Command: `git stash save "message"`
+
+The `git stash save "message"` command saves uncommitted changes to a stash with a custom message. (Note: In newer Git versions, `git stash push -m "message"` is preferred, but `git stash save` is still widely used and works.)
+
+**Syntax**:
+```bash
+git stash save "your message here"
+# or
+git stash push -m "your message here"
+```
+
+### Example Scenario
+You’re working on a hostel website’s homepage but need to pause to fix a navigation bug.
+
+1. Edit `index.html`, add `<h1>Welcome</h1>`, don’t commit.
+2. Stash with a name:
+   ```bash
+   git stash save "Homepage changes"
+   ```
+   - **Output**: `Saved working directory and index state "Homepage changes"`.
+3. List stashes:
+   ```bash
+   git stash list
+   ```
+   - **Output**: `stash@{0}: On main: Homepage changes`.
+
+### What Happens?
+- The stash is saved with your message instead of the default “WIP on branch: commit”.
+- The message appears in `git stash list`, making it easier to find.
+
+---
+
+## 🔍 Real-Life Analogy
+
+Naming a stash is like labeling a jar in the hostel kitchen with “Spicy Curry” instead of just “Food.” When you’re hungry later, you know exactly which jar to grab.
+
+---
+
+## 📚 Summary Table
+
+| Command                     | Purpose                                      |
+|-----------------------------|----------------------------------------------|
+| `git stash save "msg"`      | Saves changes with a custom message          |
+| `git stash push -m "msg"`   | Modern alternative to `save` with message    |
+| `git stash list`            | Shows stashes with their messages            |
+
+---
+
+## 🔧 Best Practices
+
+- **Use clear messages**: E.g., “Added login page” is better than “Changes”.
+- **Check stashes**: Use `git stash list` to confirm your message.
+- **Use `push -m` for newer Git**: It’s the modern standard (since Git 2.30).
+- **Don’t rely on default messages**: They’re vague and hard to track.
+
+---
+
+## 📝 Summary
+
+- Use `git stash save "message"` or `git stash push -m "message"` to name stashes.
+- Named stashes are easier to identify in `git stash list`.
+- Helps manage multiple stashes in complex projects.
+
+---
+
+## 🏋️ Exercises and Assignments
+
+### Exercise 1: Naming a Stash
+**Objective**: Practice stashing with a custom message.
+
+Step-by-step:
+1. Create a repo `name-stash-practice` with `git init`.
+2. Add `page.html` with `<p>Hostel Page</p>`, commit.
+3. Edit `page.html`, add `<h2>About Us</h2>`, don’t commit.
+4. Stash: `git stash save "Added about section"`.
+   - **Explanation**: Saves changes with a clear label.
+5. Check: `git stash list` (shows `stash@{0}: On main: Added about section`).
+6. Verify: `git status` (clean working directory).
+
+**Expected Learning**: See how naming makes stashes recognizable.
+
+### Exercise 2: Multiple Named Stashes
+**Objective**: Create and identify multiple named stashes.
+
+Step-by-step:
+1. In `name-stash-practice`, edit `page.html`, add `<footer>Contact</footer>`, stash: `git stash save "Footer changes"`.
+2. Add `style.css` with `body { color: blue; }`, stash: `git stash save "CSS styling"`.
+3. List: `git stash list` (shows both named stashes).
+4. Apply: `git stash apply stash@{1}` (restores footer changes).
+   - **Explanation**: Uses the message to pick the right stash.
+5. Check: `git status` (shows restored footer changes).
+
+**Expected Learning**: Manage multiple stashes by their names.
+
+### Assignment: Labeling Stashes in a Project
+**Objective**: Use named stashes in a realistic scenario.
+
+1. Create a repo `hostel-site` with `git init`.
+2. Add `index.html` with `<h1>Hostel</h1>`, commit.
+3. Edit `index.html`, add `<p>Info</p>`, stash as “Homepage info”.
+4. Add `nav.html` with `<nav>Home</nav>`, stash as “Navigation bar”.
+5. List stashes and apply “Homepage info”.
+6. Write a note explaining why naming stashes helped you choose the right one.
+
+
+---
+
