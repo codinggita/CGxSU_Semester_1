@@ -1,6 +1,6 @@
 # CSS Background Guide
 
-This guide details CSS background properties, including `background-color`, `background-repeat`, `background-attachment`, `background-image`, `background-position`, and the `background` shorthand. 
+This guide details CSS background properties, including `background-color`, `background-repeat`, `background-attachment`, `background-image`, `background-position`, `background-size`, `background-origin`, `background-clip`, and the `background` shorthand.
 
 ## 1. Background Color (`background-color`)
 The `background-color` property specifies the background color of an element using color names, hexadecimal, RGB, RGBA, HSL, or HSLA formats.
@@ -166,19 +166,127 @@ aside {
 }
 ```
 
-## 6. Background Shorthand (`background`)
-The `background` shorthand combines `background-color`, `background-image`, `background-position`, `background-repeat`, `background-attachment`, `background-size`, `background-origin`, and `background-clip`. The `center center cover` combination positions the image centrally and scales it to cover the element.
+## 6. Background Size (`background-size`)
+The `background-size` property specifies the size of the background image. Values include `auto` (default), length values (e.g., `px`, `%`), `cover` (scales to cover the element, may crop), and `contain` (scales to fit within the element).
+
+**Examples**:
+```css
+/* Auto size */
+div {
+  background-image: url('image.png');
+  background-size: auto; /* Original image size */
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+/* Specific size */
+section {
+  background-image: url('logo.png');
+  background-size: 100px 50px; /* Width 100px, height 50px */
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+/* Cover */
+article {
+  background-image: url('bg.jpg');
+  background-size: cover; /* Scales to cover, may crop */
+  background-position: center;
+  height: 200px;
+}
+
+/* Contain */
+aside {
+  background-image: url('pattern.png');
+  background-size: contain; /* Scales to fit, no cropping */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
+```
+
+## 7. Background Origin (`background-origin`)
+The `background-origin` property defines the positioning area of the background image. Values are `padding-box` (default, includes padding), `border-box` (includes border), and `content-box` (excludes padding and border).
+
+**Examples**:
+```css
+/* Padding-box (default) */
+div {
+  background-image: url('flower.png');
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  padding: 20px;
+  border: 5px solid black;
+  height: 200px;
+}
+
+/* Border-box */
+section {
+  background-image: url('pattern.png');
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  padding: 20px;
+  border: 5px solid black;
+  height: 200px;
+}
+
+/* Content-box */
+article {
+  background-image: url('icon.png');
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  padding: 20px;
+  border: 5px solid black;
+  height: 200px;
+}
+```
+
+## 8. Background Clip (`background-clip`)
+The `background-clip` property determines the area where the background (color or image) is visible. Values are `border-box` (default, extends under border), `padding-box` (clips at padding edge), and `content-box` (clips at content edge).
+
+**Examples**:
+```css
+/* Border-box (default) */
+div {
+  background-image: url('bg.jpg');
+  background-clip: border-box;
+  padding: 20px;
+  border: 5px dashed black;
+  height: 200px;
+}
+
+/* Padding-box */
+section {
+  background-color: lightblue;
+  background-clip: padding-box;
+  padding: 20px;
+  border: 5px dashed black;
+  height: 200px;
+}
+
+/* Content-box */
+article {
+  background-image: url('pattern.png');
+  background-clip: content-box;
+  padding: 20px;
+  border: 5px dashed black;
+  height: 200px;
+}
+```
+
+## 9. Background Shorthand (`background`)
+The `background` shorthand combines `background-color`, `background-image`, `background-position`, `background-size`, `background-repeat`, `background-attachment`, `background-origin`, and `background-clip`. Use a slash (`/`) to separate `background-position` and `background-size`.
 
 **Examples**:
 ```css
 /* Example 1: Center center cover */
 main {
-  background: #ffffff url('bg.jpg') center center/cover no-repeat fixed;
-  /* Centers image, scales to cover, no repeat, fixed */
+  background: #ffffff url('bg.jpg') center center/cover no-repeat fixed padding-box content-box;
+  /* Color, image, position/size, repeat, attachment, origin, clip */
   height: 400px;
 }
 
-/* Example 2: Basic shorthand with position */
+/* Example 2: Basic shorthand */
 div {
   background: #f0f0f0 url('tile.png') center center no-repeat fixed;
   height: 300px;
@@ -186,19 +294,21 @@ div {
 
 /* Example 3: Shorthand with gradient and position */
 section {
-  background: linear-gradient(blue, green) top left no-repeat;
+  background: linear-gradient(blue, green) top left no-repeat padding-box;
   height: 200px;
 }
 
 /* Example 4: Shorthand with position and size */
 article {
-  background: url('pattern.jpg') 20px 30px/50px 50px repeat scroll;
+  background: url('pattern.jpg') 20px 30px/50px 50px repeat scroll content-box;
   height: 200px;
 }
 ```
 
 ## Additional Notes
-- **Shorthand Order**: Common order is `background-color`, `background-image`, `background-position`, `background-size`, `background-repeat`, `background-attachment`, but it’s flexible.
-- **Center Center Cover**: `center center/cover` positions the image at the element’s center and scales it to cover the entire area, potentially cropping parts of the image (see Example 1 in `background` shorthand).
-- **Background Position**: Can use `background-position-x` and `background-position-y` for separate control.
-- **Fallbacks**: Include `background-color` as a fallback for `background-image`.
+- **Shorthand Order**: Typically `background-color`, `background-image`, `background-position`, `background-size` (after `/`), `background-repeat`, `background-attachment`, `background-origin`, `background-clip`. Order is flexible, but `background-size` must follow `background-position` with a `/`.
+- **Center Center Cover**: `center center/cover` centers the image and scales it to cover the element, potentially cropping parts (see Example 1 in `background` shorthand).
+- **Background Position**: Use `background-position-x` and `background-position-y` for separate control.
+- **Fallbacks**: Specify `background-color` as a fallback for `background-image`.
+- **Multiple Backgrounds**: Layer multiple images by listing them in `background-image`, with corresponding properties (e.g., `background-position`, `background-size`) in the same order, separated by commas.
+- **Browser Compatibility**: Most properties are widely supported, but test `background-origin` and `background-clip` in older browsers.
