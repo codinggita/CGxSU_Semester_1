@@ -7,7 +7,7 @@ This guide covers the CSS `display` property, which controls the layout behavior
 The `display` property specifies how an element is rendered in the layout, affecting its box type and interaction with other elements.
 
 ### CSS Property
-- `display`: Defines the display type (e.g., `block`, `inline`, `inline-block`, `none`, `flex`, `grid`, `contents`).
+- `display`: Defines the display type (e.g., `block`, `inline`, `inline-block`, `none`, `flex`, `grid`).
 
 ## Common Display Values
 
@@ -309,65 +309,7 @@ HTML for examples:
 </div>
 ```
 
-### 7. Contents
-The `display: contents` value causes an element's children to appear as if they were direct children of the element's parent, removing the element itself from the layout while preserving its children's layout.
 
-#### Examples
-1. **Basic Contents Display**
-   ```css
-   .wrapper {
-     display: contents;
-   }
-   ```
-   The `wrapper` element is removed from the layout, and its children are treated as direct children of its parent.
-
-2. **Contents in Flex Parent**
-   ```css
-   .parent {
-     display: flex;
-     gap: 10px;
-   }
-   .wrapper {
-     display: contents;
-   }
-   ```
-   Children of `wrapper` are laid out as flex items of `parent`.
-
-3. **Contents in Grid Parent**
-   ```css
-   .parent {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-   }
-   .wrapper {
-     display: contents;
-   }
-   ```
-   Children of `wrapper` become grid items of `parent`.
-
-4. **Contents with Styling**
-   ```css
-   .wrapper {
-     display: contents;
-   }
-   .child {
-     background-color: lightyellow;
-     padding: 10px;
-     border: 1px solid black;
-   }
-   ```
-   The `wrapper` is removed, but children retain their styling.
-
-HTML for examples:
-```html
-<div class="parent">
-  <div class="wrapper">
-    <div class="child">Child 1</div>
-    <div class="child">Child 2</div>
-  </div>
-  <div class="child">Child 3</div>
-</div>
-```
 
 ## Notes
 - The `display` property is fundamental for layout control, and combining it with other CSS properties (e.g., `margin`, `padding`, `width`) enhances its functionality.
