@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Class and ID Example</title>
+
+    <!-- Internal CSS styles to demonstrate class and id usage -->
+    <style>
+        /* CLASS: Used for styling multiple elements at once */
+        .course-info {
+            font-size: 16px;               /* Sets font size to 16px */
+            padding: 15px;                 /* Adds padding inside the element */
+            background-color: #f0f0f0;     /* Light grey background */
+        }
+
+        /* ID: Used for styling a unique element */
+        #python-course {
+            border: 2px solid green;       /* Green solid border */
+            margin: 20px;                  /* Space around the element */
+        }
+
+        /* Another unique ID for a different element */
+        #ai-lab {
+            border: 2px dashed purple;     /* Purple dashed border */
+            text-align: center;            /* Centers the text horizontally */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- h1 with unique ID (main-heading) -->
+    <h1 id="main-heading" style="color: #0066cc; text-align: center; font-family: Verdana, sans-serif;">
+        Welcome to Coding Gita
+    </h1>
+    <!-- Inline style used here for quick demonstration (not best practice for large projects) -->
+
+    <!-- h2 element with BOTH class and id -->
+    <!-- class="course-info" applies shared styles, id="python-course" applies unique styles -->
+    <h2 id="python-course" class="course-info">
+        Coding Gita’s Python Workshop
+    </h2>
+
+    <!-- p element with ONLY class (shared style) -->
+    <p class="course-info">
+        Learn Python with hands-on projects.
+    </p>
+
+    <!-- h2 element with BOTH class and id -->
+    <h2 id="ai-lab" class="course-info">
+        SwamiNarayan University’s AI Research Lab
+    </h2>
+
+</body>
+</html>
+

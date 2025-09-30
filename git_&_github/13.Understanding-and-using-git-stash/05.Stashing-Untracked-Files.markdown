@@ -1,0 +1,116 @@
+# ⚠️ Stashing Untracked Files (git stash -u) – 
+
+## 📌 What is Stashing Untracked Files?
+
+By default, `git stash` only saves changes to tracked files (files already added to Git). Untracked files (new files not yet added with `git add`) are left behind. The `-u` (or `--include-untracked`) flag tells Git to stash untracked files too.
+
+**Analogy**: Normally, stashing is like saving your edited notebook pages. With `-u`, you also save loose sticky notes (untracked files) lying around your hostel desk.
+
+---
+
+## 🛠 The Command: `git stash -u`
+
+The `git stash -u` command saves both tracked changes and untracked files to a stash, cleaning your working directory completely.
+
+**Syntax**:
+```bash
+git stash -u
+# or
+git stash --include-untracked
+```
+
+### Example Scenario
+You’re working on a hostel website, editing `index.html` (tracked) and creating a new `style.css` (untracked).
+
+1. Edit `index.html`, add `<p>Welcome</p>`.
+2. Create `style.css` with `body { color: blue; }`.
+3. Check: `git status`.
+   - **Output**: Shows modified `index.html` (tracked) and `style.css` (untracked).
+4. Stash with untracked: `git stash -u`.
+5. Check: `git status` (clean, both files stashed).
+6. List: `git stash list` (shows `stash@{0}`).
+7. Apply: `git stash apply` (restores both files).
+
+---
+
+## 🔍 Real-Life Analogy
+
+Stashing with `-u` is like packing your entire hostel desk—edited notebooks (tracked files) and new sticky notes (untracked files)—into a drawer to clear space for a new task.
+
+---
+
+## 📚 Summary Table
+
+| Command                | Purpose                                      |
+|------------------------|----------------------------------------------|
+| `git stash -u`         | Saves tracked and untracked changes          |
+| `git stash apply`      | Restores both tracked and untracked changes  |
+
+---
+
+## 🔧 Best Practices
+
+- **Check untracked files**: Use `git status` to see untracked files before stashing.
+- **Use `-u` sparingly**: Untracked files might include temporary files; consider `.gitignore`.
+- **Verify after applying**: Ensure untracked files are restored correctly.
+- **Name your stash**: Combine with `git stash push -m "msg" -u` for clarity.
+
+---
+
+## 📝 Summary
+
+- `git stash -u` includes untracked files in the stash.
+- Useful when you create new files and want to save everything.
+- Restored with `git stash apply` or `pop`.
+
+---
+
+## 🏋️ Exercises and Assignments
+
+### Exercise 1: Stashing Untracked Files
+**Objective**: Stash and restore both tracked and untracked files.
+
+Step-by-step:
+1. Create a repo `untracked-practice` with `git init`.
+2. Add `main.html` with `<h1>Hostel</h1>`, commit.
+3. Edit `main.html`, add `<p>Info</p>`.
+4. Create `new.css` with `p { font-size: 16px; }`.
+5. Check: `git status` (shows modified `main.html`, untracked `new.css`).
+6. Stash: `git stash -u`.
+   - **Explanation**: Saves both files.
+7. Check: `git status` (clean).
+8. Apply: `git stash apply`.
+   - **Explanation**: Restores both files.
+9. Check: `git status` (shows both files again).
+
+**Expected Learning**: See how `-u` handles untracked files.
+
+### Exercise 2: Combining Named Stash with Untracked
+**Objective**: Use `-u` with a named stash.
+
+Step-by-step:
+1. In `untracked-practice`, edit `main.html`, add `<footer>End</footer>`.
+2. Create `script.js` with `console.log("Hi");`.
+3. Stash: `git stash push -m "Footer and script" -u`.
+   - **Explanation**: Saves with a message and includes untracked file.
+4. Check: `git stash list` (shows named stash).
+5. Check: `git status` (clean).
+6. Apply: `git stash apply`.
+7. Verify: `git status` (both files restored).
+
+**Expected Learning**: Combine naming and untracked stashing.
+
+### Assignment: Stashing in a Website Project
+**Objective**: Apply stashing with untracked files.
+
+1. Create a repo `hostel-web` with `git init`.
+2. Add `index.html` with `<h1>Home</h1>`, commit.
+3. Edit `index.html`, add `<p>Details</p>`.
+4. Create `temp.txt` with temporary notes.
+5. Stash with `-u`: `git stash push -m "Homepage and notes" -u`.
+6. Verify clean directory: `git status`.
+7. Apply the stash and check restored files.
+8. Write a note on why `-u` was needed for `temp.txt`.
+
+
+---

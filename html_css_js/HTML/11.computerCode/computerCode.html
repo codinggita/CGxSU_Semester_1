@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for proper text display -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive layout for all devices -->
+    <title>HTML Computer Code Elements</title> <!-- Title shown in browser tab -->
+
+    <!-- Styling for better presentation -->
+    <style>
+        /* Styling for multi-line code blocks */
+        pre {
+            background-color: #241d1d; /* Dark background for code */
+            color: #ffffff; /* White text */
+            padding: 15px; /* Space inside code block */
+            border-radius: 5px; /* Rounded corners */
+            overflow-x: auto; /* Horizontal scroll if code is long */
+        }
+
+        /* Styling for inline code */
+        code {
+            font-family: 'Consolas', monospace; /* Monospace font for clarity */
+    
+            padding: 2px 4px; /* Small padding */
+            border-radius: 3px; /* Rounded edges */
+        }
+
+        /* Styling for keyboard input */
+        kbd {
+            background-color: #f4f4f4; /* Light gray */
+            padding: 2px 4px;
+            border: 1px solid #ccc; /* Border for button-like appearance */
+            border-radius: 3px;
+            font-family: monospace; /* Monospace for consistency */
+        }
+
+        /* Styling for sample program output */
+        samp {
+            background-color: #e8f5e9; /* Light green */
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+
+        /* Styling for variables */
+        var {
+            color: #d81b60; /* Pink text */
+            font-style: italic; /* Italic for emphasis */
+        }
+    </style> 
+</head>
+<body>
+
+    <h1>HTML Computer Code Elements</h1>
+    <p>HTML provides elements like <code>&lt;code&gt;</code>, <code>&lt;pre&gt;</code>, <code>&lt;kbd&gt;</code>, <code>&lt;samp&gt;</code>, and <code>&lt;var&gt;</code> to represent code, user input, program output, and variables.</p>
+
+    <!-- =======================================================
+         1. The <code> Element
+         ======================================================= -->
+    <h2>1. The &lt;code&gt; Element</h2>
+    <p>To print text in Python, use the <code>print("Hello, World!")</code> function.</p>
+    <!-- <code> is inline and used here to highlight the function -->
+
+    <hr>
+
+    <!-- =======================================================
+         2. The <pre> Element
+         ======================================================= -->
+    <h2>2. The &lt;pre&gt; Element</h2>
+    <pre><code>
+#include &lt;stdio.h&gt;
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+    </code></pre>
+    <!-- <pre> preserves spacing, <code> gives semantic meaning -->
+
+    <hr>
+
+    <!-- =======================================================
+         3. The <kbd> Element
+         ======================================================= -->
+    <h2>3. The &lt;kbd&gt; Element</h2>
+    <p>To save a file in Vim, type <kbd><code>:w</code></kbd> and press Enter.</p>
+    <!-- <kbd> is for keyboard input, <code> ensures monospace font -->
+
+    <hr>
+
+    <!-- =======================================================
+         4. The <samp> Element
+         ======================================================= -->
+    <h2>4. The &lt;samp&gt; Element</h2>
+    <p>If you run <code>print("Hello")</code>, the output will be <samp>Hello</samp>.</p>
+    <!-- <samp> represents program output -->
+
+    <hr>
+
+    <!-- =======================================================
+         5. The <var> Element
+         ======================================================= -->
+    <h2>5. The &lt;var&gt; Element</h2>
+    <p>In the equation <code>E = mc^2</code>, <var>m</var> stands for mass.</p>
+    <!-- <var> represents a variable name -->
+
+    <hr>
+
+    <!-- =======================================================
+         6. Combining Elements
+         ======================================================= -->
+    <h2>6. Combining Elements</h2>
+    <p>To count files in a directory, type <kbd><code>ls | wc -l</code></kbd> in the terminal, and the output will be <samp>42</samp>, where <var>42</var> is the number of files.</p>
+    <!-- Here we use kbd+code for command, samp for output, var for explanation -->
+
+    <hr>
+
+    <!-- =======================================================
+         7. Styled Example with All Elements
+         ======================================================= -->
+    <h2>7. Styled Example</h2>
+    <pre><code>
+def calculate_area(radius):
+    <var>pi</var> = 3.14159
+    return <var>pi</var> * <var>radius</var> ** 2
+    </code></pre>
+    <p>Type <kbd><code>calculate_area(5)</code></kbd> to get <samp>78.53975</samp>.</p>
+
+    <hr>
+
+</body>
+</html>
+

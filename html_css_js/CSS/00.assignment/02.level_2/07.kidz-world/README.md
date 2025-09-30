@@ -1,0 +1,1 @@
+# kidz-world-static

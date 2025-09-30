@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes it responsive -->
+    <title>HTML Iframe Examples</title>
+
+    <style>
+        /* Styling for the styled iframe example */
+        .responsive-iframe {
+            width: 100%; /* Full width of container */
+            height: 400px; /* Fixed height */
+            border: none; /* Removes default border */
+            margin: 10px; /* Adds space around iframe */
+            background:rgb(43, 7, 78); /* Background color for visibility */
+            padding: 20px; /* Padding inside the iframe */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Using the HTML &lt;iframe&gt; Element</h1>
+    <p>The &lt;iframe&gt; element lets you embed another HTML page or media into your own page.</p>
+
+    <!-- ================================
+         Example 1: Embedding a Webpage
+         ================================= -->
+    <h2>Example 1: Embedding a Webpage</h2>
+    <!-- 
+        src: The URL of the content to embed
+        width & height: Dimensions of the iframe
+        title: Description for accessibility
+    -->
+    <iframe 
+        src="https://www.example.com" 
+        width="100%" 
+        height="400" 
+        title="Example Website">
+    </iframe>
+
+    <hr>
+
+    <!-- ================================
+         Example 2: Embedding a YouTube Video
+         ================================= -->
+    <h2>Example 2: Embedding a YouTube Video</h2>
+    <!-- 
+        frameborder="0": Removes border
+        allow: Grants permission for extra features like autoplay
+        allowfullscreen: Allows fullscreen viewing
+    -->
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+    <hr>
+
+    <!-- ================================
+         Example 3: Using name attribute with links
+         ================================= -->
+    <h2>Example 3: Using <code>name</code> with Links</h2>
+    <!-- 
+        target="myframe": Loads the linked page into iframe with name="myframe"
+    -->
+    <a href="https://www.example.com" target="myframe">Visit Example.com</a>
+    <br><br>
+    <iframe 
+        name="myframe" 
+        width="100%" 
+        height="300" 
+        title="Targeted Frame">
+    </iframe>
+
+    <hr>
+
+    <!-- ================================
+         Example 4: Applying Security with sandbox
+         ================================= -->
+    <h2>Example 4: Applying Security with <code>sandbox</code></h2>
+    <!-- 
+        sandbox: Restricts iframe capabilities for security
+        "allow-scripts": Allows JavaScript execution but blocks forms, popups, etc.
+    -->
+    <iframe 
+        src="https://www.example.com" 
+        sandbox="allow-scripts" 
+        width="100%" 
+        height="300" 
+        title="Secure Frame">
+    </iframe>
+
+    <hr>
+
+    <!-- ================================
+         Example 5: Styling an Iframe
+         ================================= -->
+    <h2>Example 5: Styling an Iframe</h2>
+    <!-- 
+        Class .responsive-iframe applied from CSS
+        Makes iframe responsive and removes border
+    -->
+    <iframe 
+        src="https://www.example.com" 
+        class="responsive-iframe" 
+        title="Styled Frame">
+    </iframe>
+
+    <hr>
+</body>
+</html>
+
