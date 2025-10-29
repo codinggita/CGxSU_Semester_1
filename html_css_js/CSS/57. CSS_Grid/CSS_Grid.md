@@ -179,41 +179,11 @@ These properties are applied to the grid container (the element with `display: g
   }
   ```
 
-### 15. `grid-auto-columns`
-- **Description**: Specifies the size of implicitly created columns (e.g., for items placed outside explicit grid tracks).
-- **Values**: Track sizes (e.g., `px`, `fr`, `auto`).
-- **Example**:
-  ```css
-  .container {
-    display: grid;
-    grid-auto-columns: 100px;
-  }
-  ```
 
-### 16. `grid-auto-rows`
-- **Description**: Specifies the size of implicitly created rows.
-- **Values**: Track sizes.
-- **Example**:
-  ```css
-  .container {
-    display: grid;
-    grid-auto-rows: 80px;
-  }
-  ```
 
-### 17. `grid-auto-flow`
-- **Description**: Controls how auto-placed items are inserted into the grid.
-- **Values**: `row` (default), `column`, `dense`.
-- **Example**:
-  ```css
-  .container {
-    display: grid;
-    grid-auto-flow: dense;
-  }
-  ```
-  **Explanation**: The `dense` value fills gaps in the grid by placing items in earlier available spaces.
 
-### 18. `grid`
+
+### 15. `grid`
 - **Description**: Shorthand for `grid-template`, `grid-auto-flow`, `grid-auto-rows`, and `grid-auto-columns`.
 - **Values**: Combines multiple grid properties.
 - **Example**:
