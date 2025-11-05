@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>The Great</h1>
+            <h1 id="colorDisplay" class="color-display">RGB Color Guessing Game</h1>
+            <h1>Guessing Game</h1>
+        </header>
+        
+        <!-- Message Display -->
+        <div id="message" class="message">Pick a color!</div>
+        
+        <!-- Streak Display -->
+        <div class="streak-section">
+            <div class="streak-box">
+                <h3>Current Streak</h3>
+                <div id="currentStreak" class="streak-number">0</div>
+            </div>
+            <div class="streak-box">
+                <h3>Best Streak</h3>
+                <div id="bestStreak" class="streak-number">0</div>
+            </div>
+        </div>
+        
+        <!-- Control Buttons -->
+        <div class="controls">
+            <button id="newRoundBtn" class="control-btn">New Round</button>
+            <button id="easyBtn" class="mode-btn">Easy</button>
+            <button id="hardBtn" class="mode-btn selected">Hard</button>
+            <button id="resetStreakBtn" class="control-btn">Reset Streak</button>
+        </div>
+        
+        <!-- Color Box Grid -->
+        <div id="colorBoxContainer" class="color-box-container">
+            <div class="color-box"></div>
+            <div class="color-box"></div>
+            <div class="color-box"></div>
+            <div class="color-box"></div>
+            <div class="color-box"></div>
+            <div class="color-box"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
