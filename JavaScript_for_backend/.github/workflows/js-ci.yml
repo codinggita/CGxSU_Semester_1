@@ -1,0 +1,74 @@
+name: JavaScript Curriculum CI
+
+on:
+  push:
+    branches: [ main, develop, 'claude/**' ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  quality:
+    name: Code Quality & Testing
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./JavaScript_for_backend
+
+      - name: Run ESLint
+        run: npm run lint
+        working-directory: ./JavaScript_for_backend
+
+      - name: Check code formatting
+        run: npm run format:check
+        working-directory: ./JavaScript_for_backend
+
+      - name: TypeScript type checking
+        run: npm run type-check
+        working-directory: ./JavaScript_for_backend
+
+      - name: Run tests
+        run: npm run test:coverage
+        working-directory: ./JavaScript_for_backend
+
+      - name: Upload coverage reports
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./JavaScript_for_backend/coverage/coverage-final.json
+          flags: unittests
+          name: codecov-umbrella
+
+  examples:
+    name: Validate Examples
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+
+      - name: Validate all runnable examples
+        run: |
+          find . -name "example*.js" -type f | while read file; do
+            echo "Validating: $file"
+            node "$file" || exit 1
+          done
+        working-directory: ./JavaScript_for_backend

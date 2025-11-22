@@ -1,0 +1,55 @@
+{
+  "name": "javascript-curriculum",
+  "version": "2.0.0",
+  "description": "Comprehensive, rigorous, practice-oriented JavaScript curriculum - from fundamentals to production-ready applications",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint . --ext .js,.mjs,.cjs",
+    "lint:fix": "eslint . --ext .js,.mjs,.cjs --fix",
+    "format": "prettier --write \"**/*.{js,mjs,cjs,json,md}\"",
+    "format:check": "prettier --check \"**/*.{js,mjs,cjs,json,md}\"",
+    "type-check": "tsc --noEmit",
+    "validate": "npm run lint && npm run format:check && npm run type-check && npm run test",
+    "dev": "node --watch",
+    "start": "node"
+  },
+  "keywords": [
+    "javascript",
+    "curriculum",
+    "tutorial",
+    "learning",
+    "education",
+    "es6",
+    "es2021",
+    "nodejs",
+    "browser",
+    "dom",
+    "async",
+    "promises",
+    "testing"
+  ],
+  "author": "Code Galaxy Contributors",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@vitest/ui": "^1.1.0",
+    "@vitest/coverage-v8": "^1.1.0",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
+  }
+}

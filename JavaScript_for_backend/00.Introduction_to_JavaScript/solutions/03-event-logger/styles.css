@@ -1,0 +1,219 @@
+/**
+ * Event Logger Styles
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+header p {
+  opacity: 0.8;
+  font-size: 1.1em;
+}
+
+.controls {
+  padding: 20px 30px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+  background: #667eea;
+  color: white;
+}
+
+.btn-secondary {
+  background: #764ba2;
+  color: white;
+}
+
+.btn-danger {
+  background: #e74c3c;
+  color: white;
+}
+
+.btn-warning {
+  background: #f39c12;
+  color: white;
+}
+
+.btn-success {
+  background: #27ae60;
+  color: white;
+}
+
+.badge {
+  background: #333;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  margin-left: auto;
+}
+
+.interactive-area {
+  padding: 30px;
+  background: #fafafa;
+  border-bottom: 1px solid #ddd;
+}
+
+.interactive-area h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.interactive-area p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.interactive-area input {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-right: 10px;
+  width: 300px;
+  transition: border-color 0.3s ease;
+}
+
+.interactive-area input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.log-container {
+  padding: 30px;
+}
+
+.log-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#logOutput {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+.log-entry {
+  padding: 10px;
+  margin-bottom: 8px;
+  background: white;
+  border-left: 4px solid #667eea;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.log-entry:hover {
+  background: #f0f0f0;
+  transform: translateX(5px);
+}
+
+.log-entry.click {
+  border-left-color: #e74c3c;
+}
+
+.log-entry.keypress {
+  border-left-color: #27ae60;
+}
+
+.log-entry.mousemove {
+  border-left-color: #f39c12;
+}
+
+.log-entry-header {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.log-entry-details {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.log-entry-time {
+  color: #999;
+  font-size: 0.85em;
+}
+
+.empty-log {
+  text-align: center;
+  color: #999;
+  padding: 40px;
+  font-style: italic;
+}
+
+/* Scrollbar styling */
+#logOutput::-webkit-scrollbar {
+  width: 8px;
+}
+
+#logOutput::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+#logOutput::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+#logOutput::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

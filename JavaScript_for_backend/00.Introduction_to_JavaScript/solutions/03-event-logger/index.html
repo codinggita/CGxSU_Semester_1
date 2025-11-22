@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Logger - Exercise 3 Solution</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Event Logger</h1>
+      <p>Interact with this page to log events (clicks, keypresses, mouse movements)</p>
+    </header>
+
+    <section class="controls">
+      <button id="clearLog" class="btn btn-danger">Clear Log</button>
+      <button id="pauseLogging" class="btn btn-warning">Pause Logging</button>
+      <span id="eventCount" class="badge">Events: 0</span>
+    </section>
+
+    <section class="interactive-area">
+      <h2>Interactive Area</h2>
+      <p>Click, type, or move your mouse here</p>
+      <input type="text" id="textInput" placeholder="Type something..." />
+      <button class="btn btn-primary">Click Me</button>
+      <button class="btn btn-secondary">Or Me</button>
+    </section>
+
+    <section class="log-container">
+      <h2>Event Log (Last 50 Events)</h2>
+      <div id="logOutput"></div>
+    </section>
+  </div>
+
+  <script src="event-logger.js"></script>
+</body>
+</html>
