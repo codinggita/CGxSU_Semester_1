@@ -1,0 +1,103 @@
+## Level 3 – Basic number logic
+
+---
+
+### Q21. Count Digits in a Number
+
+Given a number, count how many digits it has. (Ignore sign.)
+
+* Input: `n = 0` → Output: `1`
+* Input: `n = 1234` → Output: `4`
+* Input: `n = -98` → Output: `2`
+
+---
+
+### Q22. Sum of Digits
+
+Given a number, find sum of its digits.
+
+* Input: `n = 123` → Output: `6` (1+2+3)
+* Input: `n = 505` → Output: `10` (5+0+5)
+* Input: `n = 9` → Output: `9`
+
+---
+
+### Q23. Product of Digits
+
+Given a number, find product of its digits.
+
+* Input: `n = 123` → Output: `6` (1×2×3)
+* Input: `n = 505` → Output: `0` (5×0×5)
+* Input: `n = 46` → Output: `24` (4×6)
+
+---
+
+### Q24. Reverse a Number
+
+Given a number, print its reverse.
+
+* Input: `n = 1234` → Output: `4321`
+* Input: `n = 100` → Output: `1` (leading zeros dropped)
+* Input: `n = -321` → Output: `-123` (if you handle sign)
+
+---
+
+### Q25. Palindrome Number
+
+Check if a number reads same forwards and backwards.
+
+* Input: `n = 121` → Output: `true` (or `"palindrome"`)
+* Input: `n = 123` → Output: `false`
+* Input: `n = 0` → Output: `true`
+
+---
+
+### Q26. Prime Number (Simple Check)
+
+Given a number, check if it is prime.
+
+* Input: `n = 2` → Output: `true`
+* Input: `n = 17` → Output: `true`
+* Input: `n = 15` → Output: `false`
+
+---
+
+### Q27. All Primes from 1 to N
+
+Print all prime numbers from 1 to N.
+
+* Input: `N = 10` → Output: `2 3 5 7`
+* Input: `N = 5` → Output: `2 3 5`
+* Input: `N = 2` → Output: `2`
+
+---
+
+### Q28. First N Fibonacci Numbers
+
+Print first N Fibonacci numbers. (Start: 0, 1, 1, 2, 3, …)
+
+* Input: `N = 5` → Output: `0 1 1 2 3`
+* Input: `N = 1` → Output: `0`
+* Input: `N = 7` → Output: `0 1 1 2 3 5 8`
+
+---
+
+### Q29. GCD of Two Numbers (Simple Loop)
+
+Given two numbers, find their greatest common divisor.
+
+* Input: `a = 12, b = 18` → Output: `6`
+* Input: `a = 5, b = 9` → Output: `1`
+* Input: `a = 20, b = 100` → Output: `20`
+
+---
+
+### Q30. LCM of Two Numbers
+
+Given two numbers, find their least common multiple.
+
+* Input: `a = 4, b = 6` → Output: `12`
+* Input: `a = 5, b = 7` → Output: `35`
+* Input: `a = 3, b = 9` → Output: `9`
+
+---

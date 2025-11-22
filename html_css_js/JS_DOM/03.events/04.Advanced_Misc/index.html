@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Events - Group 4 (Advanced / Misc)</title>
+  </head>
+  <body>
+    <h1>JavaScript Events - Group 4</h1>
+    <p>
+      Events in this group: scroll, copy, paste, DOMContentLoaded/load, touchstart.
+    </p>
+
+    <!-- 1. scroll -->
+    <h2>1. scroll - Page Scroll Position</h2>
+    <p>
+      Scroll this page up and down to see the current scroll position update
+      below.
+    </p>
+    <p id="scrollInfo">Scroll position: (top: 0 px)</p>
+
+    <hr />
+
+    <!-- 2. copy -->
+    <h2>2. copy - Detect Copy Action</h2>
+    <p id="copyText">
+      Select some part of this text and press Ctrl+C (or right-click &amp; Copy)
+      to trigger the copy event.
+    </p>
+    <p id="copyResult">Copy status: (nothing copied yet)</p>
+
+    <hr />
+
+    <!-- 3. paste -->
+    <h2>3. paste - Detect Paste into Input</h2>
+    <input
+      id="pasteInput"
+      type="text"
+      placeholder="Click here and paste something (Ctrl+V)"
+    />
+    <p id="pasteResult">Paste status: (nothing pasted yet)</p>
+
+    <hr />
+
+    <!-- 4. DOMContentLoaded / load -->
+    <h2>4. DOMContentLoaded and load</h2>
+    <p id="domLoadStatus">
+      Page load status: (waiting for events - refresh the page to see sequence in
+      console).
+    </p>
+    <p style="font-size: 12px; color: gray;">
+      Open the console and refresh the page to see
+      DOMContentLoaded and load logs.
+    </p>
+
+    <hr />
+
+    <!-- 5. touchstart -->
+    <h2>5. touchstart - Mobile Touch (with desktop fallback)</h2>
+    <div
+      id="touchArea"
+      style="
+        width: 200px;
+        height: 100px;
+        border: 1px solid green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      Tap here on mobile, or click here on desktop
+    </div>
+    <p id="touchResult">Touch/click status: (none)</p>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Events - Group 2</title>
+  </head>
+  <body>
+    <h1>JavaScript Events - Group 2</h1>
+    <p>
+      Events in this group: submit, focus/blur, keydown, resize, event delegation.
+    </p>
+
+      <!-- 6. Submit Event (Form) -->
+        <h2>6. Submit Event - Simple Form</h2>
+        <form id="simpleForm">
+          <label for="formNameInput">Name:</label>
+          <input id="formNameInput" type="text" />
+          <button type="submit">Submit</button>
+        </form>
+        <p id="formResult">Form result will appear here.</p>
+
+      <hr />
+
+      <!-- 7. Focus / Blur Events -->
+        <h2>7. Focus / Blur - Highlight Input</h2>
+        <input
+          id="focusInput"
+          type="text"
+          placeholder="Click here to focus"
+          style="border: 1px solid #ccc"
+        />
+
+      <hr />
+
+      <!-- 8. Keydown Event -->
+        <h2>8. Keydown Event - Show Pressed Key</h2>
+        <p>Press any key on your keyboard.</p>
+        <p id="keyInfo">You pressed: (nothing yet)</p>
+
+      <hr />
+
+      <!-- 9. Resize Event -->
+        <h2>9. Resize Event - Window Size</h2>
+        <p id="sizeInfo">Resize the window to see width and height.</p>
+
+      <hr />
+
+      <!-- 10. Event Delegation on List -->
+        <h2>10. Event Delegation - Click List Item</h2>
+        <p>Click on any item in the list below.</p>
+        <ul id="itemList">
+          <li>Item A</li>
+          <li>Item B</li>
+          <li>Item C</li>
+        </ul>
+        <p id="itemClickResult">Clicked item: (none)</p>
+
+    <script src="index.js"></script>
+  </body>
+</html>
