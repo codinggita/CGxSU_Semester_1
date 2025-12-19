@@ -82,7 +82,6 @@
 
 * Print-based debugging (`printf`)
 * Common runtime errors (segfault, infinite loops, uninitialized variables)
-* Intro to `gdb` (optional)
 
 ---
 
@@ -156,23 +155,4 @@
 * `malloc`, `calloc`, `realloc`, `free`
 * Example: dynamic storage for student names
 
-29. Advanced Pointers
 
-* Pointer arithmetic
-* Pointers to pointers
-* Function pointers (basic intro)
-
----
-
-### **Unit 11: Capstone Projects**
-
-30. Mini Projects
-
-* Student Result Management System (structures + file handling)
-* Attendance Tracker (arrays + bitwise ops)
-* Library Management (structures + files)
-* Inventory Management (DMA + structures + files)
-* Bitwise Permission System (bitwise ops)
-* Command-Line Utility (argv + file handling)
-
----
