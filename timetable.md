@@ -169,7 +169,7 @@
 | 9:15–10:45  | Neel Sir (C Language)              | 9:15–10:45  | Samir Sir (Web Dev)    |
 | 10:45–12:15 | Samir Sir (Web Dev)        | 10:45–12:15 | Neel Sir (C Language)         |
 | 12:15–1:15  | Break                        | 12:15–1:15  | Break                  |
-| 1:15–2:45   | Neel Sir                       | 1:15–2:45   | Anubhav Sir (PS) |
-| 2:45–4:15   | Anubhav Sir (PS)           | 2:45–4:15      | Neel Sir                     |
+| 1:15–2:45   | Samir Sir                      | 1:15–2:45   | Anubhav Sir (PS) |
+| 2:45–4:15   | Anubhav Sir (PS)           | 2:45–4:15      | Samir Sir                    |
 
 
