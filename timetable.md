@@ -172,4 +172,59 @@
 | 1:15–2:45   | Samir Sir                      | 1:15–2:45   | Anubhav Sir (PS) |
 | 2:45–4:15   | Anubhav Sir (PS)           | 2:45–4:15      | Samir Sir                    |
 
+### 22 Dec
+| Time        | CG LAB 1                     | Time        | CG LAB 2               |
+|-------------|------------------------------|-------------|-------------------------|
+| 9:15–10:45  | Anubhav Sir (PS)              | 9:15–10:45  | Samir Sir (React)    |
+| 10:45–12:15 | Samir Sir (React)        | 10:45–12:15 | Anubhav Sir (PS)         |
+| 12:15–1:15  | Break                        | 12:15–1:15  | Break                  |
+| 1:15–2:45   | Neel Sir (JS)           | 2:45–4:15      | Samir Sir (React)                       |
+| 2:45–4:15   | Samir Sir (React)                       | 1:15–2:45   | Neel Sir (JS) |
+| 4:15–4:40   | Break                        | 4:15–4:40  | Break                  |
+| 4:40–6:00   | Skill Development & Assignment Hours | 4:40–6:00  | Skill Development & Assignment Hours                 |
+| 6:00–7:00   | Skill Development & Assignment Hours| 6:00–7:00  | Skill Development & Assignment Hours                  |
 
+### 23 Dec
+| Time        | CG LAB 1                     | Time        | CG LAB 2               |
+|-------------|------------------------------|-------------|-------------------------|
+| 9:15–10:45  | Neel Sir (JS)              | 9:15–10:45  | Samir Sir (React)    |
+| 10:45–12:15 | Samir Sir (React)        | 10:45–12:15 | Neel Sir (JS)         |
+| 12:15–1:15  | Break                        | 12:15–1:15  | Break                  |
+| 1:15–2:45   | Anubhav Sir (PS)          | 2:45–4:15      | Samir Sir (React)                       |
+| 2:45–4:15   | Samir Sir (React)                       | 1:15–2:45   | Anubhav Sir (PS)     |
+| 4:15–4:40   | Break                        | 4:15–4:40  | Break                  |
+| 4:40–6:00   | Skill Development & Assignment Hours | 4:40–6:00  | Skill Development & Assignment Hours                 |
+| 6:00–7:00   | Skill Development & Assignment Hours| 6:00–7:00  | Skill Development & Assignment Hours                  |
+
+### 24 Dec
+| Time        | CG LAB 1                     | Time        | CG LAB 2               |
+|-------------|------------------------------|-------------|-------------------------|
+| 9:15–10:45  | Anubhav Sir (PS)              | 9:15–10:45  | Samir Sir (React)    |
+| 10:45–12:15 | Samir Sir (React)        | 10:45–12:15 | Anubhav Sir (PS)         |
+| 12:15–1:15  | Break                        | 12:15–1:15  | Break                  |
+| 1:15–2:45   | Neel Sir (JS)           | 2:45–4:15      | Samir Sir (React)                       |
+| 2:45–4:15   | Samir Sir (React)                       | 1:15–2:45   | Neel Sir (JS) |
+| 4:15–4:40   | Break                        | 4:15–4:40  | Break                  |
+| 4:40–6:00   | Skill Development & Assignment Hours | 4:40–6:00  | Skill Development & Assignment Hours                 |
+| 6:00–7:00   | Skill Development & Assignment Hours| 6:00–7:00  | Skill Development & Assignment Hours                  |
+
+### 26 Dec
+| Time        | CG LAB 1                     | Time        | CG LAB 2               |
+|-------------|------------------------------|-------------|-------------------------|
+| 9:15–10:45  | Neel Sir (JS)              | 9:15–10:45  | Samir Sir (React)    |
+| 10:45–12:15 | Samir Sir (React)        | 10:45–12:15 | Neel Sir (JS)         |
+| 12:15–1:15  | Break                        | 12:15–1:15  | Break                  |
+| 1:15–2:45   | Anubhav Sir (PS)          | 2:45–4:15      | Samir Sir (React)                       |
+| 2:45–4:15   | Samir Sir (React)                       | 1:15–2:45   | Anubhav Sir (PS)     |
+| 4:15–4:40   | Break                        | 4:15–4:40  | Break                  |
+| 4:40–6:00   | Skill Development & Assignment Hours | 4:40–6:00  | Skill Development & Assignment Hours                 |
+| 6:00–7:00   | Skill Development & Assignment Hours| 6:00–7:00  | Skill Development & Assignment Hours                  |
+
+### 27 Dec
+| Time        | CG LAB 1                     | Time        | CG LAB 2               |
+|-------------|------------------------------|-------------|-------------------------|
+| 9:15–10:45  | Anubhav Sir (PS)              | 9:15–10:45  | Samir Sir (React)    |
+| 10:45–12:15 | Samir Sir (React)        | 10:45–12:15 | Anubhav Sir (PS)         |
+| 12:15–1:15  | Break                        | 12:15–1:15  | Break                  |
+| 1:15–2:45   | Yogesh Sir (MongoDB)           | 2:45–4:15      | Samir Sir (React)                       |
+| 2:45–4:15   | Samir Sir (React)                       | 1:15–2:45   | Yogesh Sir (MongoDB) |
