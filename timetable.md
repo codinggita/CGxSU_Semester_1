@@ -228,3 +228,16 @@
 | 12:15–1:15  | Break                        | 12:15–1:15  | Break                  |
 | 1:15–2:45   | Yogesh Sir (MongoDB)           | 2:45–4:15      | Samir Sir (React)                       |
 | 2:45–4:15   | Samir Sir (React)                       | 1:15–2:45   | Yogesh Sir (MongoDB) |
+
+### 30 Dec
+| Time        | CG LAB 1                     | Time        | CG LAB 2               |
+|-------------|------------------------------|-------------|-------------------------|
+| 9:15–10:45  | Neel Sir (JS)              | 9:15–10:45  | Yogesh Sir (React)    |
+| 10:45–12:15 | Yogesh Sir (React)        | 10:45–12:15 | Neel Sir (JS)         |
+| 12:15–1:15  | Break                        | 12:15–1:15  | Break                  |
+| 1:15–2:45   | Anubhav Sir (PS)          | 1:15–2:45      | Ranjan Sir (Maths) + React Assignment (30 Min)                       |
+| 2:45–4:15   | React Assignment (30 Min) + Ranjan Sir (Maths)                        | 2:45–4:15   | Anubhav Sir (PS)     |
+| 4:15–4:40   | Break                        | 4:15–4:40  | Break                  |
+| 4:40–6:00   | Skill Development & Assignment Hours | 4:40–6:00  | Skill Development & Assignment Hours                 |
+| 6:00–7:00   | Skill Development & Assignment Hours| 6:00–7:00  | Skill Development & Assignment Hours                  |
+
