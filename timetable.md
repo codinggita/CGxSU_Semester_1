@@ -269,15 +269,16 @@
 ### 2 Jan
 | Time        | CG LAB 1                     | Time        | CG LAB 2               |
 |-------------|------------------------------|-------------|-------------------------|
-| 9:15–10:15   | Anubhav Sir           | 9:15–10:15      | Ranjan Sir          |
-| 10:15–11:15   | Yogesh Sir                  | 10:15–11:15    | Anubhav Sir      |
-| 11:15–12:15   | Ranjan Sir                  | 11:15–12:15     | Yogesh Sir      |
+| 9:15–10:45   | Anubhav Sir           | 9:15–10:45      | Yogesh Sir          |
+| 10:45–12:15   | Yogesh Sir                  | 10:45–12:15    | Anubhav Sir      |
 | 12:15–1:15  | Break                        | 12:15–1:15  | Break                  |
-| 1:15–2:45  | Samir Sir                 | 1:15–2:45  | Neel Sir     |
-| 2:45–4:15 | Neel Sir                   | 2:45–4:15 | Samir Sir          |
+| 1:15–2:45  | Samir Sir                 | 1:15–2:45  | Rajan Sir + JS(Assignment)    |
+| 2:45–4:15 | Ranjan Sir + JS(Assignment)                  | 2:45–4:15 | Samir Sir          |
 | 4:15–4:40   | Break                        | 4:15–4:40  | Break                  |
 | 4:40–6:00   | Skill Development & Assignment Hours | 4:40–6:00  | Skill Development & Assignment Hours                 |
 | 6:00–7:00   | Skill Development & Assignment Hours| 6:00–7:00  | Skill Development & Assignment Hours                  |
+
+### Assignment for JS: https://github.com/codinggita/CGxSU_Semester_1/blob/main/JavaScript_for_backend/00.assignment/06.async_concepts.md
 
 ### 3 Jan
 | Time        | CG LAB 1                     | Time        | CG LAB 2               |
