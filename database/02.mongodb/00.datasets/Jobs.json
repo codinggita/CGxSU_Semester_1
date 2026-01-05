@@ -1,0 +1,345 @@
+[
+  {
+    "company": "Google",
+    "role": "Software Engineer",
+    "experience": 3,
+    "location": "Bangalore",
+    "salaryLPA": 28,
+    "jobType": "Full-time",
+    "skills": ["DSA", "Java", "System Design", "Algorithms", "Problem Solving"]
+  },
+  {
+    "company": "Amazon",
+    "role": "Backend Developer",
+    "experience": 2,
+    "location": "Hyderabad",
+    "salaryLPA": 22,
+    "jobType": "Full-time",
+    "skills": ["Node.js", "MongoDB", "AWS", "REST APIs", "Scalability"]
+  },
+  {
+    "company": "Microsoft",
+    "role": "Software Engineer",
+    "experience": 4,
+    "location": "Bangalore",
+    "salaryLPA": 30,
+    "jobType": "Full-time",
+    "skills": ["C#", ".NET", "Azure", "DSA", "OOPs"]
+  },
+  {
+    "company": "Flipkart",
+    "role": "Full Stack Developer",
+    "experience": 1,
+    "location": "Remote",
+    "salaryLPA": 18,
+    "jobType": "Intern",
+    "skills": ["React", "Node.js", "MongoDB", "HTML", "CSS"]
+  },
+  {
+    "company": "Swiggy",
+    "role": "Backend Developer",
+    "experience": 5,
+    "location": "Bangalore",
+    "salaryLPA": 26,
+    "jobType": "Full-time",
+    "skills": ["Java", "Spring Boot", "MySQL", "Microservices", "Kafka"]
+  },
+  {
+    "company": "Zomato",
+    "role": "Frontend Developer",
+    "experience": 2,
+    "location": "Delhi",
+    "salaryLPA": 15,
+    "jobType": "Contract",
+    "skills": ["HTML", "CSS", "JavaScript", "React", "UI Design"]
+  },
+  {
+    "company": "Paytm",
+    "role": "Software Engineer",
+    "experience": 6,
+    "location": "Noida",
+    "salaryLPA": 32,
+    "jobType": "Full-time",
+    "skills": ["Java", "Microservices", "Kafka", "Redis", "System Design"]
+  },
+  {
+    "company": "PhonePe",
+    "role": "Backend Developer",
+    "experience": 3,
+    "location": "Bangalore",
+    "salaryLPA": 24,
+    "jobType": "Full-time",
+    "skills": ["Node.js", "MongoDB", "Redis", "Express", "API Design"]
+  },
+  {
+    "company": "Byjus",
+    "role": "Full Stack Developer",
+    "experience": 2,
+    "location": "Remote",
+    "salaryLPA": 14,
+    "jobType": "Full-time",
+    "skills": ["React", "Node.js", "JavaScript", "REST APIs"]
+  },
+  {
+    "company": "Infosys",
+    "role": "Software Engineer",
+    "experience": 1,
+    "location": "Pune",
+    "salaryLPA": 7,
+    "jobType": "Full-time",
+    "skills": ["Java", "SQL", "Basics of DSA", "Git"]
+  },
+  {
+    "company": "TCS",
+    "role": "Backend Developer",
+    "experience": 4,
+    "location": "Chennai",
+    "salaryLPA": 10,
+    "jobType": "Full-time",
+    "skills": ["Java", "Oracle", "Spring", "REST APIs"]
+  },
+  {
+    "company": "Wipro",
+    "role": "Frontend Developer",
+    "experience": 3,
+    "location": "Bangalore",
+    "salaryLPA": 9,
+    "jobType": "Contract",
+    "skills": ["React", "CSS", "JavaScript", "Responsive Design"]
+  },
+  {
+    "company": "Accenture",
+    "role": "Software Engineer",
+    "experience": 5,
+    "location": "Gurgaon",
+    "salaryLPA": 16,
+    "jobType": "Full-time",
+    "skills": ["Java", "Spring", "REST APIs", "Agile"]
+  },
+  {
+    "company": "Uber",
+    "role": "Backend Developer",
+    "experience": 7,
+    "location": "Bangalore",
+    "salaryLPA": 40,
+    "jobType": "Full-time",
+    "skills": ["Go", "Distributed Systems", "Microservices", "Scalability"]
+  },
+  {
+    "company": "Ola",
+    "role": "Data Engineer",
+    "experience": 4,
+    "location": "Bangalore",
+    "salaryLPA": 25,
+    "jobType": "Full-time",
+    "skills": ["Python", "Spark", "SQL", "ETL", "Data Pipelines"]
+  },
+  {
+    "company": "Meesho",
+    "role": "Software Engineer",
+    "experience": 2,
+    "location": "Remote",
+    "salaryLPA": 12,
+    "jobType": "Full-time",
+    "skills": ["JavaScript", "Node.js", "MongoDB", "Express"]
+  },
+  {
+    "company": "Cred",
+    "role": "Backend Developer",
+    "experience": 6,
+    "location": "Bangalore",
+    "salaryLPA": 35,
+    "jobType": "Full-time",
+    "skills": ["Java", "System Design", "Microservices", "Redis"]
+  },
+  {
+    "company": "Razorpay",
+    "role": "Full Stack Developer",
+    "experience": 3,
+    "location": "Bangalore",
+    "salaryLPA": 27,
+    "jobType": "Full-time",
+    "skills": ["React", "Node.js", "PostgreSQL", "Payments"]
+  },
+  {
+    "company": "Freshworks",
+    "role": "Software Engineer",
+    "experience": 2,
+    "location": "Chennai",
+    "salaryLPA": 13,
+    "jobType": "Full-time",
+    "skills": ["Java", "REST APIs", "Spring Boot"]
+  },
+  {
+    "company": "Zoho",
+    "role": "Backend Developer",
+    "experience": 8,
+    "location": "Chennai",
+    "salaryLPA": 38,
+    "jobType": "Full-time",
+    "skills": ["C++", "Distributed Systems", "Low Level Design"]
+  },
+
+  {
+    "company": "LinkedIn",
+    "role": "Data Engineer",
+    "experience": 5,
+    "location": "Bangalore",
+    "salaryLPA": 34,
+    "jobType": "Full-time",
+    "skills": ["Python", "SQL", "Big Data", "Spark"]
+  },
+  {
+    "company": "Netflix",
+    "role": "Backend Developer",
+    "experience": 6,
+    "location": "Remote",
+    "salaryLPA": 45,
+    "jobType": "Full-time",
+    "skills": ["Java", "Microservices", "AWS", "Scalability"]
+  },
+  {
+    "company": "Meta",
+    "role": "Software Engineer",
+    "experience": 4,
+    "location": "Remote",
+    "salaryLPA": 36,
+    "jobType": "Full-time",
+    "skills": ["React", "JavaScript", "System Design"]
+  },
+  {
+    "company": "Apple",
+    "role": "iOS Developer",
+    "experience": 3,
+    "location": "Bangalore",
+    "salaryLPA": 29,
+    "jobType": "Full-time",
+    "skills": ["Swift", "iOS", "Xcode", "UI Design"]
+  },
+  {
+    "company": "Tesla",
+    "role": "Software Engineer",
+    "experience": 5,
+    "location": "Remote",
+    "salaryLPA": 42,
+    "jobType": "Full-time",
+    "skills": ["Python", "C++", "AI", "Automation"]
+  },
+  {
+    "company": "Adobe",
+    "role": "Frontend Developer",
+    "experience": 4,
+    "location": "Noida",
+    "salaryLPA": 23,
+    "jobType": "Full-time",
+    "skills": ["React", "UI/UX", "JavaScript"]
+  },
+  {
+    "company": "IBM",
+    "role": "Backend Developer",
+    "experience": 6,
+    "location": "Pune",
+    "salaryLPA": 20,
+    "jobType": "Full-time",
+    "skills": ["Java", "Spring", "Cloud"]
+  },
+  {
+    "company": "SAP",
+    "role": "Software Engineer",
+    "experience": 5,
+    "location": "Bangalore",
+    "salaryLPA": 24,
+    "jobType": "Full-time",
+    "skills": ["ABAP", "Java", "Enterprise Systems"]
+  },
+  {
+    "company": "Oracle",
+    "role": "Database Engineer",
+    "experience": 7,
+    "location": "Hyderabad",
+    "salaryLPA": 33,
+    "jobType": "Full-time",
+    "skills": ["SQL", "PL/SQL", "Database Design"]
+  },
+  {
+    "company": "Salesforce",
+    "role": "Software Engineer",
+    "experience": 4,
+    "location": "Remote",
+    "salaryLPA": 31,
+    "jobType": "Full-time",
+    "skills": ["Apex", "Java", "Cloud"]
+  },
+  {
+    "company": "Atlassian",
+    "role": "Backend Developer",
+    "experience": 5,
+    "location": "Bangalore",
+    "salaryLPA": 37,
+    "jobType": "Full-time",
+    "skills": ["Java", "Microservices", "System Design"]
+  },
+  {
+    "company": "Stripe",
+    "role": "Software Engineer",
+    "experience": 6,
+    "location": "Remote",
+    "salaryLPA": 44,
+    "jobType": "Full-time",
+    "skills": ["APIs", "Payments", "Distributed Systems"]
+  },
+  {
+    "company": "Twilio",
+    "role": "Backend Developer",
+    "experience": 5,
+    "location": "Remote",
+    "salaryLPA": 35,
+    "jobType": "Full-time",
+    "skills": ["Node.js", "APIs", "Cloud"]
+  },
+  {
+    "company": "DigitalOcean",
+    "role": "Cloud Engineer",
+    "experience": 4,
+    "location": "Remote",
+    "salaryLPA": 28,
+    "jobType": "Full-time",
+    "skills": ["Linux", "Cloud", "DevOps"]
+  },
+  {
+    "company": "RedHat",
+    "role": "Software Engineer",
+    "experience": 6,
+    "location": "Remote",
+    "salaryLPA": 34,
+    "jobType": "Full-time",
+    "skills": ["Linux", "Open Source", "C"]
+  },
+  {
+    "company": "VMware",
+    "role": "Backend Developer",
+    "experience": 5,
+    "location": "Bangalore",
+    "salaryLPA": 29,
+    "jobType": "Full-time",
+    "skills": ["Java", "Virtualization", "Cloud"]
+  },
+  {
+    "company": "Nvidia",
+    "role": "Software Engineer",
+    "experience": 7,
+    "location": "Bangalore",
+    "salaryLPA": 41,
+    "jobType": "Full-time",
+    "skills": ["C++", "CUDA", "High Performance Computing"]
+  },
+  {
+    "company": "Intel",
+    "role": "System Engineer",
+    "experience": 6,
+    "location": "Bangalore",
+    "salaryLPA": 30,
+    "jobType": "Full-time",
+    "skills": ["C", "C++", "Operating Systems"]
+  }
+]
