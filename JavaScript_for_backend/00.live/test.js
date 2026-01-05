@@ -1,22 +1,18 @@
-setTimeout(() => {
-  console.log("settimeout 1");
-}, 200);
+const timeoutId = setTimeout(() => {
+  console.log("This will not execute");
+}, 2000);
 
-setTimeout(() => {
-  console.log("settimeout 2");
-}, 100);
+clearTimeout(timeoutId);
 
-setTimeout(() => { console.log("settimeout 3");
-}, 0);
-
-setInterval(() => {
-  console.log("Running...");
+const timeoutId1 = setTimeout(() => {
+  console.log("This will not execute");
 }, 1000);
 
-setTimeout(() => {
-  console.log("setTimeout");
-}, 0);
 
-setImmediate(() => {
-  console.log("setImmediate");
-});
+function runTask() {
+  console.log("Task executed safely");
+
+  setTimeout(runTask, 1000);
+}
+
+runTask();

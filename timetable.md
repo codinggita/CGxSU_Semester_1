@@ -320,17 +320,17 @@
 | 6:00–7:00   | Skill Development & Assignment Hours| 6:00–7:00  | Skill Development & Assignment Hours                  |
 
 ### 7 Jan
-| Time        | CG LAB 1                     | Time        | CG LAB 2               |
-|-------------|------------------------------|-------------|-------------------------|
-| 9:15–10:45  | Samir Sir                 | 9:15–10:45  | Neel Sir     |
-| 10:45–12:15 | Neel Sir                   | 10:45–12:15 | Samir Sir          |
-| 12:15–1:15  | Break                        | 12:15–1:15  | Break                  |
-| 1:15–2:15   | Anubhav Sir           | 1:15–2:15      | Ranjan Sir          |
-| 2:15–3:15   | Yogesh Sir                  | 2:15–3:15    | Anubhav Sir      |
-| 3:15–4:15   | Ranjan Sir                  | 3:15–4:15     | Yogesh Sir      |
-| 4:15–4:40   | Break                        | 4:15–4:40  | Break                  |
-| 4:40–6:00   | Skill Development & Assignment Hours | 4:40–6:00  | Skill Development & Assignment Hours                 |
-| 6:00–7:00   | Skill Development & Assignment Hours| 6:00–7:00  | Skill Development & Assignment Hours                  |
+| Time        | CG LAB 1  &  CG LAB 2        |                 
+|-------------|------------------------------|
+| 9:15–10:45  | Figma / UI Design                  | 
+| 10:45–12:15 | Frontend Implementation (React)        | 
+| 12:15–1:15  | Break                        | 
+| 1:15–2:15   | Frontend Implementation (React)       |
+| 2:15–3:15   | Frontend Implementation (React)       | 
+| 3:15–4:15   | Final Deployment on Netlify                      |
+| 4:15–4:40   | Break                        | 
+| 4:40–6:00   | Skill Development & Assignment Hours | 
+| 6:00–7:00   | Skill Development & Assignment Hours| 
 
 ### 8 Jan
 | Time        | CG LAB 1                     | Time        | CG LAB 2               |
