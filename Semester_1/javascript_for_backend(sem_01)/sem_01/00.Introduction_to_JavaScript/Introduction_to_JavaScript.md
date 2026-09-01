@@ -42,6 +42,8 @@ Every web browser (Chrome, Firefox, Edge, Safari) has a JavaScript Engine inside
 | Firefox | SpiderMonkey |
 | Safari | JavaScriptCore |
 | Edge | Chakra (earlier) |
+| Brave | V8 Engine |
+
 
 This engine reads and executes your JavaScript code.
 
