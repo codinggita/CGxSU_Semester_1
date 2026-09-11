@@ -2,7 +2,7 @@
 
 # Assignments: Variables and Data Types in JavaScript
 
-Use the notes you were given. Write all code in a single `.js` file per question or in an online editor (like Replit, CodePen, or JSFiddle).
+Use the notes you were given. Write all code in a single `.js` file per question or in an online editor (like Online Js Compiler, Replit, CodePen, or JSFiddle, OneCompiler).
 
 ***
 
