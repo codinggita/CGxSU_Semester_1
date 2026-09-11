@@ -1,7 +1,7 @@
 
 ***
 
-## Introduction to Variables and datatypes
+## Introduction to Variables and Datatypes
 
 - Variables are containers for storing data values.
 - Think of variables as labeled boxes where you can store stuff, like your name, age, or score.
