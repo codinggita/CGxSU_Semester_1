@@ -732,7 +732,7 @@ Used to combine or invert boolean conditions.
 | # | Operator Name | Symbol |
 |---|---------------|--------|
 | 1 | Logical AND   | `&&`   |
-| 2 | Logical OR    | `||`   |
+| 2 | Logical OR    | \| \|   |
 | 3 | Logical NOT   | `!`    |
 
 ### 4.1 Logical AND `&&`
