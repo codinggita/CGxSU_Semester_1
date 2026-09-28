@@ -187,8 +187,6 @@ TypeScript provides abstraction mainly through:
 - `abstract class`
 - `abstract method`
 
-An abstract class cannot be instantiated directly.
-
 ---
 
 ## Abstract Classes
@@ -760,57 +758,7 @@ The implementation signature itself is not directly visible to callers.
 
 ---
 
-# 8. How These Concepts Connect
-
-These concepts are related, but they solve different problems.
-
-```text
-Class
-  ↓
-Inheritance
-  ↓
-Method Overriding
-  ↓
-Polymorphism
-```
-
-```text
-Class
-  ↓
-Abstract Class
-  ↓
-Abstract Method
-  ↓
-Subclasses provide implementation
-```
-
-```text
-Interface
-  ↓
-implements
-  ↓
-Multiple classes follow the same contract
-```
-
-```text
-Class
-  ↓
-Contains another object
-  ↓
-Composition
-```
-
-```text
-One method name
-  ↓
-Multiple valid signatures
-  ↓
-Method Overloading
-```
-
----
-
-# 9. Quick Comparison
+# 8. Quick Comparison
 
 | Concept            | Main Purpose                       | TypeScript Feature           | Relationship     |
 | ------------------ | ---------------------------------- | ---------------------------- | ---------------- |
@@ -822,46 +770,3 @@ Method Overloading
 | Method Overloading | Support multiple method signatures | Overload signatures          | Same method name |
 
 ---
-
-# 10. Key Differences to Remember
-
-### Abstract Class vs Interface
-
-```text
-Abstract Class
-├── Can contain implemented methods
-├── Can contain properties
-├── Can contain constructors
-└── Can contain abstract methods
-
-Interface
-├── Defines a contract
-├── Classes implement it
-└── A class can implement multiple interfaces
-```
-
-### Inheritance vs Composition
-
-```text
-Inheritance
-Admin → User
-"is-a"
-
-Composition
-Car → Engine
-"has-a"
-```
-
-### Overriding vs Overloading
-
-```text
-Overriding
-Parent and child
-Same method
-Different implementation
-
-Overloading
-Same class
-Same method name
-Different parameter signatures
-```
