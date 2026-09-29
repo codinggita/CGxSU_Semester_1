@@ -1,169 +1,90 @@
-# SQL Features vs PostgreSQL Features
+# SQL vs PostgreSQL
 
-## 1. SQL vs PostgreSQL
-
-Before comparing features, understand the basic difference:
-
-> **SQL is a standardized database language. PostgreSQL is a database management system that implements SQL and adds PostgreSQL-specific features.**
-
-SQL defines concepts and syntax.
-
-PostgreSQL provides an actual database engine that:
-
-- Stores data
-- Executes SQL
-- Manages transactions
-- Manages users
-- Creates indexes
-- Provides functions
-- Provides advanced data types
-- Provides extensions
-- Provides PostgreSQL-specific functionality
+> **Important:** SQL is a language/standard, while PostgreSQL is a database management system that implements SQL and provides additional PostgreSQL-specific features.
 
 ---
 
-# 2. Standard SQL vs PostgreSQL Features
-
-There are three important categories:
-
-### Category 1 — Standard SQL
-
-Features defined by SQL standards and supported by PostgreSQL.
-
-Examples:
-
-    SELECT
-    INSERT
-    UPDATE
-    DELETE
-    CREATE TABLE
-    ALTER TABLE
-    JOIN
-    GROUP BY
-    ORDER BY
-    WHERE
-    HAVING
-    PRIMARY KEY
-    FOREIGN KEY
-    UNIQUE
-    CHECK
-    NOT NULL
-    Transactions
-
----
-
-### Category 2 — PostgreSQL-specific Features
-
-Features provided specifically by PostgreSQL or strongly associated with PostgreSQL.
-
-Examples:
-
-    ILIKE
-    JSONB
-    PostgreSQL arrays
-    RETURNING
-    ON CONFLICT
-    PostgreSQL-specific operators
-    PostgreSQL extensions
-    GIN indexes
-    GiST indexes
-    BRIN indexes
-    PL/pgSQL
-    Materialized views
-    Range types
-    PostgreSQL-specific system catalogs
-
----
-
-### Category 3 — PostgreSQL Implementation Details
-
-These are features/behaviors provided by the PostgreSQL database engine.
-
-Examples:
-
-    MVCC
-    VACUUM
-    ANALYZE
-    WAL
-    PostgreSQL query planner
-    PostgreSQL storage architecture
-    PostgreSQL background processes
-
----
-
-# 3. CREATE TABLE
+# 1. SQL vs PostgreSQL
 
 ## SQL
 
-Standard SQL allows:
+SQL stands for **Structured Query Language**.
 
-    CREATE TABLE students (
-        id INT,
-        name VARCHAR(100),
-        age INT
-    );
+It is used to communicate with relational databases.
+
+Example:
+
+    SELECT *
+    FROM students;
 
 ## PostgreSQL
 
-PostgreSQL supports the same syntax:
+PostgreSQL is an **open-source relational database management system (RDBMS)**.
 
-    CREATE TABLE students (
-        id INT,
-        name VARCHAR(100),
-        age INT
-    );
+It uses SQL to communicate with the database.
+
+Example:
+
+    SELECT *
+    FROM students;
 
 ### Difference
 
-There is no major difference here.
+    SQL
+    ↓
+    Language / Standard
 
-PostgreSQL implements the standard SQL syntax.
-
----
-
-# 4. INSERT
-
-## SQL
-
-    INSERT INTO students
-    (id, name, age)
-    VALUES
-    (1, 'Motu', 20);
-
-## PostgreSQL
-
-Same:
-
-    INSERT INTO students
-    (id, name, age)
-    VALUES
-    (1, 'Motu', 20);
-
-### Conclusion
-
-`INSERT` is a standard SQL feature.
-
-PostgreSQL supports it.
+    PostgreSQL
+    ↓
+    Database Management System
 
 ---
 
-# 5. SELECT
+# 2. SELECT
 
 ## SQL
+
+`SELECT` is a standard SQL command used to retrieve data.
 
     SELECT *
     FROM students;
 
 ## PostgreSQL
 
+PostgreSQL supports the same syntax.
+
     SELECT *
     FROM students;
 
-Again, PostgreSQL supports standard SQL.
+### Difference
+
+No major syntax difference.
+
+`SELECT` is a standard SQL feature supported by PostgreSQL.
 
 ---
 
-# 6. UPDATE
+# 3. INSERT
+
+## SQL
+
+    INSERT INTO students (name, age)
+    VALUES ('Motu', 20);
+
+## PostgreSQL
+
+    INSERT INTO students (name, age)
+    VALUES ('Motu', 20);
+
+### Difference
+
+No major difference.
+
+`INSERT` is standard SQL.
+
+---
+
+# 4. UPDATE
 
 ## SQL
 
@@ -177,223 +98,55 @@ Again, PostgreSQL supports standard SQL.
     SET age = 21
     WHERE id = 1;
 
-Standard SQL feature.
+### Difference
+
+No major difference.
+
+`UPDATE` is standard SQL.
 
 ---
 
-# 7. DELETE
+# 5. DELETE
 
 ## SQL
 
     DELETE FROM students
     WHERE id = 1;
 
-PostgreSQL supports the same syntax.
+## PostgreSQL
 
----
+    DELETE FROM students
+    WHERE id = 1;
 
-# 8. WHERE
-
-Standard SQL:
-
-    SELECT *
-    FROM students
-    WHERE age > 18;
-
-PostgreSQL:
-
-    SELECT *
-    FROM students
-    WHERE age > 18;
+### Difference
 
 No major difference.
 
----
-
-# 9. ORDER BY
-
-Standard SQL:
-
-    SELECT *
-    FROM students
-    ORDER BY age DESC;
-
-PostgreSQL:
-
-    SELECT *
-    FROM students
-    ORDER BY age DESC;
+`DELETE` is standard SQL.
 
 ---
 
-# 10. GROUP BY
-
-Standard SQL:
-
-    SELECT course, COUNT(*)
-    FROM students
-    GROUP BY course;
-
-PostgreSQL supports it.
-
----
-
-# 11. HAVING
-
-Standard SQL:
-
-    SELECT course, COUNT(*)
-    FROM students
-    GROUP BY course
-    HAVING COUNT(*) > 5;
-
-PostgreSQL supports it.
-
----
-
-# 12. JOIN
-
-Standard SQL supports:
-
-    INNER JOIN
-    LEFT JOIN
-    RIGHT JOIN
-    FULL OUTER JOIN
-    CROSS JOIN
-
-Example:
-
-    SELECT students.name, courses.course_name
-    FROM students
-    INNER JOIN courses
-    ON students.course_id = courses.id;
-
-PostgreSQL supports these joins.
-
----
-
-# 13. PRIMARY KEY
-
-Standard SQL:
-
-    CREATE TABLE students (
-        id INT PRIMARY KEY,
-        name VARCHAR(100)
-    );
-
-PostgreSQL supports it.
-
-A primary key:
-
-- Uniquely identifies rows
-- Cannot contain NULL
-- Can be referenced by foreign keys
-
----
-
-# 14. FOREIGN KEY
-
-Standard SQL:
-
-    CREATE TABLE courses (
-        id INT PRIMARY KEY,
-        name VARCHAR(100)
-    );
-
-    CREATE TABLE students (
-        id INT PRIMARY KEY,
-        name VARCHAR(100),
-        course_id INT,
-        FOREIGN KEY (course_id)
-        REFERENCES courses(id)
-    );
-
-PostgreSQL supports foreign keys.
-
----
-
-# 15. UNIQUE
-
-Standard SQL:
-
-    CREATE TABLE users (
-        id INT PRIMARY KEY,
-        email VARCHAR(100) UNIQUE
-    );
-
-PostgreSQL supports it.
-
----
-
-# 16. CHECK
-
-Standard SQL:
-
-    CREATE TABLE students (
-        id INT,
-        age INT CHECK (age >= 18)
-    );
-
-PostgreSQL supports it.
-
----
-
-# 17. NOT NULL
-
-Standard SQL:
-
-    CREATE TABLE students (
-        id INT,
-        name VARCHAR(100) NOT NULL
-    );
-
-PostgreSQL supports it.
-
----
-
-# 18. DEFAULT
-
-Standard SQL:
-
-    CREATE TABLE students (
-        id INT,
-        name VARCHAR(100),
-        status VARCHAR(20) DEFAULT 'active'
-    );
-
-PostgreSQL supports it.
-
----
-
-# 19. AUTO-INCREMENT IDs
-
-This is where database systems start providing their own implementations.
+# 6. AUTO-INCREMENT / IDENTITY
 
 ## Standard SQL
 
-SQL standards support identity columns.
-
-Example:
-
-    CREATE TABLE students (
-        id INT GENERATED ALWAYS AS IDENTITY,
-        name VARCHAR(100)
-    );
-
-## PostgreSQL
-
-PostgreSQL supports:
-
-    GENERATED ALWAYS AS IDENTITY
-
-Example:
+Modern SQL supports identity columns.
 
     CREATE TABLE students (
         id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
         name VARCHAR(100)
     );
 
-PostgreSQL also historically provides:
+## PostgreSQL
+
+PostgreSQL supports `IDENTITY`.
+
+    CREATE TABLE students (
+        id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+        name VARCHAR(100)
+    );
+
+PostgreSQL also provides:
 
     SERIAL
 
@@ -401,83 +154,84 @@ Example:
 
     CREATE TABLE students (
         id SERIAL PRIMARY KEY,
-        name VARCHAR(100)
+        name TEXT
     );
 
-### Important
+### Difference
 
-`SERIAL` is a PostgreSQL-specific convenience mechanism.
+`IDENTITY` is standards-based.
 
-`IDENTITY` is the more standards-aligned modern approach.
+`SERIAL` is a PostgreSQL-specific convenience feature.
 
 ---
 
-# 20. RETURNING
+# 7. RETURNING
 
-`RETURNING` is one of PostgreSQL's most useful features for backend development.
+## SQL
 
-Example:
+There is no single universal `RETURNING` syntax supported by every SQL database.
+
+A traditional approach may require another query after an INSERT.
+
+    INSERT INTO students (name, age)
+    VALUES ('Motu', 20);
+
+Then:
+
+    SELECT *
+    FROM students
+    WHERE name = 'Motu';
+
+## PostgreSQL
+
+PostgreSQL can return the affected row directly.
 
     INSERT INTO students (name, age)
     VALUES ('Motu', 20)
     RETURNING *;
 
-PostgreSQL immediately returns the inserted row.
-
-Example:
+It also works with UPDATE:
 
     UPDATE students
     SET age = 21
     WHERE id = 1
     RETURNING *;
 
-Also:
+And DELETE:
 
     DELETE FROM students
     WHERE id = 1
     RETURNING *;
 
-### Why useful?
+### Difference
 
-Without `RETURNING`, applications often need another query to retrieve the affected row.
-
-Backend:
-
-    INSERT
-        ↓
-    PostgreSQL
-        ↓
-    RETURNING
-        ↓
-    Node.js
+`RETURNING` is a major PostgreSQL feature and is very useful in backend development.
 
 ---
 
-# 21. LIKE
+# 8. LIKE vs ILIKE
 
-`LIKE` is a standard SQL pattern-matching operator.
+## SQL
+
+Standard SQL provides:
+
+    LIKE
 
 Example:
 
     SELECT *
     FROM students
-    WHERE name LIKE 'M%';
+    WHERE name LIKE 'Motu';
 
-Meaning:
+## PostgreSQL
 
-Names starting with `M`.
+PostgreSQL supports:
 
-PostgreSQL supports `LIKE`.
+    LIKE
 
----
-
-# 22. ILIKE
-
-PostgreSQL provides:
+and:
 
     ILIKE
-
-It performs case-insensitive pattern matching.
 
 Example:
 
@@ -485,73 +239,63 @@ Example:
     FROM students
     WHERE name ILIKE 'motu';
 
-This can match:
-
-    Motu
-    motu
-    MOTU
-    MoTu
+`ILIKE` performs case-insensitive pattern matching.
 
 ### Difference
 
     LIKE
     ↓
-    Pattern matching
+    Standard SQL pattern matching
 
     ILIKE
     ↓
-    Case-insensitive pattern matching in PostgreSQL
+    PostgreSQL-specific case-insensitive matching
 
 ---
 
-# 23. NULL Handling
+# 9. COALESCE
 
-SQL provides:
+## SQL
 
-    IS NULL
-
-and:
-
-    IS NOT NULL
-
-Example:
-
-    SELECT *
-    FROM students
-    WHERE phone IS NULL;
-
-PostgreSQL supports this.
-
----
-
-# 24. COALESCE
-
-`COALESCE()` is part of the SQL standard and PostgreSQL supports it.
-
-Example:
+`COALESCE()` is part of standard SQL.
 
     SELECT
         name,
         COALESCE(phone, 'Not Available')
     FROM students;
 
-If `phone` is NULL:
+## PostgreSQL
 
-    Not Available
+PostgreSQL supports the same function.
 
-### Important
+    SELECT
+        name,
+        COALESCE(phone, 'Not Available')
+    FROM students;
 
-Unlike `ILIKE` or `JSONB`, `COALESCE` should not be described as a PostgreSQL-only feature.
+### Difference
 
-It is standard SQL functionality.
+There is no major PostgreSQL-specific difference.
+
+`COALESCE()` is standard SQL.
+
+It returns the first non-NULL value.
+
+Example:
+
+    SELECT COALESCE(NULL, NULL, 'Motu');
+
+Result:
+
+    Motu
 
 ---
 
-# 25. CASE
+# 10. CASE
 
-Standard SQL supports `CASE`.
+## SQL
 
-Example:
+`CASE` is standard SQL.
 
     SELECT
         name,
@@ -562,180 +306,158 @@ Example:
         END AS category
     FROM students;
 
-PostgreSQL supports it.
+## PostgreSQL
 
----
+PostgreSQL supports the same syntax.
 
-# 26. String Functions
-
-SQL provides common string functionality.
-
-Examples:
-
-    UPPER()
-    LOWER()
-    LENGTH()
-    TRIM()
-    SUBSTRING()
-
-PostgreSQL supports these and also provides many additional string functions.
-
-Example:
-
-    SELECT UPPER(name)
+    SELECT
+        name,
+        age,
+        CASE
+            WHEN age >= 18 THEN 'Adult'
+            ELSE 'Minor'
+        END AS category
     FROM students;
 
----
+### Difference
 
-# 27. Numeric Functions
+No major difference.
 
-Common SQL functions include:
-
-    ROUND()
-    ABS()
-    CEILING()
-    FLOOR()
-
-PostgreSQL supports these and provides additional mathematical functions.
+`CASE` is standard SQL.
 
 ---
 
-# 28. Date and Time
+# 11. ON CONFLICT / UPSERT
 
-SQL provides date/time concepts.
+## SQL
 
-Example:
+Different database systems provide different syntax for handling duplicate records.
 
-    SELECT CURRENT_DATE;
+PostgreSQL's exact:
 
-PostgreSQL supports:
+    ON CONFLICT
 
-    CURRENT_DATE
-    CURRENT_TIME
-    CURRENT_TIMESTAMP
+syntax is not universal SQL syntax.
 
-PostgreSQL also provides many additional date/time functions and operators.
-
-Example:
-
-    SELECT NOW();
-
-`NOW()` is commonly used in PostgreSQL to obtain the current timestamp.
-
----
-
-# 29. SQL Data Types
-
-Common SQL data types include:
-
-    INTEGER
-    BIGINT
-    DECIMAL
-    NUMERIC
-    VARCHAR
-    CHAR
-    DATE
-    TIME
-    TIMESTAMP
-    BOOLEAN
-
-PostgreSQL supports these.
-
----
-
-# 30. PostgreSQL TEXT
+## PostgreSQL
 
 PostgreSQL provides:
 
-    TEXT
+    INSERT INTO users (email, name)
+    VALUES ('motu@gmail.com', 'Motu')
+    ON CONFLICT (email)
+    DO UPDATE
+    SET name = EXCLUDED.name;
 
-Example:
+Or:
 
-    CREATE TABLE students (
-        name TEXT
-    );
+    INSERT INTO users (email, name)
+    VALUES ('motu@gmail.com', 'Motu')
+    ON CONFLICT (email)
+    DO NOTHING;
 
-`TEXT` allows variable-length text.
+### Difference
 
-PostgreSQL does not impose a length limit on `TEXT` like `VARCHAR(n)` does.
+`ON CONFLICT` is a major PostgreSQL feature for implementing UPSERT operations.
 
 ---
 
-# 31. JSON
+# 12. JSON
 
-Modern SQL standards include JSON functionality, and PostgreSQL supports JSON.
+## SQL
 
-Example:
+Modern SQL standards include JSON functionality, but exact syntax and support vary between database systems.
+
+## PostgreSQL
+
+PostgreSQL supports a native `JSON` data type.
 
     CREATE TABLE users (
+        id INT,
         profile JSON
     );
 
 Insert:
 
-    INSERT INTO users(profile)
-    VALUES ('{"city":"Delhi"}');
+    INSERT INTO users
+    VALUES (
+        1,
+        '{"city":"Delhi","age":20}'
+    );
+
+### Difference
+
+PostgreSQL provides both:
+
+    JSON
+    JSONB
+
+with PostgreSQL-specific operators and functionality.
 
 ---
 
-# 32. JSONB
+# 13. JSON vs JSONB
+
+## SQL
+
+JSON functionality is available in modern SQL standards, but implementation differs between database systems.
+
+## PostgreSQL
 
 PostgreSQL provides:
 
+    JSON
     JSONB
 
 Example:
 
     CREATE TABLE users (
+        id SERIAL PRIMARY KEY,
         profile JSONB
     );
 
 Insert:
 
-    INSERT INTO users(profile)
+    INSERT INTO users (profile)
     VALUES (
         '{"city":"Delhi","skills":["C++","SQL"]}'
     );
 
-JSONB stores JSON in a decomposed binary representation that is optimized for processing and indexing.
+Query:
+
+    SELECT profile->>'city'
+    FROM users;
+
+### Difference
+
+`JSONB` is a PostgreSQL-specific data type.
+
+It stores JSON in a decomposed binary representation designed for efficient processing and indexing.
 
 ---
 
-# 33. JSON vs JSONB
+# 14. Arrays
 
-| JSON | JSONB |
-|---|---|
-| Stores JSON text representation | Stores decomposed binary representation |
-| Preserves input formatting details such as whitespace | Does not preserve original formatting |
-| Generally useful when exact input representation matters | Generally preferred for querying/indexing JSON data |
-| Less optimized for repeated processing | Optimized for processing |
-| PostgreSQL supports it | PostgreSQL provides it |
+## SQL
 
-For most PostgreSQL applications requiring frequent JSON querying:
+SQL does not provide one universally implemented array system across all relational databases.
 
-    JSONB
+Support varies by DBMS.
 
-is commonly preferred.
+## PostgreSQL
 
----
-
-# 34. Arrays
-
-PostgreSQL has native array data types.
-
-Example:
+PostgreSQL provides native arrays.
 
     CREATE TABLE students (
-        id INT,
+        id SERIAL,
         name TEXT,
         skills TEXT[]
     );
 
 Insert:
 
-    INSERT INTO students
+    INSERT INTO students (name, skills)
     VALUES (
-        1,
         'Motu',
         ARRAY['C++', 'SQL', 'PostgreSQL']
     );
@@ -745,22 +467,30 @@ Query:
     SELECT skills
     FROM students;
 
-This is a major PostgreSQL feature.
+### Difference
+
+PostgreSQL provides native array data types and array operators/functions.
 
 ---
 
-# 35. UUID
+# 15. UUID
 
-PostgreSQL supports UUID as a native data type.
+## SQL
 
-Example:
+UUID support varies between database systems.
+
+There is no universally identical native UUID implementation across all SQL databases.
+
+## PostgreSQL
+
+PostgreSQL supports the `UUID` data type.
 
     CREATE TABLE users (
         id UUID PRIMARY KEY,
         name TEXT
     );
 
-PostgreSQL can generate UUIDs using available functions/extensions depending on the setup.
+PostgreSQL can generate UUIDs using functions provided by PostgreSQL or extensions.
 
 Example:
 
@@ -771,13 +501,23 @@ Example:
         name TEXT
     );
 
+### Difference
+
+PostgreSQL provides native UUID support.
+
 ---
 
-# 36. ENUM
+# 16. ENUM
 
-PostgreSQL allows developers to create custom ENUM types.
+## SQL
 
-Example:
+ENUM support varies between database systems.
+
+It is not a universal core SQL data type implemented identically everywhere.
+
+## PostgreSQL
+
+PostgreSQL allows custom ENUM types.
 
     CREATE TYPE user_status AS ENUM (
         'active',
@@ -793,13 +533,21 @@ Then:
         status user_status
     );
 
-Only allowed ENUM values can be stored.
+### Difference
+
+PostgreSQL provides native custom ENUM types.
 
 ---
 
-# 37. Custom Types
+# 17. Custom Data Types
 
-PostgreSQL provides powerful custom data types.
+## SQL
+
+SQL has data type concepts, but support for user-defined/custom types varies by database system.
+
+## PostgreSQL
+
+PostgreSQL has strong support for custom types.
 
 Example:
 
@@ -809,22 +557,38 @@ Example:
         pincode TEXT
     );
 
-This allows developers to create database-specific structured types.
+Then:
+
+    CREATE TABLE users (
+        id SERIAL,
+        name TEXT,
+        address address_type
+    );
+
+### Difference
+
+PostgreSQL provides powerful user-defined type functionality.
 
 ---
 
-# 38. Range Types
+# 18. Range Types
+
+## SQL
+
+Range types are not universally available as native SQL data types.
+
+## PostgreSQL
 
 PostgreSQL provides native range types.
 
-Examples include:
+Examples:
 
     int4range
     int8range
     numrange
+    daterange
     tsrange
     tstzrange
-    daterange
 
 Example:
 
@@ -833,73 +597,54 @@ Example:
         booking_period DATERANGE
     );
 
-Useful for:
+Insert:
 
-- Booking periods
-- Date ranges
-- Numeric ranges
-- Scheduling
+    INSERT INTO bookings (booking_period)
+    VALUES ('[2026-10-01,2026-10-10)');
 
----
+### Difference
 
-# 39. Generated Columns
-
-PostgreSQL supports generated columns.
-
-Example:
-
-    CREATE TABLE products (
-        price NUMERIC,
-        quantity INT,
-        total NUMERIC
-        GENERATED ALWAYS AS (price * quantity) STORED
-    );
-
-The database automatically calculates `total`.
+Native range types are a PostgreSQL feature.
 
 ---
 
-# 40. Sequences
+# 19. Views
 
-PostgreSQL has a sequence object for generating numeric values.
+## SQL
 
-Example:
-
-    CREATE SEQUENCE student_id_seq;
-
-Use:
-
-    SELECT nextval('student_id_seq');
-
-`SERIAL` internally uses sequence-based behavior.
-
----
-
-# 41. Views
-
-Views are supported by SQL and PostgreSQL.
-
-Example:
+Views are a standard database concept.
 
     CREATE VIEW adult_students AS
     SELECT *
     FROM students
     WHERE age >= 18;
 
-Then:
+## PostgreSQL
 
+PostgreSQL supports the same:
+
+    CREATE VIEW adult_students AS
     SELECT *
-    FROM adult_students;
+    FROM students
+    WHERE age >= 18;
 
-A normal view stores the query definition rather than a separate stored copy of the result.
+### Difference
+
+No major difference.
+
+Views are part of SQL and are implemented by PostgreSQL.
 
 ---
 
-# 42. Materialized Views
+# 20. Materialized Views
+
+## SQL
+
+Materialized view support is not universally available in all SQL database systems.
+
+## PostgreSQL
 
 PostgreSQL provides materialized views.
-
-Example:
 
     CREATE MATERIALIZED VIEW student_count AS
     SELECT course, COUNT(*) AS total
@@ -912,34 +657,23 @@ Refresh:
 
 ### Difference
 
-Normal View:
+A normal view executes its underlying query when accessed.
 
-    Query
-      ↓
-    Execute every time
-
-Materialized View:
-
-    Query
-      ↓
-    Result stored
-      ↓
-    Read stored result
-
-Materialized views are useful for expensive queries where completely fresh data is not required for every read.
+A materialized view stores the result and can be refreshed later.
 
 ---
 
-# 43. Stored Procedures and Functions
+# 21. Functions
 
-SQL standards include routines/procedures, but syntax and capabilities vary between database systems.
+## SQL
 
-PostgreSQL supports:
+SQL supports functions/routines, but exact syntax and procedural capabilities differ between database systems.
 
-    FUNCTIONS
-    PROCEDURES
+## PostgreSQL
 
-Example function:
+PostgreSQL provides powerful database functions.
+
+Example:
 
     CREATE FUNCTION add_numbers(a INT, b INT)
     RETURNS INT
@@ -953,15 +687,32 @@ Call:
 
     SELECT add_numbers(10, 20);
 
+### Difference
+
+PostgreSQL supports SQL functions as well as procedural functions using languages such as PL/pgSQL.
+
 ---
 
-# 44. PL/pgSQL
+# 22. PL/pgSQL
+
+## SQL
+
+SQL itself is not a procedural programming language like PL/pgSQL.
+
+## PostgreSQL
 
 PostgreSQL provides:
 
     PL/pgSQL
 
-It is PostgreSQL's procedural language commonly used for writing functions and procedures.
+It can be used for:
+
+- Variables
+- IF/ELSE
+- Loops
+- Exception handling
+- Functions
+- Procedures
 
 Example:
 
@@ -977,228 +728,53 @@ Example:
     END;
     $$ LANGUAGE plpgsql;
 
----
+### Difference
 
-# 45. Transactions
-
-Transactions are a core database concept.
-
-Standard SQL provides transaction commands such as:
-
-    START TRANSACTION
-    COMMIT
-    ROLLBACK
-    SAVEPOINT
-
-PostgreSQL supports transactions.
-
-Example:
-
-    BEGIN;
-
-    UPDATE accounts
-    SET balance = balance - 1000
-    WHERE id = 1;
-
-    UPDATE accounts
-    SET balance = balance + 1000
-    WHERE id = 2;
-
-    COMMIT;
-
-If something fails:
-
-    ROLLBACK;
+`PL/pgSQL` is PostgreSQL's procedural language.
 
 ---
 
-# 46. Isolation Levels
+# 23. Index Types
 
-SQL defines transaction isolation concepts.
+## SQL
 
-PostgreSQL supports:
+Indexes are a standard database performance concept, but exact index types vary by DBMS.
 
-    READ COMMITTED
-    REPEATABLE READ
-    SERIALIZABLE
+## PostgreSQL
 
-PostgreSQL also accepts:
+PostgreSQL provides several index types:
 
-    READ UNCOMMITTED
-
-but its behavior is effectively the same as:
-
-    READ COMMITTED
-
-because PostgreSQL's MVCC architecture does not provide dirty reads.
-
----
-
-# 47. MVCC
-
-MVCC means:
-
-> Multi-Version Concurrency Control
-
-This is an important PostgreSQL implementation feature.
-
-Instead of simply overwriting a row immediately for every update, PostgreSQL maintains row versions that allow concurrent transactions to work efficiently.
-
-Benefits include:
-
-- Better concurrency
-- Readers generally don't block writers
-- Writers generally don't block ordinary readers
-- Transaction isolation
-
----
-
-# 48. VACUUM
-
-PostgreSQL provides:
-
-    VACUUM
-
-It is used to manage dead row versions created by PostgreSQL's MVCC system.
-
-Example:
-
-    VACUUM students;
-
-PostgreSQL also provides:
-
-    VACUUM ANALYZE students;
-
-`ANALYZE` updates statistics used by the query planner.
-
----
-
-# 49. ANALYZE
-
-PostgreSQL's query planner uses statistics to choose execution plans.
-
-Example:
-
-    ANALYZE students;
-
-This collects statistics about the table.
-
-These statistics help PostgreSQL decide things such as:
-
-- Which index to use
-- Which join strategy to use
-- How many rows are expected
-
----
-
-# 50. EXPLAIN
-
-SQL databases commonly provide query-plan inspection tools.
-
-PostgreSQL provides:
-
-    EXPLAIN
-
-Example:
-
-    EXPLAIN
-    SELECT *
-    FROM students
-    WHERE age > 20;
-
-For actual execution information:
-
-    EXPLAIN ANALYZE
-    SELECT *
-    FROM students
-    WHERE age > 20;
-
-This is extremely useful for query optimization.
-
----
-
-# 51. Indexes
-
-Indexes are a standard database concept.
+    B-tree
+    Hash
+    GIN
+    GiST
+    SP-GiST
+    BRIN
 
 Example:
 
     CREATE INDEX idx_students_name
     ON students(name);
 
-PostgreSQL supports this and provides several specialized index types.
-
----
-
-# 52. PostgreSQL Index Types
-
-Important PostgreSQL index types include:
-
-### B-tree
-
-Default index type.
-
-Good for:
-
-- Equality
-- Range queries
-- Sorting
-
----
-
-### Hash
-
-Useful primarily for equality comparisons.
-
----
-
-### GIN
-
-Generalized Inverted Index.
-
-Very useful for:
-
-- JSONB
-- Arrays
-- Full-text search
-
-Example:
+GIN example:
 
     CREATE INDEX idx_users_profile
     ON users
     USING GIN(profile);
 
----
+### Difference
 
-### GiST
-
-Generalized Search Tree.
-
-Useful for:
-
-- Geometric data
-- Range queries
-- Specialized search operations
+PostgreSQL provides multiple specialized index types for different workloads.
 
 ---
 
-### SP-GiST
+# 24. Partial Indexes
 
-Space-partitioned GiST.
+## SQL
 
-Useful for certain specialized data structures and search patterns.
+Partial/filtered index support varies between database systems.
 
----
-
-### BRIN
-
-Block Range Index.
-
-Useful for very large tables where values are naturally correlated with their physical storage order.
-
----
-
-# 53. Partial Indexes
+## PostgreSQL
 
 PostgreSQL supports partial indexes.
 
@@ -1210,11 +786,19 @@ Example:
 
 Only rows satisfying the condition are included in the index.
 
-This can reduce index size and improve performance for specific query patterns.
+### Difference
+
+Partial indexes are a powerful PostgreSQL feature.
 
 ---
 
-# 54. Expression Indexes
+# 25. Expression Indexes
+
+## SQL
+
+Expression/function-based indexes are not implemented identically across all SQL databases.
+
+## PostgreSQL
 
 PostgreSQL supports indexes on expressions.
 
@@ -1223,24 +807,36 @@ Example:
     CREATE INDEX idx_lower_email
     ON users(LOWER(email));
 
-Then:
+Now a query such as:
 
     SELECT *
     FROM users
-    WHERE LOWER(email) = 'abc@gmail.com';
+    WHERE LOWER(email) = 'motu@gmail.com';
 
-The expression index can support this type of query.
+can make use of the expression index.
+
+### Difference
+
+PostgreSQL allows indexes to be built directly on expressions.
 
 ---
 
-# 55. Full-Text Search
+# 26. FULL-TEXT SEARCH
+
+## SQL
+
+Full-text search support varies considerably between database systems.
+
+## PostgreSQL
 
 PostgreSQL provides built-in full-text search functionality.
 
-Important concepts:
+Important PostgreSQL types/functions include:
 
     tsvector
     tsquery
+    to_tsvector()
+    plainto_tsquery()
 
 Example:
 
@@ -1250,356 +846,58 @@ Example:
           @@
           plainto_tsquery('english', 'database');
 
-This allows PostgreSQL to perform text search without requiring a separate search engine for many applications.
+### Difference
+
+PostgreSQL provides an integrated full-text search system.
 
 ---
 
-# 56. Extensions
+# 27. Extensions
 
-One of PostgreSQL's major architectural features is its extension system.
+## SQL
+
+SQL itself does not define PostgreSQL's extension system.
+
+## PostgreSQL
+
+PostgreSQL supports extensions.
 
 Example:
 
     CREATE EXTENSION pgcrypto;
 
-Another famous extension:
+Another famous PostgreSQL extension:
 
     PostGIS
 
-PostGIS adds geospatial capabilities.
+Extensions can add functionality such as:
 
-Other extensions can add functionality such as:
-
-- Cryptographic functions
+- Cryptography
 - UUID generation
-- Spatial processing
+- Geographic data
 - Additional data types
-- Additional indexing/query capabilities
+- Additional functions
+- Additional operators
+
+### Difference
+
+The PostgreSQL extension system allows functionality to be added to the database.
 
 ---
 
-# 57. Schemas
+# 28. DISTINCT ON
 
-SQL supports the concept of schemas.
+## SQL
 
-PostgreSQL makes extensive use of schemas.
+Standard SQL provides:
 
-Example:
+    DISTINCT
 
-    CREATE SCHEMA admin;
-
-Create a table inside it:
-
-    CREATE TABLE admin.users (
-        id SERIAL,
-        name TEXT
-    );
-
-Access:
-
-    SELECT *
-    FROM admin.users;
-
-The default PostgreSQL schema is commonly:
-
-    public
-
----
-
-# 58. PostgreSQL System Catalogs
-
-PostgreSQL stores metadata about database objects in system catalogs.
-
-Examples:
-
-    pg_tables
-    pg_indexes
-    pg_class
-    pg_attribute
-    pg_database
-
-Example:
-
-    SELECT *
-    FROM pg_tables;
-
-This allows developers and database administrators to inspect PostgreSQL internals and metadata.
-
----
-
-# 59. Information Schema
-
-SQL defines the concept of an information schema.
-
-PostgreSQL supports:
-
-    information_schema
-
-Example:
-
-    SELECT *
-    FROM information_schema.tables;
-
-This provides a more standardized way to inspect database metadata.
-
----
-
-# 60. Roles and Users
-
-PostgreSQL uses a role-based security system.
-
-Example:
-
-    CREATE ROLE developer
-    LOGIN
-    PASSWORD 'password';
-
-Grant permission:
-
-    GRANT SELECT
-    ON students
-    TO developer;
-
-PostgreSQL's role system is more general than simply thinking in terms of "users."
-
-A role can:
-
-- Login
-- Own objects
-- Receive permissions
-- Be a member of another role
-
----
-
-# 61. GRANT and REVOKE
-
-These are standard SQL security concepts.
-
-Example:
-
-    GRANT SELECT
-    ON students
-    TO developer;
-
-Remove permission:
-
-    REVOKE SELECT
-    ON students
-    FROM developer;
-
-PostgreSQL supports these commands.
-
----
-
-# 62. UPSERT
-
-"Upsert" means:
-
-> INSERT if the row does not exist, otherwise UPDATE.
-
-PostgreSQL provides:
-
-    INSERT ... ON CONFLICT
-
-Example:
-
-    INSERT INTO users (email, name)
-    VALUES ('abc@gmail.com', 'Motu')
-    ON CONFLICT (email)
-    DO UPDATE
-    SET name = EXCLUDED.name;
-
-This is a very important PostgreSQL feature for backend applications.
-
----
-
-# 63. MERGE
-
-Modern SQL includes:
-
-    MERGE
-
-PostgreSQL supports `MERGE`.
-
-It allows conditional INSERT/UPDATE/DELETE behavior based on matching source and target rows.
-
-Conceptually:
-
-    Source Data
-         |
-         ↓
-    Compare with Target
-         |
-         +--- Match → UPDATE
-         |
-         +--- No Match → INSERT
-
----
-
-# 64. Common Table Expressions
-
-SQL supports CTEs using:
-
-    WITH
-
-Example:
-
-    WITH adult_students AS (
-        SELECT *
-        FROM students
-        WHERE age >= 18
-    )
-    SELECT *
-    FROM adult_students;
-
-PostgreSQL supports CTEs.
-
----
-
-# 65. Recursive CTE
-
-PostgreSQL supports recursive queries using:
-
-    WITH RECURSIVE
-
-Example use cases:
-
-- Employee hierarchy
-- Tree structures
-- Organization hierarchy
-- Graph traversal
-- Category hierarchy
-
-Example:
-
-    WITH RECURSIVE numbers AS (
-        SELECT 1 AS n
-
-        UNION ALL
-
-        SELECT n + 1
-        FROM numbers
-        WHERE n < 5
-    )
-    SELECT *
-    FROM numbers;
-
-Result:
-
-    1
-    2
-    3
-    4
-    5
-
----
-
-# 66. Window Functions
-
-SQL supports window functions.
-
-Examples:
-
-    ROW_NUMBER()
-    RANK()
-    DENSE_RANK()
-    SUM() OVER()
-    AVG() OVER()
-
-Example:
-
-    SELECT
-        name,
-        marks,
-        RANK() OVER (
-            ORDER BY marks DESC
-        ) AS rank
-    FROM students;
-
-PostgreSQL supports these and many advanced window-function capabilities.
-
----
-
-# 67. PostgreSQL Operators
-
-PostgreSQL provides many specialized operators.
-
-Examples:
-
-    ->
-    ->>
-    @>
-    <@
-    ||
-    ?
-
-These become especially important when working with JSONB and arrays.
-
-Example:
-
-    SELECT profile->>'city'
-    FROM users;
-
-Here:
-
-    ->>
-
-extracts a JSON value as text.
-
----
-
-# 68. PostgreSQL JSONB Operators
-
-Suppose:
-
-    profile = '{"city":"Delhi","age":20}'
-
-Extract value:
-
-    SELECT profile->>'city'
-    FROM users;
-
-Output:
-
-    Delhi
-
-Check containment:
-
-    SELECT *
-    FROM users
-    WHERE profile @> '{"city":"Delhi"}';
-
-The `@>` operator is particularly useful with JSONB.
-
----
-
-# 69. LATERAL
-
-PostgreSQL supports:
-
-    LATERAL
-
-It allows a subquery in the `FROM` clause to reference columns from preceding tables in the same `FROM` clause.
-
-Example:
-
-    SELECT *
-    FROM students s
-    CROSS JOIN LATERAL (
-        SELECT *
-        FROM courses c
-        WHERE c.id = s.course_id
-    ) c;
-
-This is useful for advanced query patterns.
-
----
-
-# 70. DISTINCT ON
-
-PostgreSQL provides:
+But PostgreSQL additionally provides:
 
     DISTINCT ON
+
+## PostgreSQL
 
 Example:
 
@@ -1610,260 +908,128 @@ Example:
     FROM students
     ORDER BY course_id, marks DESC;
 
-This can be used to retrieve the highest-marked student for each course.
+This can be used to select the highest-scoring student from each course.
+
+### Difference
 
 `DISTINCT ON` is a PostgreSQL-specific feature.
 
 ---
 
-# 71. Array Operators
-
-PostgreSQL supports array-specific operations.
-
-Example:
-
-    SELECT *
-    FROM students
-    WHERE 'SQL' = ANY(skills);
-
-Other useful operators/functions include:
-
-    ANY
-    ALL
-    array_length()
-    unnest()
-
-Example:
-
-    SELECT unnest(skills)
-    FROM students;
-
-This converts array elements into rows.
-
----
-
-# 72. String Aggregation
-
-PostgreSQL provides:
-
-    STRING_AGG()
-
-Example:
-
-    SELECT
-        course,
-        STRING_AGG(name, ', ')
-    FROM students
-    GROUP BY course;
-
-This combines multiple row values into one string.
-
----
-
-# 73. FILTER Clause
-
-PostgreSQL supports the SQL `FILTER` clause for aggregate functions.
-
-Example:
-
-    SELECT
-        COUNT(*) AS total_students,
-        COUNT(*) FILTER (
-            WHERE age >= 18
-        ) AS adults
-    FROM students;
-
-This can make conditional aggregation cleaner.
-
----
-
-# 74. UPSERT vs Traditional SQL
-
-Traditional approach:
-
-    SELECT
-        ↓
-    Check whether row exists
-        ↓
-    INSERT or UPDATE
-
-PostgreSQL:
-
-    INSERT
-    ON CONFLICT
-    DO UPDATE
-
-This can reduce application-side race conditions and simplify backend code.
-
----
-
-# 75. SQL Portability
-
-Standard SQL is useful because it improves portability.
-
-For example:
-
-    SELECT *
-    FROM students
-    WHERE age > 18;
-
-This type of query can usually move between:
-
-    PostgreSQL
-    MySQL
-    SQL Server
-    Oracle
-
-with little or no change.
-
-But PostgreSQL-specific syntax may require modification.
-
-Example:
-
-    SELECT *
-    FROM students
-    WHERE name ILIKE '%motu%';
-
-This cannot simply be assumed to work identically in every SQL database.
-
----
-
-# 76. Important Comparison Table
-
-| Feature | Standard SQL | PostgreSQL |
-|---|---|---|
-| SELECT | Yes | Yes |
-| INSERT | Yes | Yes |
-| UPDATE | Yes | Yes |
-| DELETE | Yes | Yes |
-| CREATE TABLE | Yes | Yes |
-| ALTER TABLE | Yes | Yes |
-| WHERE | Yes | Yes |
-| GROUP BY | Yes | Yes |
-| HAVING | Yes | Yes |
-| ORDER BY | Yes | Yes |
-| JOIN | Yes | Yes |
-| PRIMARY KEY | Yes | Yes |
-| FOREIGN KEY | Yes | Yes |
-| UNIQUE | Yes | Yes |
-| CHECK | Yes | Yes |
-| NOT NULL | Yes | Yes |
-| DEFAULT | Yes | Yes |
-| Transactions | Yes | Yes |
-| COMMIT | Yes | Yes |
-| ROLLBACK | Yes | Yes |
-| SAVEPOINT | Yes | Yes |
-| CASE | Yes | Yes |
-| COALESCE | Yes | Yes |
-| CTE | Yes | Yes |
-| Window Functions | Yes | Yes |
-| MERGE | Modern SQL | Yes |
-| Identity Columns | Yes | Yes |
-| ILIKE | No | Yes |
-| SERIAL | No | Yes |
-| RETURNING | Not a universal core SQL feature | Yes |
-| ON CONFLICT | No | Yes |
-| JSON | Standardized functionality exists | Yes |
-| JSONB | No | Yes |
-| Native Arrays | Not universally implemented this way | Yes |
-| UUID Type | Not universally available as a native type | Yes |
-| ENUM Type | Not a universal core SQL type | Yes |
-| Custom Types | Limited/varies | Strong support |
-| Range Types | No | Yes |
-| Materialized Views | Not universal | Yes |
-| DISTINCT ON | No | Yes |
-| LATERAL | Standardized concept, implementation varies | Yes |
-| GIN Index | No | Yes |
-| GiST Index | No | Yes |
-| BRIN Index | No | Yes |
-| Partial Index | Not universal | Yes |
-| Expression Index | Not universal | Yes |
-| Full-Text Search | Varies | Yes |
-| Extensions | No | Yes |
-| PL/pgSQL | No | Yes |
-| VACUUM | No | Yes |
-| ANALYZE | Varies | Yes |
-| EXPLAIN | Varies by DBMS | Yes |
-
----
-
-# 77. Most Important PostgreSQL Features to Teach
-
-If students already know MySQL/SQL, focus on these PostgreSQL features:
-
-## Level 1 — PostgreSQL Syntax
-
-    SERIAL
-    IDENTITY
-    RETURNING
-    ILIKE
-    ON CONFLICT
-
-## Level 2 — PostgreSQL Data Types
-
-    JSONB
-    ARRAY
-    UUID
-    ENUM
-    Custom Types
-    Range Types
-
-## Level 3 — PostgreSQL Database Objects
-
-    Functions
-    Procedures
-    Views
-    Materialized Views
-    Sequences
-    Schemas
-
-## Level 4 — PostgreSQL Performance
-
-    EXPLAIN
-    EXPLAIN ANALYZE
-    VACUUM
-    ANALYZE
-    B-tree
-    GIN
-    GiST
-    BRIN
-    Partial Index
-    Expression Index
-
-## Level 5 — PostgreSQL Architecture
-
-    MVCC
-    WAL
-    Transactions
-    Isolation Levels
-    Locks
-    Concurrency
-
-## Level 6 — Advanced PostgreSQL
-
-    Extensions
-    Full-Text Search
-    Recursive CTE
-    LATERAL
-    JSONB operators
-    Array operations
-    Window functions
-    Custom functions
-    PL/pgSQL
-
----
-
-# 78. What Is SQL and What Is PostgreSQL?
+# 29. MVCC
 
 ## SQL
 
-Think:
+SQL defines transaction and isolation concepts, but it does not require every DBMS to use one particular internal concurrency implementation.
+
+## PostgreSQL
+
+PostgreSQL uses:
+
+    MVCC
+
+Meaning:
+
+    Multi-Version Concurrency Control
+
+PostgreSQL maintains row versions to allow transactions to work concurrently.
+
+Conceptually:
+
+    Transaction A
+          |
+          ↓
+       Row Version 1
+
+    Transaction B
+          |
+          ↓
+       Row Version 2
+
+This helps PostgreSQL provide strong concurrency behavior.
+
+### Difference
+
+MVCC is an important PostgreSQL implementation mechanism.
+
+---
+
+# 30. VACUUM
+
+## SQL
+
+SQL does not define a PostgreSQL-style `VACUUM` command.
+
+## PostgreSQL
+
+PostgreSQL provides:
+
+    VACUUM
+
+Example:
+
+    VACUUM students;
+
+Also:
+
+    VACUUM ANALYZE students;
+
+Because PostgreSQL uses MVCC, old row versions can remain after updates/deletes.
+
+`VACUUM` helps PostgreSQL reclaim/reuse storage and maintain database health.
+
+`ANALYZE` updates statistics used by the query planner.
+
+### Difference
+
+`VACUUM` and PostgreSQL's vacuuming system are PostgreSQL-specific database management features.
+
+---
+
+# Quick Revision Table
+
+| # | Feature | SQL | PostgreSQL |
+|---|---|---|---|
+| 1 | SELECT | Standard | Supported |
+| 2 | INSERT | Standard | Supported |
+| 3 | UPDATE | Standard | Supported |
+| 4 | DELETE | Standard | Supported |
+| 5 | Identity | Standard | Supported |
+| 6 | SERIAL | Not standard SQL | PostgreSQL feature |
+| 7 | RETURNING | Not universal | Supported |
+| 8 | LIKE | Standard | Supported |
+| 9 | ILIKE | Not standard | PostgreSQL feature |
+| 10 | COALESCE | Standard | Supported |
+| 11 | CASE | Standard | Supported |
+| 12 | ON CONFLICT | Not universal | PostgreSQL feature |
+| 13 | JSON | Standardized functionality | Supported |
+| 14 | JSONB | Not universal | PostgreSQL feature |
+| 15 | Arrays | Varies by DBMS | Native support |
+| 16 | UUID | Varies | Native support |
+| 17 | ENUM | Varies | Native support |
+| 18 | Custom Types | Varies | Strong support |
+| 19 | Range Types | Not universal | Native support |
+| 20 | Views | Standard concept | Supported |
+| 21 | Materialized Views | Not universal | Supported |
+| 22 | Functions | Standard concept | Powerful implementation |
+| 23 | PL/pgSQL | No | Yes |
+| 24 | Multiple Index Types | Varies | Yes |
+| 25 | Partial Index | Varies | Yes |
+| 26 | Expression Index | Varies | Yes |
+| 27 | Full-Text Search | Varies | Built-in |
+| 28 | Extensions | Not PostgreSQL-specific concept | PostgreSQL extension system |
+| 29 | DISTINCT ON | No | Yes |
+| 30 | VACUUM | No | Yes |
+
+---
+
+# Final Concept
+
+The easiest way to remember the difference:
 
     SQL
     ↓
-    Standard database language
-    ↓
-    Commands and concepts
+    Language / Standard
     ↓
     SELECT
     INSERT
@@ -1871,90 +1037,38 @@ Think:
     DELETE
     JOIN
     GROUP BY
+    HAVING
+    CASE
+    COALESCE
     Transactions
     Constraints
 
----
-
-## PostgreSQL
-
-Think:
 
     PostgreSQL
     ↓
-    Complete database system
+    Database Management System
     ↓
-    SQL
+    Implements SQL
     +
     PostgreSQL-specific features
-    +
-    Database engine
-    +
-    Query planner
-    +
-    Storage
-    +
-    MVCC
-    +
-    WAL
-    +
-    Indexes
-    +
+    ↓
+    SERIAL
+    RETURNING
+    ILIKE
+    ON CONFLICT
+    JSONB
+    Arrays
+    UUID
+    ENUM
+    Range Types
+    Materialized Views
+    GIN
+    GiST
+    BRIN
     Extensions
-    +
-    Advanced data types
-    +
-    Security
+    PL/pgSQL
+    DISTINCT ON
+    MVCC
+    VACUUM
 
----
-
-# 79. Final Mental Model
-
-Do not teach students:
-
-> SQL and PostgreSQL are two different databases.
-
-Instead teach:
-
-> **SQL is a language/standard. PostgreSQL is a database management system that implements SQL.**
-
-Then:
-
-    SQL
-    │
-    ├── SELECT
-    ├── INSERT
-    ├── UPDATE
-    ├── DELETE
-    ├── JOIN
-    ├── GROUP BY
-    ├── Constraints
-    ├── Transactions
-    └── Window Functions
-            │
-            ↓
-       PostgreSQL
-            │
-            ├── SQL Support
-            ├── JSONB
-            ├── Arrays
-            ├── UUID
-            ├── ENUM
-            ├── Custom Types
-            ├── ILIKE
-            ├── RETURNING
-            ├── ON CONFLICT
-            ├── Materialized Views
-            ├── GIN / GiST / BRIN
-            ├── Extensions
-            ├── PL/pgSQL
-            ├── MVCC
-            ├── VACUUM
-            ├── WAL
-            └── PostgreSQL Query Planner
-
----
-
-# 80. One-Line Summary
-
-> **SQL tells us how to communicate with a relational database; PostgreSQL is a complete database system that understands SQL and extends it with powerful data types, operators, indexing methods, transaction/concurrency mechanisms, functions, extensions, and database-management features.**
+> **Remember: SQL is the language; PostgreSQL is the database system that implements SQL and adds its own powerful features.**
