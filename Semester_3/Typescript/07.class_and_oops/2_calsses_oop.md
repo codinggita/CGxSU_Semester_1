@@ -557,9 +557,9 @@ The `User` class must provide everything required by `Identifiable`.
 
 ## Why Use an Interface?
 
-An interface describes **what an object should provide** without deciding how it should implement that behavior.
+An interface describes **what a class should provide** without defining how it should implement that behavior.
 
-Different classes can implement the same interface:
+The main purpose of an interface is to define a **common contract** that can be followed by different, potentially unrelated classes.
 
 ```ts
 interface Payable {
@@ -579,7 +579,7 @@ class UpiPayment implements Payable {
 }
 ```
 
-Both classes satisfy the same contract:
+Both classes follow the same contract:
 
 ```text
 Payable
@@ -589,7 +589,27 @@ Payable
 CardPayment   UpiPayment
 ```
 
-A class can also implement multiple interfaces:
+The interface does not provide the implementation of `pay()`.
+Each class decides how to implement it.
+
+---
+
+## Interface vs Abstract Class
+
+The main difference is:
+
+- **Interface** → defines a contract.
+- **Abstract class** → provides a common base with shared state or behavior and can also force subclasses to implement methods.
+
+Use an interface when you only need to define **what a class must provide**.
+
+Use an abstract class when related classes need to **share common implementation or state**.
+
+---
+
+## Multiple Interfaces
+
+A class can implement multiple interfaces:
 
 ```ts
 interface Identifiable {
@@ -608,6 +628,8 @@ class User implements Identifiable, Loggable {
 	}
 }
 ```
+
+This allows a class to follow multiple contracts without requiring multiple class inheritance.
 
 ---
 
