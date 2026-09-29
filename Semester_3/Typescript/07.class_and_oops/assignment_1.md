@@ -1,5 +1,7 @@
 # TypeScript Classes & Objects — Practice Assignment 1
 
+## (Phase 1)
+
 ## 🏦 Bank Account Management System
 
 Build a **Bank Account Management System** using TypeScript classes and objects.
@@ -100,32 +102,6 @@ The bank name should be available through the class itself.
 
 ---
 
-## Subclasses
-
-Create the following subclasses from `BankAccount`.
-
-### `SavingsAccount`
-
-A savings account should have:
-
-- Interest rate
-- Method to calculate the interest amount based on the current balance
-
-The account type should be identified as **Savings**.
-
----
-
-### `CurrentAccount`
-
-A current account should have:
-
-- Overdraft limit
-- Withdrawal behavior that allows the account balance to go below `0`, but only within the allowed overdraft limit
-
-The account type should be identified as **Current**.
-
----
-
 ## Account Details
 
 When displaying account information, show:
@@ -170,4 +146,45 @@ Total Bank Holding: 10000
 
 The exact values may differ depending on your transactions.
 
+## (Phase 2)
+
+## Implement Subclasses 
+
+Create the following subclasses from `BankAccount`.
+
+### `SavingsAccount`
+
+A savings account should have:
+
+- Interest rate
+- Method to calculate the interest amount based on the current balance
+
+The account type should be identified as **Savings**.
+
 ---
+
+### `CurrentAccount`
+
+A current account should have:
+
+- Overdraft limit
+- Withdrawal behavior that allows the account balance to go below `0`, but only within the allowed overdraft limit
+
+The account type should be identified as **Current**.
+
+---
+
+## (Phase 3)
+
+## Abstraction
+
+- Convert the BankAccount class into abstract class.
+- create abstract method `debit` and `credit`.
+- create a abstract property `accountType`.
+
+---
+
+## (Phase 4)
+
+## Polymorphism
+
