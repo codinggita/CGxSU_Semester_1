@@ -226,26 +226,7 @@ Flow:
 
 ---
 
-## 12. CTE with Window Functions
-
-CTEs are useful with window functions.
-
-    WITH ranked_orders AS (
-        SELECT
-            customer_name,
-            amount,
-            RANK() OVER (ORDER BY amount DESC) AS rank
-        FROM orders
-    )
-    SELECT *
-    FROM ranked_orders
-    WHERE rank <= 3;
-
-This makes the query easier to understand.
-
----
-
-## 13. CTE vs Subquery
+## 12. CTE vs Subquery
 
 Without CTE:
 
@@ -270,7 +251,7 @@ CTE is usually easier to read when the query becomes complex.
 
 ---
 
-## 14. CTE with DELETE / UPDATE
+## 13. CTE with DELETE / UPDATE
 
 CTEs are not limited to `SELECT`.
 
@@ -303,7 +284,7 @@ Example with `UPDATE`:
 
 ---
 
-## 15. Practice Questions
+## 14. Practice Questions
 
 | # | Question |
 |---|---|
