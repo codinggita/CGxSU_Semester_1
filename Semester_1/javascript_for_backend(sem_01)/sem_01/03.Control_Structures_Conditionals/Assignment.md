@@ -141,3 +141,63 @@
     If present, then check if internal marks are ≥ 30.  
     If internal marks are valid, then check if external marks are ≥ 35.  
     Print “Eligible for Final Exam” only when all conditions are satisfied.
+
+---
+
+
+
+### `switch` Statement – 10 Questions
+
+1. Write a program that takes a month number (1–12) and prints the number of days in that month using `switch`  
+   (Hint: Consider 28/29 for February as 28 for simplicity).
+
+2. Write a program that checks a character and prints whether it is a vowel or consonant using `switch`.
+
+3. Create a program that takes a number from 1 to 4 and prints the season using multiple cases together:  
+   1 or 2 → Winter  
+   3 or 4 → Summer
+
+4. Write a program using `switch (true)` to assign class based on marks:  
+   ≥ 75 → Distinction  
+   ≥ 60 → 1st class  
+   ≥ 50 → 2nd class  
+   ≥ 35 → 3rd class  
+   below 35 → Failed
+
+5. Create a nested `switch` program:  
+   First take a role (“admin” or “user”).  
+   If role is “admin”, then take an action (“create”, “edit”, “delete”) and print the corresponding message.  
+   If role is “user”, print “Limited Access”.
+
+6. Predict and explain the output of the following code. Then correct it so that only one message is printed:
+```js
+let fruit = "mango";
+
+switch (fruit) {
+  case "apple":
+    console.log("Apple is red");
+  case "mango":
+    console.log("Mango is yellow");
+  case "banana":
+    console.log("Banana is yellow");
+  default:
+    console.log("Unknown fruit");
+}
+```
+
+7. Write a program that takes a value which can be either a number or a string (`0`, `"0"`, `false`, `null`, `undefined`) and uses `switch` to correctly identify each one. Explain why some values may not match as expected.
+
+8. Create a tricky calculator using `switch` that supports these operations:  
+   `+`, `-`, `*`, `/`, `%`, and also `**` (exponentiation).  
+   Handle division by zero properly inside the corresponding case.
+
+9. Write a program using `switch` that takes a date (day number of the month) and prints:  
+   “Beginning of the month” (1–10)  
+   “Middle of the month” (11–20)  
+   “End of the month” (21–31)  
+   Use `switch (true)` technique for range checking.
+
+10. Create a multi-level nested `switch` program for an online food ordering system:  
+    First select Category: `"veg"` or `"nonveg"`.  
+    Then select Item based on category.  
+    Finally select Size: `"half"` or `"full"` and print the final order summary with price.
