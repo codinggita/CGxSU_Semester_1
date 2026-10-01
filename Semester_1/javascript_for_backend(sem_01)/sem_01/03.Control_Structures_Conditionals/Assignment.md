@@ -96,7 +96,7 @@
 ---
 
 
-### D. Nested `if` Statement 
+### D] Nested `if` Statement 
 
 
 1. Check if a number is greater than 10.  
@@ -144,9 +144,7 @@
 
 ---
 
-
-
-### `switch` Statement – 10 Questions
+### E] `switch` Statement – 10 Questions
 
 1. Write a program that takes a month number (1–12) and prints the number of days in that month using `switch`  
    (Hint: Consider 28/29 for February as 28 for simplicity).
@@ -201,3 +199,56 @@ switch (fruit) {
     First select Category: `"veg"` or `"nonveg"`.  
     Then select Item based on category.  
     Finally select Size: `"half"` or `"full"` and print the final order summary with price.
+
+---
+
+### F] Ternary Operator Questions  
+
+
+1. Write a ternary operator to check whether a given number is divisible by 7. If yes, return `"Divisible by 7"`, otherwise `"Not Divisible by 7"`.
+
+2. Using ternary operator, check if the temperature is greater than or equal to 30. Return `"Hot Day"` or `"Pleasant Day"`.
+
+3. Write a ternary expression that checks if a string is empty. Return `"Empty String"` if it is empty, otherwise `"String has content"`.
+
+
+4. Using nested ternary, check a person’s age and return:  
+   - `"Child"` (age < 13)  
+   - `"Teenager"` (13–19)  
+   - `"Adult"` (20 and above)
+
+5. Write a nested ternary to find the greater of three numbers (`a`, `b`, `c`) without using `Math.max`.
+
+6. Create a nested ternary that classifies a student’s marks as:  
+   - `"Distinction"` (≥ 75)  
+   - `"First Class"` (60–74)  
+   - `"Second Class"` (50–59)  
+   - `"Pass"` (35–49)  
+   - `"Fail"` (< 35)
+
+7. Write a single nested ternary expression that returns one of the following based on a number:  
+   `"Positive Even"`, `"Positive Odd"`, `"Negative Even"`, `"Negative Odd"`, or `"Zero"`.
+
+8. Using only nested ternary operators, implement the full leap year logic  
+   (divisible by 4 **and** (not divisible by 100 **or** divisible by 400)) and return `"Leap Year"` or `"Not a Leap Year"`.
+
+9. Convert the following decision tree into **one single nested ternary** expression:  
+   ```
+   if (role === "admin") {
+     if (action === "delete") → "Admin Delete"
+     else if (action === "edit") → "Admin Edit"
+     else → "Admin Other"
+   } else if (role === "user") {
+     if (action === "view") → "User View"
+     else → "User Restricted"
+   } else {
+     → "Invalid Role"
+   }
+   ```
+
+10. Write a complex nested ternary that calculates discount and final amount based on these rules:  
+    - Cart total ≥ 5000 → 20% discount  
+    - Cart total ≥ 2000 → 10% discount  
+    - Cart total ≥ 1000 → 5% discount  
+    - Otherwise → 0% discount  
+    Return both the discount percentage and the final payable amount in a single expression (you may return an object or a formatted string).
