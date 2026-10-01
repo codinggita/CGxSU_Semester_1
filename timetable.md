@@ -1,4 +1,4 @@
-## 06 September 
+## 06 October 
 
 | Time        | CG LAB 1                  | Time        | CG LAB 2                      |
 |-------------|---------------------------|-------------|-------------------------------|
@@ -11,7 +11,7 @@
 | 4:15–5:15   | Industry Readiness 07     | 4:15–5:15   | Industry Readiness 07         |
 | 5:15–6:00   | Industry Readiness 08     | 5:15–6:00   | Industry Readiness 08         |
 
-## 05 September 
+## 05 October 
 
 | Time        | CG LAB 1                  | Time        | CG LAB 2                      |
 |-------------|---------------------------|-------------|-------------------------------|
