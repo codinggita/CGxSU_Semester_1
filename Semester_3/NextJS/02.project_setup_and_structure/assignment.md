@@ -39,6 +39,7 @@ Inside `src/`, organize the project with:
 - `components/`
 - `lib/`
 - `hooks/`
+- `types/`
 
 Create a `public/images/` directory for static assets.
 
@@ -55,7 +56,7 @@ The homepage should contain:
 - Store name
 - Short description
 - A simple hero section
-- A section representing featured products
+- A section representing featured products (Optional)
 
 The page does not need actual product data or product functionality.
 
