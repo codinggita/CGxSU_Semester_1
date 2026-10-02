@@ -326,9 +326,6 @@ Using absorption:
 
        A(A + B)
 
-3. Find the 1-minterms:
-
-       F(A,B) = Σm(1,2)
 
 ### Easy-Medium
 
