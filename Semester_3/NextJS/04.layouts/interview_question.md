@@ -6,7 +6,7 @@
 
 3. What does the `children` prop represent in a layout?
 
-4. Why does a layout stay mounted when navigating between routes in the same segment (for example, `/dashboard` to `/dashboard/settings`)?
+4. What happens to a layout when navigating between routes that share the same layout segment (for example, `/dashboard` to `/dashboard/settings`)?
 
 5. How does a nested layout hierarchy work from root layout down to the page?
 
@@ -19,3 +19,9 @@
 9. When is adding another nested layout file unnecessary?
 
 10. A dashboard sidebar needs `useState`. Why keep the layout as a Server Component and mark only the sidebar as `"use client"`?
+
+11. What is the purpose of the root layout, and what makes it different from a nested layout?
+
+12. If an application has a root layout, product layout, and product-detail page, in what order are they rendered?
+
+13. Why is it generally better to keep a layout as a Server Component and move only interactive parts into Client Components?

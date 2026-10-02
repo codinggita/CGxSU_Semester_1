@@ -1,6 +1,6 @@
 # Next.js E-commerce Web App
 
-## Assignment 01 — Project Setup & Structure
+## Assignment 02 — Project Setup & Structure
 
 ### Objective
 

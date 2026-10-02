@@ -1,6 +1,6 @@
 # Next.js E-commerce Web App
 
-## Assignment 02 — Routing and Navigation
+## Assignment 03 — Routing and Navigation
 
 ### Objective
 
