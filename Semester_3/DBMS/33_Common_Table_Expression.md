@@ -296,10 +296,8 @@ Example with `UPDATE`:
 | 6 | Create a CTE to find the average order amount. |
 | 7 | Create a CTE to find the maximum order amount. |
 | 8 | Create a CTE to find the top 3 highest-value orders. |
-| 9 | Create a CTE using `RANK()` to rank orders by amount. |
-| 10 | Display only the top 3 ranked orders using a CTE. |
-| 11 | Create two CTEs where the second CTE uses the result of the first CTE. |
-| 12 | Use a CTE with `GROUP BY` to find yearly sales. |
-| 13 | Use a CTE with `HAVING` to find customers whose total sales exceed 5000. |
-| 14 | Use a CTE with a `JOIN` to display customer names and their total orders. |
-| 15 | Use a CTE to identify orders before 2026 and delete them from the `orders` table. |
+| 9 | Create two CTEs where the second CTE uses the result of the first CTE. |
+| 10 | Use a CTE with `GROUP BY` to find yearly sales. |
+| 11 | Use a CTE with `HAVING` to find customers whose total sales exceed 5000. |
+| 12 | Use a CTE with a `JOIN` to display customer names and their total orders. |
+| 13 | Use a CTE to identify orders before 2026 and delete them from the `orders` table. |
