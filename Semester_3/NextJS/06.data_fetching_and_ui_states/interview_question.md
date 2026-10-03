@@ -26,6 +26,4 @@
 
 13. Why can secrets not be fetched safely inside a Client Component even if the API exists?
 
-14. When should you use `redirect()` during data fetching instead of rendering a page?
-
-15. An API returns 404 for a missing product. Should you throw, call `notFound()`, or return null? Why?
+14. An API returns 404 for a missing product. Should you throw, call `notFound()`, or return null? Why?
