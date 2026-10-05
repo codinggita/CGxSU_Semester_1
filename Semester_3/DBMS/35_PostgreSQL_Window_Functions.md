@@ -214,3 +214,194 @@ Basic syntax:
     )
 
 > Window functions allow us to perform calculations across related rows without losing the individual rows.
+
+
+
+
+
+
+# Practical Questions
+
+Use the following `students` table for all questions.
+
+    CREATE TABLE students (
+        student_id SERIAL PRIMARY KEY,
+        student_name VARCHAR(50),
+        course VARCHAR(50),
+        marks INT
+    );
+
+    INSERT INTO students (student_name, course, marks)
+    VALUES
+    ('Motu', 'Python', 85),
+    ('Patlu', 'Python', 72),
+    ('Raju', 'MERN', 90),
+    ('Shyam', 'MERN', 65),
+    ('Ravi', 'MERN', 78),
+    ('Anjali', 'Python', 95),
+    ('Neha', 'Java', 88),
+    ('Amit', 'Java', 75);
+
+---
+
+## Easy Level
+
+### 1. Overall Average
+
+Display every student's name, marks, and the overall average marks using a window function.
+
+Expected columns:
+
+    student_name | marks | average_marks
+
+---
+
+### 2. Student Row Number
+
+Display every student with a row number based on marks from highest to lowest.
+
+Expected columns:
+
+    student_name | marks | row_number
+
+---
+
+### 3. Course Average
+
+Display every student along with the average marks of their course.
+
+Expected columns:
+
+    student_name | course | marks | course_average
+
+Hint:
+
+    PARTITION BY course
+
+---
+
+### 4. Student Rank
+
+Display every student with their rank based on marks from highest to lowest.
+
+Use:
+
+    RANK()
+
+Expected columns:
+
+    student_name | marks | rank
+
+---
+
+### 5. Previous Student Marks
+
+Display each student's marks along with the marks of the previous student based on `student_id`.
+
+Use:
+
+    LAG()
+
+Expected columns:
+
+    student_name | marks | previous_marks
+
+---
+
+## Medium Level
+
+### 6. Rank Students Within Each Course
+
+Rank students separately inside each course based on marks from highest to lowest.
+
+Expected columns:
+
+    student_name | course | marks | course_rank
+
+Hint:
+
+    PARTITION BY course
+    ORDER BY marks DESC
+
+---
+
+### 7. Dense Rank Within Each Course
+
+Use `DENSE_RANK()` to rank students separately within each course.
+
+Expected columns:
+
+    student_name | course | marks | course_rank
+
+---
+
+### 8. Next Student Marks
+
+Display each student along with the marks of the next student based on `student_id`.
+
+Use:
+
+    LEAD()
+
+Expected columns:
+
+    student_name | marks | next_marks
+
+---
+
+### 9. Course Total Marks
+
+Display every student along with the total marks obtained by all students in their course.
+
+Expected columns:
+
+    student_name | course | marks | course_total
+
+Hint:
+
+    SUM(marks) OVER(
+        PARTITION BY course
+    )
+
+---
+
+### 10. Compare Student Marks with Course Average
+
+Display:
+
+- Student name
+- Course
+- Marks
+- Course average
+- Difference between student's marks and course average
+
+Expected columns:
+
+    student_name | course | marks | course_average | difference
+
+For example:
+
+    difference = marks - course_average
+
+Hint:
+
+    AVG(marks) OVER(PARTITION BY course)
+
+---
+
+## Challenge Question
+
+Find the top-performing student from each course using a window function.
+
+Expected result:
+
+    student_name | course | marks
+
+Hint:
+
+    RANK() OVER(
+        PARTITION BY course
+        ORDER BY marks DESC
+    )
+
+Then use the result to select students whose rank is `1`.
