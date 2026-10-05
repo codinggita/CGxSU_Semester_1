@@ -79,9 +79,9 @@ Check the table:
 
 ---
 
-# 4. CREATE — Insert Data Using Procedure
+# 4. CREATE — Insert Data 
 
-Create a procedure that inserts a student.
+ inserts a student.
 
     CREATE OR REPLACE PROCEDURE add_student(
         p_name VARCHAR,
