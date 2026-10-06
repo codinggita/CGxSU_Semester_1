@@ -389,19 +389,177 @@ Hint:
 
 ---
 
-## Challenge Question
+---
 
-Find the top-performing student from each course using a window function.
+## More Practice Questions
 
-Expected result:
+### 11. Highest Marks in Each Course
 
-    student_name | course | marks
+Display every student along with the highest marks obtained in their course.
+
+Expected columns:
+
+    student_name | course | marks | highest_marks
 
 Hint:
 
-    RANK() OVER(
+    MAX(marks) OVER(
         PARTITION BY course
-        ORDER BY marks DESC
     )
 
-Then use the result to select students whose rank is `1`.
+---
+
+### 12. Lowest Marks in Each Course
+
+Display every student along with the lowest marks obtained in their course.
+
+Expected columns:
+
+    student_name | course | marks | lowest_marks
+
+Hint:
+
+    MIN(marks) OVER(
+        PARTITION BY course
+    )
+
+---
+
+### 13. Number of Students in Each Course
+
+Display every student along with the total number of students in their course.
+
+Expected columns:
+
+    student_name | course | marks | student_count
+
+Hint:
+
+    COUNT(*) OVER(
+        PARTITION BY course
+    )
+
+---
+
+### 14. Overall Highest Marks
+
+Display every student along with the highest marks obtained by any student.
+
+Expected columns:
+
+    student_name | marks | highest_marks
+
+Hint:
+
+    MAX(marks) OVER()
+
+---
+
+### 15. Overall Lowest Marks
+
+Display every student along with the lowest marks obtained by any student.
+
+Expected columns:
+
+    student_name | marks | lowest_marks
+
+Hint:
+
+    MIN(marks) OVER()
+
+---
+
+### 16. Difference from Highest Marks
+
+Display every student along with:
+
+- Student name
+- Marks
+- Highest marks
+- Difference from highest marks
+
+Expected columns:
+
+    student_name | marks | highest_marks | difference
+
+Formula:
+
+    difference = highest_marks - marks
+
+Hint:
+
+    MAX(marks) OVER()
+
+---
+
+### 17. Running Total of Marks
+
+Display students ordered by `student_id` and calculate the running total of marks.
+
+Expected columns:
+
+    student_name | marks | running_total
+
+Hint:
+
+    SUM(marks) OVER(
+        ORDER BY student_id
+    )
+
+---
+
+### 18. Running Total Within Each Course
+
+Calculate a running total of marks separately for each course.
+
+Order students by `student_id`.
+
+Expected columns:
+
+    student_name | course | marks | running_total
+
+Hint:
+
+    SUM(marks) OVER(
+        PARTITION BY course
+        ORDER BY student_id
+    )
+
+---
+
+### 19. Previous Marks Difference
+
+Display each student along with:
+
+- Previous student's marks
+- Difference between current marks and previous marks
+
+Expected columns:
+
+    student_name | marks | previous_marks | difference
+
+Formula:
+
+    difference = marks - previous_marks
+
+Hint:
+
+    LAG(marks) OVER(
+        ORDER BY student_id
+    )
+
+---
+
+### 20. Running Average of Marks
+
+Display students ordered by `student_id` and calculate the running average of marks.
+
+Expected columns:
+
+    student_name | marks | running_average
+
+Hint:
+
+    AVG(marks) OVER(
+        ORDER BY student_id
+    )
