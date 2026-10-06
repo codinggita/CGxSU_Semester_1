@@ -60,3 +60,119 @@ Given an array `[90, 85, 70, 95, 60, 88, 75]`, use a reverse `for` loop to find 
 
 10. **(Reverse For Loop + `continue`)**  
 Write a reverse `for` loop that prints numbers from 40 down to 1, but skips every number that is a perfect square using `continue`.
+
+
+### Part I-d] `Nested For Loop` Questions
+
+1. Print the following right-triangle number pattern using nested `for` loops (without hard-coding any row):
+```
+1
+2 3
+4 5 6
+7 8 9 10
+```
+
+2. Print the following right-triangle alphabet pattern using nested `for` loops (without hard-coding any row):
+```
+A
+A B
+A B C
+A B C D
+A B C D E
+```
+
+3. Print this hollow right-triangle star pattern using nested loops:
+```
+*
+* *
+*   *
+*     *
+* * * * *
+```
+
+4. Print the following reverse right-angle star pattern using nested `for` loops:
+```
+*****
+****
+***
+**
+*
+```
+
+5. Print the following reverse right-angle pattern where each row contains the row number repeated, using nested loops:
+```
+5 5 5 5 5
+4 4 4 4
+3 3 3
+2 2
+1
+```
+
+
+6. Print this reverse right-angle number pattern using nested `for` loops:
+```
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2
+1
+```
+
+7. Print the following reverse right-angle pattern of consecutive numbers using nested loops:
+```
+15 14 13 12 11
+10  9  8  7
+ 6  5  4
+ 3  2
+ 1
+```
+
+8. Print this reverse right-angle hollow star pattern (only the borders should have stars) using nested `for` loops:
+```
+* * * * *
+*     *
+*   *
+* *
+*
+```
+
+9. Using nested `for` loops, print a 5×5 square of stars (`*`) but skip printing a star whenever the row number equals the column number (i.e., leave the main diagonal empty).
+
+10. Write nested `for` loops that print the multiplication table of numbers from 1 to 5, but only show the products that are even. (Each table should start on a new line.)
+
+
+11. Given a positive integer `n`, use nested `for` loops to print an `n × n` matrix where each cell contains the absolute difference of its row and column indices (0-based or 1-based — your choice, but be consistent).
+
+12. Using nested `for` loops, generate and print all unique pairs `(i, j)` such that `1 ≤ i < j ≤ 10` and `i + j` is a perfect square. Print each pair on a new line.
+
+
+13. Print the following diamond number pattern for `n = 5` using nested loops (no extra spaces or characters allowed beyond what’s shown):
+```
+    1
+   121
+  12321
+ 1234321
+123454321
+ 1234321
+  12321
+   121
+    1
+```
+
+14. Write nested `for` loops that print a 6×6 matrix filled with consecutive numbers starting from 1, but in spiral order (clockwise, starting from top-left).  
+   Example start of the matrix:
+```
+ 1  2  3  4  5  6
+20 21 22 23 24  7
+19 32 33 34 25  8
+18 31 36 35 26  9
+17 30 29 28 27 10
+16 15 14 13 12 11
+```
+
+16. Using only nested `for` loops (no arrays or built-in reverse methods), print the Pascal’s Triangle up to 8 rows. Each row should be properly spaced so the triangle looks centered.
+
+16. Given two positive integers `rows` and `cols`, use nested `for` loops to print a matrix where:  
+    - The border cells contain the value `1`  
+    - All inner cells contain the value `0`  
+    - Additionally, if a cell’s row index + column index is divisible by 3, force the value to `2` (even if it is on the border).
