@@ -2,9 +2,7 @@
 
 ## Question 1
 
-A person starts from point **P** and walks **5 km towards North**. He then walks **3 km towards East**.
-
-In which direction is he from point P?
+A person starts from point **P** and walks **5 km towards North**. He then walks **3 km towards East**. In which direction is he from point P?
 
 * a) North-West
 * b) North-East
@@ -15,9 +13,7 @@ In which direction is he from point P?
 
 ## Question 2
 
-A person starts from point **A** and walks **6 km towards East**. He then walks **4 km towards South**.
-
-In which direction is he from point A?
+A person starts from point **A** and walks **6 km towards East**. He then walks **4 km towards South**. In which direction is he from point A?
 
 * a) North-East
 * b) South-East
@@ -28,9 +24,7 @@ In which direction is he from point A?
 
 ## Question 3
 
-A person starts from point **X** and walks **5 km towards West**. He then walks **3 km towards North**.
-
-In which direction is he from point X?
+A person starts from point **X** and walks **5 km towards West**. He then walks **3 km towards North**. In which direction is he from point X?
 
 * a) North-East
 * b) South-East
@@ -41,9 +35,7 @@ In which direction is he from point X?
 
 ## Question 4
 
-A person starts from point **M** and walks **7 km towards South**. He then walks **2 km towards West**.
-
-In which direction is he from point M?
+A person starts from point **M** and walks **7 km towards South**. He then walks **2 km towards West**. In which direction is he from point M?
 
 * a) South-East
 * b) North-West
@@ -54,9 +46,7 @@ In which direction is he from point M?
 
 ## Question 5
 
-A person starts from point **P** and walks **4 km towards East**. He then walks **3 km towards North**. Finally, he walks **4 km towards West**.
-
-In which direction is he from point P?
+A person starts from point **P** and walks **4 km towards East**. He then walks **3 km towards North**. Finally, he walks **4 km towards West**. In which direction is he from point P?
 
 * a) North
 * b) South
@@ -67,9 +57,7 @@ In which direction is he from point P?
 
 ## Question 6
 
-A person is facing **North**. He turns **90° to his right**.
-
-Which direction is he facing now?
+A person is facing **North**. He turns **90° to his right**. Which direction is he facing now?
 
 * a) West
 * b) East
@@ -80,9 +68,7 @@ Which direction is he facing now?
 
 ## Question 7
 
-A person is facing **East**. He turns **90° to his left**.
-
-Which direction is he facing now?
+A person is facing **East**. He turns **90° to his left**. Which direction is he facing now?
 
 * a) North
 * b) South
@@ -93,9 +79,7 @@ Which direction is he facing now?
 
 ## Question 8
 
-A person is facing **South**. He turns **90° to his right**.
-
-Which direction is he facing now?
+A person is facing **South**. He turns **90° to his right**. Which direction is he facing now?
 
 * a) East
 * b) North
@@ -106,9 +90,7 @@ Which direction is he facing now?
 
 ## Question 9
 
-A person is facing **West**. He turns **90° to his left**.
-
-Which direction is he facing now?
+A person is facing **West**. He turns **90° to his left**. Which direction is he facing now?
 
 * a) North
 * b) East
@@ -119,9 +101,7 @@ Which direction is he facing now?
 
 ## Question 10
 
-A person is facing **North**. He turns right, then right again, and then left.
-
-Which direction is he facing now?
+A person is facing **North**. He turns right, then right again, and then left. Which direction is he facing now?
 
 * a) North
 * b) South
@@ -132,9 +112,7 @@ Which direction is he facing now?
 
 ## Question 11
 
-A person walks **5 km North** and then **3 km East**.
-
-What is his final displacement from the starting point?
+A person walks **5 km North** and then **3 km East**. What is his final displacement from the starting point?
 
 * a) 8 km
 * b) 2 km
@@ -145,9 +123,7 @@ What is his final displacement from the starting point?
 
 ## Question 12
 
-A person walks **7 km East** and then **4 km South**.
-
-In which direction is he from his starting point?
+A person walks **7 km East** and then **4 km South**. In which direction is he from his starting point?
 
 * a) North-East
 * b) South-East
@@ -158,9 +134,7 @@ In which direction is he from his starting point?
 
 ## Question 13
 
-A person walks **6 km West** and then **2 km North**.
-
-In which direction is he from his starting point?
+A person walks **6 km West** and then **2 km North**. In which direction is he from his starting point?
 
 * a) South-East
 * b) North-East
@@ -171,9 +145,7 @@ In which direction is he from his starting point?
 
 ## Question 14
 
-A person walks **8 km South** and then **5 km East**.
-
-In which direction is he from his starting point?
+A person walks **8 km South** and then **5 km East**. In which direction is he from his starting point?
 
 * a) South-West
 * b) North-East
@@ -184,9 +156,7 @@ In which direction is he from his starting point?
 
 ## Question 15
 
-A person walks **4 km North**, then **4 km East**, and finally **4 km South**.
-
-In which direction is he from his starting point?
+A person walks **4 km North**, then **4 km East**, and finally **4 km South**. In which direction is he from his starting point?
 
 * a) North
 * b) South
@@ -197,9 +167,7 @@ In which direction is he from his starting point?
 
 ## Question 16
 
-A person walks **6 km East**, then **3 km North**, and finally **6 km West**.
-
-In which direction is he from his starting point?
+A person walks **6 km East**, then **3 km North**, and finally **6 km West**. In which direction is he from his starting point?
 
 * a) South
 * b) East
@@ -210,9 +178,7 @@ In which direction is he from his starting point?
 
 ## Question 17
 
-A person walks **10 km North**, then **4 km East**, and then **6 km South**.
-
-In which direction is he from his starting point?
+A person walks **10 km North**, then **4 km East**, and then **6 km South**. In which direction is he from his starting point?
 
 * a) North-East
 * b) South-East
@@ -223,9 +189,7 @@ In which direction is he from his starting point?
 
 ## Question 18
 
-A person walks **8 km West**, then **5 km South**, and finally **3 km East**.
-
-In which direction is he from his starting point?
+A person walks **8 km West**, then **5 km South**, and finally **3 km East**. In which direction is he from his starting point?
 
 * a) North-East
 * b) South-East
@@ -236,9 +200,7 @@ In which direction is he from his starting point?
 
 ## Question 19
 
-A person walks **5 km East**, then **7 km North**, and finally **5 km West**.
-
-In which direction is he from his starting point?
+A person walks **5 km East**, then **7 km North**, and finally **5 km West**. In which direction is he from his starting point?
 
 * a) East
 * b) West
@@ -249,9 +211,7 @@ In which direction is he from his starting point?
 
 ## Question 20
 
-A person walks **9 km South**, then **4 km West**, and finally **3 km North**.
-
-In which direction is he from his starting point?
+A person walks **9 km South**, then **4 km West**, and finally **3 km North**. In which direction is he from his starting point?
 
 * a) South-East
 * b) South-West
@@ -262,9 +222,7 @@ In which direction is he from his starting point?
 
 ## Question 21
 
-A person walks **6 km East** and then **8 km North**.
-
-What is the shortest distance between his starting point and final position?
+A person walks **6 km East** and then **8 km North**. What is the shortest distance between his starting point and final position?
 
 * a) 10 km
 * b) 12 km
@@ -275,9 +233,7 @@ What is the shortest distance between his starting point and final position?
 
 ## Question 22
 
-A person walks **9 km West** and then **12 km South**.
-
-What is the shortest distance between his starting point and final position?
+A person walks **9 km West** and then **12 km South**. What is the shortest distance between his starting point and final position?
 
 * a) 15 km
 * b) 18 km
@@ -288,9 +244,7 @@ What is the shortest distance between his starting point and final position?
 
 ## Question 23
 
-A person walks **12 km East** and then **5 km North**.
-
-What is the shortest distance between his starting point and final position?
+A person walks **12 km East** and then **5 km North**. What is the shortest distance between his starting point and final position?
 
 * a) 13 km
 * b) 15 km
@@ -301,9 +255,7 @@ What is the shortest distance between his starting point and final position?
 
 ## Question 24
 
-A person walks **7 km East** and then **24 km South**.
-
-What is the shortest distance between his starting point and final position?
+A person walks **7 km East** and then **24 km South**. What is the shortest distance between his starting point and final position?
 
 * a) 25 km
 * b) 27 km
@@ -314,9 +266,7 @@ What is the shortest distance between his starting point and final position?
 
 ## Question 25
 
-A person walks **15 km West** and then **8 km North**.
-
-What is the shortest distance between his starting point and final position?
+A person walks **15 km West** and then **8 km North**. What is the shortest distance between his starting point and final position?
 
 * a) 17 km
 * b) 19 km
@@ -327,9 +277,7 @@ What is the shortest distance between his starting point and final position?
 
 ## Question 26
 
-It is **morning**, and a person is standing with his **shadow directly to his left**.
-
-In which direction is the person facing?
+It is **morning**, and a person is standing with his **shadow directly to his left**. In which direction is the person facing?
 
 * a) South
 * b) North
@@ -340,9 +288,7 @@ In which direction is the person facing?
 
 ## Question 27
 
-It is **morning**, and a person's **shadow is directly to his right**.
-
-In which direction is the person facing?
+It is **morning**, and a person's **shadow is directly to his right**. In which direction is the person facing?
 
 * a) North
 * b) South
@@ -353,9 +299,7 @@ In which direction is the person facing?
 
 ## Question 28
 
-It is **evening**, and a person is standing with his **shadow directly to his right**.
-
-In which direction is the person facing?
+It is **evening**, and a person is standing with his **shadow directly to his right**. In which direction is the person facing?
 
 * a) North
 * b) South
@@ -366,9 +310,7 @@ In which direction is the person facing?
 
 ## Question 29
 
-In the morning, a tree's shadow falls towards the **West**.
-
-In which direction is the Sun?
+In the morning, a tree's shadow falls towards the **West**. In which direction is the Sun?
 
 * a) North
 * b) South
@@ -379,9 +321,7 @@ In which direction is the Sun?
 
 ## Question 30
 
-In the evening, a tree's shadow falls towards the **East**.
-
-In which direction is the Sun?
+In the evening, a tree's shadow falls towards the **East**. In which direction is the Sun?
 
 * a) North
 * b) South
