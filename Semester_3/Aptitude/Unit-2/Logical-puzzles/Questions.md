@@ -257,6 +257,7 @@ P, Q, R and S sit in the first row, while T, U, V and W sit in the second row. E
 - U sits opposite Q.
 - P sits immediately to the left of Q.
 - T sits at the extreme left of the second row.
+- W sits immediately to the right of T.
 
 Who sits opposite P?
 
@@ -389,6 +390,7 @@ Five students A, B, C, D and E each study a different subject: Maths, English, S
 - C studies English.
 - D studies Maths.
 - E does not study Science.
+- B studies Computer.
 
 Which subject does E study?
 
@@ -479,15 +481,15 @@ Six people A, B, C, D, E and F are standing in a row facing north.
 
 - E is at the extreme left.
 - F is at the extreme right.
+- A is immediately to the right of E.
 - C is immediately to the right of A.
 - B is immediately to the left of D.
-- A is not next to E.
 
 Who is standing third from the left?
 
 * a) A
 * b) B
-* c) D
+* c) C
 * d) E
 
 ---
@@ -600,8 +602,8 @@ Who has the highest rank?
 | Q23 | **b) Blue** |
 | Q24 | **d) Sports** |
 | Q25 | **b) Sales** |
-| Q26 | **c) D** |
+| Q26 | **c) C** |
 | Q27 | **c) S** |
-| Q28 | **d) E** |
+| Q28 | **b) B** |
 | Q29 | **d) U** |
 | Q30 | **d) D** |
