@@ -57,23 +57,23 @@ Who is second to the left of D?
 
 Five books P, Q, R, S and T are arranged on a shelf from left to right.
 
-- R is at the extreme left.
-- P is immediately to the left of Q.
-- T is immediately to the left of S.
-- P is not at an end.
+- P is at the extreme left.
+- Q is immediately to the right of P.
+- R is immediately to the left of S.
+- T is at the extreme right.
 
-Which book is at the extreme right?
+Which book is at the second from right?
 
 * a) P
-* b) Q
-* c) S
+* b) S
+* c) R
 * d) T
 
 ---
 
 ### Question 5
 
-Six people A, B, C, D, E and F are standing in a row facing north.
+Five people A, B, C, D, and F are standing in a row facing north.
 
 - A is second from the left.
 - C is immediately to the right of A.
@@ -102,7 +102,7 @@ All positions are considered clockwise.
 - E sits immediately clockwise of D.
 - F occupies the remaining seat.
 
-Who sits immediately clockwise of A?
+Who sits second clockwise of A?
 
 * a) B
 * b) C
@@ -221,6 +221,7 @@ P, Q, R and S sit in the first row, while W, X, Y and Z sit in the second row. E
 - X sits opposite P.
 - Q sits immediately to the right of P.
 - Z sits at the extreme right of the second row.
+- W sits immediately to the left of X.
 
 Who sits opposite Q?
 
@@ -577,9 +578,9 @@ Who has the highest rank?
 | Q1 | **b) B** |
 | Q2 | **b) Q** |
 | Q3 | **a) A** |
-| Q4 | **c) S** |
-| Q5 | **d) E** |
-| Q6 | **a) B** |
+| Q4 | **b) S** |
+| Q5 | **c) D** |
+| Q6 | **d) F** |
 | Q7 | **d) W** |
 | Q8 | **d) G** |
 | Q9 | **b) Q** |
