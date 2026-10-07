@@ -99,7 +99,7 @@ In a certain code, **SUN** is written as **19-21-14**. How will **MOON** be writ
 
 ### Question 10
 
-In a certain code, **DOG** is written as **13**. The code is obtained by adding the alphabetical positions of the first and last letters and subtracting the position of the middle letter. How will **CAT** be coded using the same rule?
+In a certain code, **LOG** is written as **4**. The code is obtained by adding the alphabetical positions of the first and last letters and subtracting the position of the middle letter. How will **CAT** be coded using the same rule?
 
 * a) 20
 * b) 21
@@ -165,11 +165,11 @@ If the letters of the word **MARKET** are arranged in alphabetical order, which 
 
 ### Question 16
 
-If in the English alphabet, every alternate letter starting from D is written in capital letters and the remaining letters in small letters, how will the **3rd day from Monday** be coded?
+If in the English alphabet, every alternate letter starting from D is written in capital letters and the remaining letters in small letters, how will the **2nd day from Monday** be coded?
 
 * a) wEdNeSdAy
 * b) WeDnEsDaY
-* c) wEdNeSdAy
+* c) wEdNeSdAY
 * d) WEdnEsday
 
 ---
@@ -198,7 +198,7 @@ In a certain code, each letter is represented by a fixed digit. If **DELHI** is 
 
 ### Question 19
 
-In a certain code, **APPLE** is written as **50** and **MANGO** is written as **55**. The code is the sum of the alphabetical positions of all letters. What is the code for **GRAPE**?
+In a certain code, **APPLE** is written as **50** and **MANGO** is written as **50**. The code is the sum of the alphabetical positions of all letters. What is the code for **GRAPE**?
 
 * a) 47
 * b) 49
@@ -277,7 +277,7 @@ In a certain code language, “book pen paper” is coded as “ka mi ro”, “
 
 | Question | Answer |
 |---|---|
-| Q1 | **b) DBU** |
+| Q1 | **a) ECV** |
 | Q2 | **a) ALD** |
 | Q3 | **a) HBNF** |
 | Q4 | **a) BQQMF** |
@@ -286,18 +286,18 @@ In a certain code language, “book pen paper” is coded as “ka mi ro”, “
 | Q7 | **c) 23** |
 | Q8 | **a) GJTI** |
 | Q9 | **a) 13-15-15-14** |
-| Q10 | **b) 21** |
+| Q10 | **c) 22** |
 | Q11 | **c) 6** |
 | Q12 | **b) la** |
 | Q13 | **c) na** |
 | Q14 | **c) O** |
 | Q15 | **b) M** |
-| Q16 | **a) wEdNeSdAy** |
+| Q16 | **b) WeDnEsDaY** |
 | Q17 | **a) TaBlE** |
 | Q18 | **a) 409** |
 | Q19 | **c) 51** |
 | Q20 | **b) 4-15-7** |
-| Q21 | **d) 108** |
+| Q21 | **b) 54** |
 | Q22 | **a) NIART** |
 | Q23 | **a) CHAIR → DIBJS** |
 | Q24 | **a) AFHTRE** |
