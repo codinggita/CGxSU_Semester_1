@@ -1,11 +1,3 @@
-# Basic Logical Puzzles - Practice Set
-
-## Instructions
-
-Read all conditions carefully. Use a diagram, table, or arrangement wherever required. Choose the correct option.
-
----
-
 ### Question 1
 
 Five people A, B, C, D and E are standing in a row facing north.
