@@ -6,7 +6,11 @@
 
 Implement appropriate rendering strategies for different parts of the existing E-commerce Web App.
 
-The application should demonstrate Static Rendering, Dynamic Rendering, SSG, ISR, and Client-Side Rendering where appropriate.
+The application should demonstrate **Static Rendering**, **Dynamic Rendering**, **SSG**, **time-based ISR**, and **Client-Side Rendering** where appropriate.
+
+> **Scope:** Use **time-based** revalidation only (for example `export const revalidate = 60` or `fetch` with `next: { revalidate: 60 }`). On-demand revalidation with `revalidatePath()` and `revalidateTag()` is covered in **Caching & Revalidation** — do not use those APIs in this assignment.
+
+Refer to the course notes for validating behavior (for example showing `Date.now()` on a page and testing with `npm run build` and `npm run start`).
 
 ---
 
@@ -17,13 +21,13 @@ Update the existing product listing page to use **Incremental Static Regeneratio
 Requirements:
 
 - Continue using the existing Express API and product data.
-- The product listing page should use a revalidation period of **60 seconds**.
+- The product listing page should use a revalidation period of **60 seconds** (route-level `revalidate` and/or `fetch` with `next: { revalidate: 60 }`).
 - The page should display the fetched products and existing pagination/filter information.
 - The page should remain suitable for content that changes periodically rather than on every request.
 
 ---
 
-## 2. Product Details — Static Generation
+## 2. Product Details — Static Generation + ISR
 
 Update the existing dynamic product detail route:
 
@@ -34,28 +38,33 @@ Update the existing dynamic product detail route:
 Requirements:
 
 - Use `generateStaticParams` for the product detail route.
-- Pre-generate a selected set of product pages.
+- Pre-generate a **selected set** of product pages (you do not need to pre-render every product in the dataset).
 - Use the existing Express API to retrieve the product information.
 - The generated product pages should include the existing product information, images, pricing, variants, rating, and other available product details.
-- Configure the product detail page so that product information can be regenerated periodically.
+- Configure periodic regeneration for product detail data (for example `revalidate: 60` on the route or on the product `fetch`), so pages can update without a full rebuild.
 
 ---
 
 ## 3. Static Pages
 
-Identify the existing pages that contain content that does not depend on a request or frequently changing data.
+Identify existing pages whose content does not depend on the request or frequently changing data.
 
 Ensure pages such as:
 
 - Contact
 - Terms
-- About, if created
+- About
 
-use an appropriate static rendering approach.
+use an appropriate **static rendering** approach.
+
+Requirements:
+
+- Do not use request-specific APIs on these routes (for example `cookies()`, `headers()`, or `searchParams` for dynamic behavior).
+- Server-side data fetching may use default or `force-cache` behavior where applicable.
 
 ---
 
-## 4. Dynamic Rendering
+## 4. Dynamic Rendering — Account
 
 Create an account page:
 
@@ -65,24 +74,18 @@ Create an account page:
 
 Requirements:
 
-- The page must use request-specific information.
-- The page should be dynamically rendered.
-- Display a simple account-related message based on request-specific information.
-- Do not implement authentication yet.
-
 ---
 
-## 5. Client-Side Rendering
+## 5. Client-Side Rendering — Product Filtering / Search
 
 Add a client-side interactive product filtering/search experience to the product listing UI.
 
 Requirements:
 
-- The existing product page should remain responsible for the initial product data.
-- Filtering/search interaction should happen on the client.
-- Use the existing product data available to the page.
-- The interactive portion should be implemented as a Client Component.
-- Do not convert the entire product page into a Client Component unnecessarily.
+- The product listing page should remain responsible for the **initial** product data (server fetch with ISR from section 1).
+- Filtering/search interaction should happen on the **client** using data already available to the page.
+- Implement the interactive portion as a **Client Component**.
+- Do not convert the entire product listing page into a Client Component unnecessarily.
 
 ---
 
@@ -90,14 +93,15 @@ Requirements:
 
 The application should demonstrate the following rendering decisions:
 
-| Page / Feature              | Required Rendering      |
-| --------------------------- | ----------------------- |
-| Product Listing             | ISR                     |
-| Product Details             | Static Generation + ISR |
-| Contact                     | Static                  |
-| Terms                       | Static                  |
-| Account                     | Dynamic                 |
-| Product Filtering/Search UI | Client-Side Rendering   |
+| Page / Feature              | Required Rendering    |
+| --------------------------- | --------------------- |
+| Product Listing             | ISR (60 seconds)      |
+| Product Details             | SSG + ISR             |
+| Contact                     | Static                |
+| Terms                       | Static                |
+| About (if present)          | Static                |
+| Account                     | Dynamic               |
+| Product Filtering/Search UI | Client-Side Rendering |
 
 ---
 
@@ -116,11 +120,12 @@ Review the application and ensure that:
 
 Verify that:
 
-- Product listing uses the configured ISR interval.
-- Product detail pages use `generateStaticParams`.
+- Product listing uses the configured **60 second** ISR interval.
+- Product detail pages use `generateStaticParams` for the pre-rendered set of IDs.
+- Product detail pages are configured for **periodic** regeneration (not only at build time).
 - Static pages do not depend on request-specific data.
-- The account page is dynamically rendered.
-- Product filtering/search works on the client.
+- The account page is dynamically rendered and uses request-specific APIs.
+- Product filtering/search works on the client without moving initial listing fetch to the client.
 - Existing loading, error, and not-found behavior continues to work.
 - All existing routes and navigation continue to work without errors.
 
@@ -139,9 +144,7 @@ Do not implement the following as part of this assignment:
 - Payments
 - Orders
 - Reviews
-- Advanced caching strategies
-- `revalidatePath`
-- `revalidateTag`
-- Advanced SEO or metadata
+- On-demand revalidation (`revalidatePath`, `revalidateTag`)
+- Advanced SEO or metadata beyond what already exists
 - Additional Express API endpoints
 - Pages Router
