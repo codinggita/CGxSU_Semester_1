@@ -386,25 +386,6 @@ Using absorption:
 
 15. Convert the truth table into both SOP and POS and verify that both expressions produce the same output.
 
-### Quick Revision
+16. Find the canonical POS expression:
 
-    SOP → Sum of Products
-    POS → Product of Sums
-
-    Minterms → Rows where F = 1
-    Maxterms → Rows where F = 0
-
-    SOP notation → Σm
-    POS notation → ΠM
-
-    Important laws:
-
-    A + AB = A
-    A(A + B) = A
-    A + A' = 1
-    AA' = 0
-
-    De Morgan:
-
-    (A + B)' = A'B'
-    (AB)' = A' + B'
+F(A,B,C)=ΠM(0,2,6)
