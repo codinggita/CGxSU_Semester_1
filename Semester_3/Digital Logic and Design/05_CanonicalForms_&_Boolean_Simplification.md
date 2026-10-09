@@ -389,3 +389,17 @@ Using absorption:
 16. Find the canonical POS expression:
 
 F(A,B,C)=ΠM(0,2,6)
+
+
+
+17.
+
+F(A,B,C)=Σm(0,1,4,5,6,7)
+
+Q18.
+
+F(A,B,C)=Σm(0,2,5,7)
+
+Q19.
+
+F(A,B,C)=Σm(1,2,3,6,7)
