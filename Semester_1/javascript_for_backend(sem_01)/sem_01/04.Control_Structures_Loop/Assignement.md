@@ -179,20 +179,132 @@ A B C D E
 
 ---
 
-## Part II] - While Loop
 
-1. Given an array of temperatures `[28, 32, 25, 40, 18, 35]`, use a `while` loop to count how many days were hotter than 30°C.  
-2. Write a `while` loop that calculates the sum of all digits of a given number (example: 4729 → 4+7+2+9 = 22).  
-3. Create a `while` loop that prints only the numbers between 1 and 100 that are divisible by both 3 and 5, but not by 7.  
-4. Write a `while` loop that prints the first 20 Fibonacci numbers (starting with 0 and 1).  
-5. Write a `while` loop that converts a decimal number to its binary representation (without using built-in methods like `toString(2)`).
+# Part II: While Loop
+
+### Q1. Print Numbers
+Write a `while` loop to print numbers from 1 to 10.
+
+### Q2. Sum of Natural Numbers
+Write a `while` loop to calculate the sum of the first 10 natural numbers.
+
+### Q3. Multiplication Table
+Write a `while` loop to print the multiplication table of a given number from 1 to 10.
+
+**Example:**
+Input: 5
+
+Output:
+5 x 1 = 5
+5 x 2 = 10
+...
+5 x 10 = 50
+
+### Q4. Count the Digits
+Write a `while` loop to count the total number of digits in a given positive integer.
+
+**Example:**
+Input: 58372
+Output: 5
+
+### Q5. Reverse a Number
+Write a `while` loop to reverse the digits of a given positive integer.
+
+**Example:**
+Input: 12345
+Output: 54321
+
+### Q6. Sum of Digits
+Write a `while` loop to calculate the sum of all digits of a given number.
+
+**Example:**
+Input: 4729
+Output: 22
+
+### Q7. Print Numbers with Conditions
+Write a `while` loop to print all numbers between 1 and 100 that are divisible by both 3 and 5 but not by 7.
+
+### Q8. Calculate Factorial
+Write a `while` loop to calculate the factorial of a given non-negative integer.
+
+**Example:**
+Input: 5
+Output: 120
+
+### Q9. Check a Palindrome Number
+Write a `while` loop to check whether a given number is a palindrome without converting it into a string.
+
+**Example:**
+Input: 121
+Output: Palindrome number
+
+### Q10. Convert Decimal to Binary
+Write a `while` loop to convert a positive decimal integer into its binary representation without using built-in methods such as `toString(2)`.
+
+**Example:**
+Input: 13
+Output: 1101
 
 ---
 
-## Part III] - Do-While Loop
+# Part III: Do-While Loop
 
-1. Given an array of temperatures `[28, 32, 25, 40, 18, 35]`, use a `do-while` loop to count how many days were hotter than 30°C.  
-2. Write a `do-while` loop that calculates the sum of all digits of a given number (example: 4729 → 4+7+2+9 = 22).  
-3. Create a `do-while` loop that prints only the numbers between 1 and 100 that are divisible by both 3 and 5, but not by 7.  
-4. Write a `do-while` loop that prints the first 20 Fibonacci numbers (starting with 0 and 1).  
-5. Write a `do-while` loop that converts a decimal number to its binary representation (without using built-in methods).
+### Q1. Print Numbers in Reverse
+Write a `do-while` loop to print numbers from 10 down to 1.
+
+### Q2. Print Even Numbers
+Write a `do-while` loop to print all even numbers between 1 and 20.
+
+### Q3. Sum of Natural Numbers
+Write a `do-while` loop to calculate the sum of the first `n` natural numbers.
+
+**Example:**
+Input: 5
+Output: 15
+
+### Q4. Product of Digits
+Write a `do-while` loop to calculate the product of all digits of a given positive integer.
+
+**Example:**
+Input: 234
+Output: 24
+
+### Q5. Find the First Digit
+Write a `do-while` loop to find the leftmost digit of a given positive integer.
+
+**Example:**
+Input: 58372
+Output: 5
+
+### Q6. Calculate a Power
+Write a `do-while` loop to calculate the power of a number without using `Math.pow()` or the exponentiation operator `**`.
+
+**Example:**
+Input: Base = 3, Exponent = 4
+Output: 81
+
+### Q7. Print Multiples with Conditions
+Write a `do-while` loop to print all numbers between 1 and 100 that are divisible by 4 but not by 8.
+
+### Q8. Check a Palindrome Number
+Write a `do-while` loop to check whether a given positive integer is a palindrome without converting it into a string.
+
+**Example:**
+Input: 1221
+Output: Palindrome number
+
+### Q9. Find the Greatest Common Divisor (GCD)
+Write a `do-while` loop to find the greatest common divisor of two positive integers using the Euclidean algorithm.
+
+**Example:**
+Input: 48, 18
+Output: 6
+
+### Q10. Convert Decimal to Binary
+Write a `do-while` loop to convert a non-negative decimal integer into binary without using built-in conversion methods.
+
+**Example:**
+Input: 13
+Output: 1101
+
+**Challenge:** Handle the input `0` correctly as well.
