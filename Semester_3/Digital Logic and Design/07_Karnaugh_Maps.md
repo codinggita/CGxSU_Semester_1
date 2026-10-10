@@ -231,41 +231,6 @@ Therefore:
 
 ---
 
-# 9. K-Map Important Tricks
-
-### Edge Adjacency
-
-The left and right edges are adjacent.
-
-Example:
-
-    [1][0][0][1]
-
-The two `1`s can be grouped.
-
-### Top and Bottom
-
-The top and bottom rows are also adjacent.
-
-### Corner Adjacency
-
-The four corner cells can form a valid group:
-
-    [1] [0] [0] [1]
-    [0] [0] [0] [0]
-    [0] [0] [0] [0]
-    [1] [0] [0] [1]
-
-### Remember
-
-    Left ↔ Right
-    Top ↔ Bottom
-
-But:
-
-    Diagonal ≠ Adjacent
-
----
 
 # 10. Practice Problems
 
@@ -323,32 +288,5 @@ But:
         F(A,B,C,D) =
         Σm(4,5,6,7,12,13,14,15)
 
-12. Explain why K-Maps use Gray Code order:
 
-        00 → 01 → 11 → 10
 
-### Quick Revision
-
-    K-Map = Graphical Boolean simplification
-
-    SOP → Group 1s
-
-    POS → Group 0s
-
-    Valid groups:
-    1, 2, 4, 8, 16
-
-    Largest possible group is preferred.
-
-    Left and right edges are adjacent.
-
-    Top and bottom edges are adjacent.
-
-    Diagonal cells are not adjacent.
-
-    2-variable → 4 cells
-
-    3-variable → 8 cells
-
-    4-variable → 16 cells
-```
