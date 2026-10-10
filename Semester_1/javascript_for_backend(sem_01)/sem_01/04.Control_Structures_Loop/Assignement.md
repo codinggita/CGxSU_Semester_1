@@ -176,3 +176,23 @@ A B C D E
     - The border cells contain the value `1`  
     - All inner cells contain the value `0`  
     - Additionally, if a cell’s row index + column index is divisible by 3, force the value to `2` (even if it is on the border).
+
+---
+
+## Part II] - While Loop
+
+1. Given an array of temperatures `[28, 32, 25, 40, 18, 35]`, use a `while` loop to count how many days were hotter than 30°C.  
+2. Write a `while` loop that calculates the sum of all digits of a given number (example: 4729 → 4+7+2+9 = 22).  
+3. Create a `while` loop that prints only the numbers between 1 and 100 that are divisible by both 3 and 5, but not by 7.  
+4. Write a `while` loop that prints the first 20 Fibonacci numbers (starting with 0 and 1).  
+5. Write a `while` loop that converts a decimal number to its binary representation (without using built-in methods like `toString(2)`).
+
+---
+
+## Part III] - Do-While Loop
+
+1. Given an array of temperatures `[28, 32, 25, 40, 18, 35]`, use a `do-while` loop to count how many days were hotter than 30°C.  
+2. Write a `do-while` loop that calculates the sum of all digits of a given number (example: 4729 → 4+7+2+9 = 22).  
+3. Create a `do-while` loop that prints only the numbers between 1 and 100 that are divisible by both 3 and 5, but not by 7.  
+4. Write a `do-while` loop that prints the first 20 Fibonacci numbers (starting with 0 and 1).  
+5. Write a `do-while` loop that converts a decimal number to its binary representation (without using built-in methods).
