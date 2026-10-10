@@ -192,46 +192,6 @@ So:
 
 ---
 
-# 7. K-Map for SOP Simplification
-
-For SOP:
-
-    Group the 1s
-
-Then find the variables that remain constant.
-
-### Example
-
-    F(A,B,C) = Σm(1,3,5,7)
-
-All four `1`s are grouped.
-
-Only:
-
-    C = 1
-
-remains constant.
-
-Therefore:
-
-    F = C
-
-### Important
-
-For SOP:
-
-    1s → Groups → Simplified SOP
-
----
-
-# 8. K-Map for POS Simplification
-
-For POS:
-
-    Group the 0s
-
-Then determine the variables that remain constant.
-
 ### Example
 
 Suppose:
