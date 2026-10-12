@@ -110,7 +110,7 @@ A person is facing **North**. He turns right, then right again, and then left. W
 
 ## Question 11
 
-A person walks **5 km North** and then **3 km East**. What is his final displacement from the starting point?
+A person walks **5 km North** and then **3 km East**. What is his shortest distance from the starting point to the final position?
 
 * a) 8 km
 * b) 2 km
