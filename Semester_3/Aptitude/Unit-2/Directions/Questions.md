@@ -2,8 +2,8 @@
 
 A person starts from point **P** and walks **5 km towards North**. He then walks **3 km towards East**. In which direction is he from point P?
 
-* a) North-West
-* b) North-East
+* a) North-East
+* b) North-West
 * c) South-East
 * d) South-West
 
@@ -136,8 +136,8 @@ A person walks **6 km West** and then **2 km North**. In which direction is he f
 
 * a) South-East
 * b) North-East
-* c) North-West
-* d) South-West
+* c) South-West
+* d) North-West
 
 ---
 
@@ -156,9 +156,9 @@ A person walks **8 km South** and then **5 km East**. In which direction is he f
 
 A person walks **4 km North**, then **4 km East**, and finally **4 km South**. In which direction is he from his starting point?
 
-* a) North
+* a) East
 * b) South
-* c) East
+* c) North
 * d) West
 
 ---
@@ -233,10 +233,10 @@ A person walks **6 km East** and then **8 km North**. What is the shortest dista
 
 A person walks **9 km West** and then **12 km South**. What is the shortest distance between his starting point and final position?
 
-* a) 15 km
+* a) 12 km
 * b) 18 km
 * c) 21 km
-* d) 24 km
+* d) 15 km
 
 ---
 
@@ -244,8 +244,8 @@ A person walks **9 km West** and then **12 km South**. What is the shortest dist
 
 A person walks **12 km East** and then **5 km North**. What is the shortest distance between his starting point and final position?
 
-* a) 13 km
-* b) 15 km
+* a) 11 km
+* b) 13 km
 * c) 17 km
 * d) 19 km
 
@@ -266,9 +266,9 @@ A person walks **7 km East** and then **24 km South**. What is the shortest dist
 
 A person walks **15 km West** and then **8 km North**. What is the shortest distance between his starting point and final position?
 
-* a) 17 km
+* a) 12 km
 * b) 19 km
-* c) 21 km
+* c) 17 km
 * d) 23 km
 
 ---
@@ -332,7 +332,7 @@ In the evening, a tree's shadow falls towards the **East**. In which direction i
 
 | Question | Answer |
 |---|---|
-| Q1 | **b) North-East** |
+| Q1 | **a) North-East** |
 | Q2 | **b) South-East** |
 | Q3 | **c) North-West** |
 | Q4 | **c) South-West** |
@@ -344,19 +344,19 @@ In the evening, a tree's shadow falls towards the **East**. In which direction i
 | Q10 | **d) West** |
 | Q11 | **c) √34 km** |
 | Q12 | **b) South-East** |
-| Q13 | **c) North-West** |
+| Q13 | **d) North-West** |
 | Q14 | **d) South-East** |
-| Q15 | **c) East** |
+| Q15 | **a) East** |
 | Q16 | **c) North** |
 | Q17 | **a) North-East** |
 | Q18 | **c) South-West** |
 | Q19 | **c) North** |
 | Q20 | **b) South-West** |
 | Q21 | **a) 10 km** |
-| Q22 | **a) 15 km** |
-| Q23 | **a) 13 km** |
+| Q22 | **d) 15 km** |
+| Q23 | **b) 13 km** |
 | Q24 | **a) 25 km** |
-| Q25 | **a) 17 km** |
+| Q25 | **c) 17 km** |
 | Q26 | **b) North** |
 | Q27 | **b) South** |
 | Q28 | **a) North** |
