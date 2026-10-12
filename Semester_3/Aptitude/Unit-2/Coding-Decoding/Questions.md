@@ -165,7 +165,7 @@ If the letters of the word **MARKET** are arranged in alphabetical order, which 
 
 ### Question 16
 
-If in the English alphabet, every alternate letter starting from D is written in capital letters and the remaining letters in small letters, how will the **2nd day from Monday** be coded?
+If every alternate letter in the given word, starting with the letter D,is written in capital letters and the remaining letters in small letters, how will the **2nd day from Monday** be coded?
 
 * a) wEdNeSdAy
 * b) WeDnEsDaY
@@ -176,7 +176,7 @@ If in the English alphabet, every alternate letter starting from D is written in
 
 ### Question 17
 
-If in the English alphabet, every alternate letter starting from B is written in capital letters and the remaining letters in small letters, how will the word **TABLE** be written?
+If every alternate letter in the given word, starting with the letter B,is written in capital letters and the remaining letters in small letters, how will the word **TABLE** be written?
 
 * a) TaBlE
 * b) tAbLe
