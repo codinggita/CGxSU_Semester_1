@@ -11,6 +11,8 @@ b) Both Conclusions I and II follow
 c) Only Conclusion I follows  
 d) Neither Conclusion I nor Conclusion II follows
 
+---
+
 
 ### Qusetion 2.
 
@@ -24,6 +26,8 @@ a) Only Conclusion I follows
 b) Only Conclusion II follows  
 c) Both Conclusions I and II follow  
 d) Neither Conclusion I nor Conclusion II follows
+
+---
 
 
 ### Qusetion3.
@@ -39,6 +43,8 @@ b) Both Conclusions I and II follow
 c) Neither Conclusion I nor Conclusion II follows
 d) Only Conclusion I follows  
 
+---
+
 
 ### Qusetion 4.
 
@@ -52,6 +58,8 @@ a) Only Conclusion II follows
 b) Only Conclusion I follows  
 c) Both Conclusions I and II follow  
 d) Neither Conclusion I nor Conclusion II follows
+
+---
 
 
 ### Qusetion 5.
@@ -67,6 +75,8 @@ b) Only Conclusion II follows
 c) Both Conclusions I and II follow  
 d) Neither Conclusion I nor Conclusion II follows
 
+---
+
 
 ### Qusetion 6.
 
@@ -81,6 +91,8 @@ b) Both Conclusions I and II follow
 c) Only Conclusion I follows  
 d) Neither Conclusion I nor Conclusion II follows
 
+---
+
 ### Qusetion 7.
 
 **Statement:** No students in Team A are absent today.
@@ -93,6 +105,8 @@ a) Only Conclusion II follows
 b) Only Conclusion I follows  
 c) Both Conclusions I and II follow  
 d) Neither Conclusion I nor Conclusion II follows
+
+---
 
 ### Qusetion 8.
 
@@ -107,6 +121,8 @@ b) Both Conclusions I and II follow
 c) Neither Conclusion I nor Conclusion II follows
 d) Only Conclusion II follows  
 
+---
+
 ### Qusetion 9.
 
 **Statement:** Only graduates are eligible for this position.
@@ -119,6 +135,8 @@ a) Only Conclusion II follows
 b) Both Conclusions I and II follow  
 c) Only Conclusion I follows  
 d) Neither Conclusion I nor Conclusion II follows
+
+---
 
 ### Qusetion 10.
 
@@ -133,6 +151,8 @@ b) Only Conclusion I follows
 c) Both Conclusions I and II follow  
 d) Neither Conclusion I nor Conclusion II follows
 
+---
+
 ### Qusetion 11.
 
 **Statement:** The school has announced that the library will remain closed on Sunday.
@@ -145,6 +165,8 @@ a) Only Conclusion II follows
 b) Only Conclusion I follows  
 c) Both Conclusions I and II follow  
 d) Neither Conclusion I nor Conclusion II follows
+
+---
 
 ### Qusetion 12.
 
@@ -159,6 +181,8 @@ b) Both Conclusions I and II follow
 c) Neither Conclusion I nor Conclusion II follows
 d) Only Conclusion I follows  
 
+---
+
 ### Qusetion 13.
 
 **Statement:** The company has reduced the price of its entry-level laptop.
@@ -171,6 +195,8 @@ a) Only Conclusion I follows
 b) Only Conclusion II follows  
 c) Both Conclusions I and II follow  
 d) Neither Conclusion I nor Conclusion II follows
+
+---
 
 ### Qusetion 14.
 
@@ -185,6 +211,8 @@ b) Both Conclusions I and II follow
 c) Only Conclusion I follows  
 d) Neither Conclusion I nor Conclusion II follows
 
+---
+
 ### Qusetion 15.
 
 **Statement:** The notice says that candidates must bring their admit cards to the examination centre.
@@ -197,6 +225,8 @@ a) Only Conclusion II follows
 b) Only Conclusion I follows  
 c) Both Conclusions I and II follow  
 d) Neither Conclusion I nor Conclusion II follows
+
+---
 
 ### Qusetion 16.
 
@@ -211,6 +241,8 @@ b) Both assumptions are implicit
 c) Neither assumption is implicit
 d) Only Assumption I is implicit  
 
+---
+
 ### Qusetion 17. 
 
 **Statement:** A school has installed water filters so that students can get safer drinking water.
@@ -223,6 +255,8 @@ a) Only Assumption I is implicit
 b) Only Assumption II is implicit  
 c) Both assumptions are implicit  
 d) Neither assumption is implicit
+
+---
 
 ### Qusetion 18. 
 
@@ -237,6 +271,8 @@ b) Both statements are unrelated in every possible situation
 c) Statement I is likely to be a cause and Statement II its effect  
 d) Both statements are effects of a stated third event
 
+---
+
 ### Qusetion 19. 
 
 **Question:** Should schools provide clean drinking water to students?
@@ -249,6 +285,8 @@ a) Only Argument II is strong
 b) Only Argument I is strong  
 c) Both arguments are strong  
 d) Neither argument is strong
+
+---
 
 ### Qusetion 20.
 
