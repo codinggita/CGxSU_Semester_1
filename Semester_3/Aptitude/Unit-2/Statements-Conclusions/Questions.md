@@ -30,7 +30,7 @@ d) Neither Conclusion I nor Conclusion II follows
 ---
 
 
-### Qusetion3.
+### Question 3.
 
 **Statement:** No plastic bottles are made of glass.
 
@@ -40,7 +40,7 @@ II. Some plastic bottles are made of glass.
 
 a) Only Conclusion II follows  
 b) Both Conclusions I and II follow  
-c) Neither Conclusion I nor Conclusion II follows
+c) Neither Conclusion I nor Conclusion II follows  
 d) Only Conclusion I follows  
 
 ---
@@ -118,7 +118,7 @@ II. Some electric cars are in the parking lot.
 
 a) Only Conclusion I follows  
 b) Both Conclusions I and II follow  
-c) Neither Conclusion I nor Conclusion II follows
+c) Neither Conclusion I nor Conclusion II follows  
 d) Only Conclusion II follows  
 
 ---
@@ -178,7 +178,7 @@ II. Anyone who submits a completed form will definitely receive the scholarship.
 
 a) Only Conclusion II follows  
 b) Both Conclusions I and II follow  
-c) Neither Conclusion I nor Conclusion II follows
+c) Neither Conclusion I nor Conclusion II follows  
 d) Only Conclusion I follows  
 
 ---
@@ -238,7 +238,7 @@ II. Every motorcycle ride results in an accident.
 
 a) Only Assumption II is implicit  
 b) Both assumptions are implicit  
-c) Neither assumption is implicit
+c) Neither assumption is implicit  
 d) Only Assumption I is implicit  
 
 ---
@@ -298,7 +298,7 @@ II. Yes, because every student likes exactly the same kind of book.
 
 a) Only Argument II is strong  
 b) Both arguments are strong  
-c) Neither argument is strong
+c) Neither argument is strong  
 d) Only Argument I is strong  
 
 ---
