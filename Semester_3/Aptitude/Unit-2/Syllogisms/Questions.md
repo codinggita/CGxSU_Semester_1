@@ -1,4 +1,5 @@
-### Q1
+### Question 1
+
 **Statements:** All cats are animals. All animals are living beings.
 
 **Conclusions:**  
@@ -10,7 +11,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q2
+---
+
+### Question 2
+
 **Statements:** All pens are stationery items. Some stationery items are expensive.
 
 **Conclusions:**  
@@ -22,7 +26,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q3
+---
+
+### Question 3
+
 **Statements:** No poets are engineers. Some writers are poets.
 
 **Conclusions:**  
@@ -34,7 +41,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q4
+---
+
+### Question 4
+
 **Statements:** Some doctors are singers. All singers are artists.
 
 **Conclusions:**  
@@ -46,7 +56,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q5
+---
+
+### Question 5
+
 **Statements:** No cups are plates. All plates are utensils.
 
 **Conclusions:**  
@@ -58,7 +71,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q6
+---
+
+### Question 6
+
 **Statements:** All roses are flowers. Some flowers are red.
 
 **Conclusions:**  
@@ -70,7 +86,9 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q7
+---
+
+### Question 7
 **Statements:** Some cars are electric. No electric things are cheap.
 
 **Conclusions:**  
@@ -82,7 +100,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q8
+---
+
+### Question 8
+
 **Statements:** All A are B. No B are C.
 
 **Conclusions:**  
@@ -94,7 +115,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q9
+---
+
+### Question 9
+
 **Statements:** Some teachers are writers. Some writers are painters.
 
 **Conclusions:**  
@@ -106,7 +130,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q10
+---
+
+### Question 10
+
 **Statements:** All laptops are devices. All devices are machines.
 
 **Conclusions:**  
@@ -120,7 +147,8 @@ d) Neither follows
 
 ---
 
-### Q11
+### Question 11
+
 **Statements:** No birds are mammals. Some animals are birds.
 
 **Conclusions:**  
@@ -132,7 +160,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q12
+---
+
+### Question 12
+
 **Statements:** All oranges are fruits. Some fruits are sour.
 
 **Conclusions:**  
@@ -144,7 +175,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q13
+---
+
+### Question 13
+
 **Statements:** Some students are athletes. No athletes are lazy.
 
 **Conclusions:**  
@@ -156,7 +190,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q14
+---
+
+### Question 14
+
 **Statements:** All chefs are cooks. Some cooks are musicians.
 
 **Conclusions:**  
@@ -168,7 +205,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q15
+---
+
+### Question 15
+
 **Statements:** No squares are circles. All circles are shapes.
 
 **Conclusions:**  
@@ -180,7 +220,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q16
+---
+
+### Question 16
+
 **Statements:** All A are B. All C are B.
 
 **Conclusions:**  
@@ -192,7 +235,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q17
+---
+
+### Question 17
+
 **Statements:** Some A are B. All B are C.
 
 **Conclusions:**  
@@ -204,7 +250,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q18
+---
+
+### Question 18
+
 **Statements:** No A are B. Some C are A.
 
 **Conclusions:**  
@@ -216,7 +265,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q19
+---
+
+### Question 19
+
 **Statement:** Some A are not B.
 
 **Conclusions:**  
@@ -228,7 +280,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q20
+---
+
+### Question 20
+
 **Statement:** All A are B.
 
 **Conclusions:**  
@@ -242,7 +297,8 @@ d) Neither follows
 
 ---
 
-### Q21
+### Question 21
+
 **Statement:** All roses are flowers.
 
 **Conclusions:**  
@@ -254,7 +310,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q22
+---
+
+### Question 22
+
 **Statement:** No pencils are markers.
 
 **Conclusions:**  
@@ -266,7 +325,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q23
+---
+
+### Question 23
+
 **Statement:** Some actors are dancers.
 
 **Conclusions:**  
@@ -278,7 +340,10 @@ b) Only II follows
 c) Both follow  
 d) Neither follows
 
-### Q24
+---
+
+### Question 24
+
 **Statement:** Some cars are not electric.
 
 **Conclusions:**  
@@ -292,7 +357,8 @@ d) Neither follows
 
 ---
 
-### Q25
+### Question 25
+
 **Statements:** All cats are mammals. No mammals are reptiles.
 
 **Conclusions:**  
@@ -304,7 +370,10 @@ b) Only II is possible
 c) Both are possible  
 d) Neither is possible
 
-### Q26
+---
+
+### Question 26
+
 **Statements:** All A are B. Some B are C.
 
 **Conclusions:**  
@@ -316,7 +385,10 @@ b) Only II is possible
 c) Both are possible  
 d) Neither is possible
 
-### Q27
+---
+
+### Question 27
+
 **Statements:** No A are B. Some C are A.
 
 **Conclusions:**  
@@ -331,7 +403,8 @@ d) Neither is possible
 ---
 
 
-### Q28
+### Question 28
+
 **Statement:** All pens are stationery items.
 
 **Conclusions:**  
@@ -343,7 +416,10 @@ b) Only II follows
 c) Both follow  
 d) Either I or II follows
 
-### Q29
+---
+
+### Question 29
+
 **Statement:** No cats are dogs.
 
 **Conclusions:**  
@@ -352,10 +428,13 @@ II. No animals are cats.
 
 a) Only I follows  
 b) Only II follows  
-c) Both follow  
+c) Neither I nor II follows 
 d) Either I or II follows
 
-### Q30
+---
+
+### Question 30
+
 **Statement:** All A are B.
 
 **Conclusions:**  
@@ -364,7 +443,7 @@ II. Some A are not C.
 
 a) Only I follows  
 b) Only II follows  
-c) Both follow  
+c) Neither I nor II follows  
 d) Either I or II follows
 
 ---
@@ -401,5 +480,5 @@ d) Either I or II follows
 | Q26 | c |
 | Q27 | c |
 | Q28 | d |
-| Q29 | d |
-| Q30 | d |
+| Q29 | c |
+| Q30 | c |
