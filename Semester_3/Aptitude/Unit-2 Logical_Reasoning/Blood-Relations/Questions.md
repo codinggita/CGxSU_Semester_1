@@ -1,3 +1,4 @@
+
 ### Question 1
 
 Pointing to a photograph, a man says, "She is the daughter of my grandfather's only son." How is she related to the man?
