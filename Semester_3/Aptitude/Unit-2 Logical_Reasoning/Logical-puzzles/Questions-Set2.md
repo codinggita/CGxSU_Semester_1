@@ -1,3 +1,4 @@
+
 ### Question 1.
 Four numbers are given below. Three follow the same rule, while one does not. Find the odd one out.
 
