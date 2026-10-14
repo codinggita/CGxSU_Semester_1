@@ -1,3 +1,4 @@
+
 ### Question 1
 
 **Statements:** All cats are animals. All animals are living beings.
