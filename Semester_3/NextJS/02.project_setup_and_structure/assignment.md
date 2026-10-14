@@ -1,41 +1,150 @@
-# Project Setup & Structure — Assignments
+# Next.js E-commerce Web App
 
-## Assignment 1 — App Router Project Structure
+## Assignment 02 — Project Setup & Structure
 
-**Title:** Create and Organize a Next.js App Router Project
+### Objective
 
-**Implementation:**
+Set up the initial Next.js E-commerce Web App using the App Router.
 
-- Create a new Next.js project with TypeScript, ESLint, App Router, import alias, and `src/` directory enabled
-- Inside `src/`, create three folders: `components/`, `lib/`, and `hooks/`
-- In `components/`, create a `Navbar` component with three text items: Home, About, and Contact
-- In `components/`, create a `Footer` component with a copyright line
-- In `lib/`, create a `utils.ts` file and export a `formatDate` function that takes a `Date` and returns it in `DD/MM/YYYY` format
-- In `hooks/`, create a `useWindowWidth.ts` file and export a custom hook that returns the current window width
-- Import `Navbar` and `Footer` into the root layout so they appear on every page
-- Inside `src/app/`, create three routes: `about/`, `services/`, and `contact/` — each returning a heading with that page's name
-- Create a `dashboard/` route with its own layout containing a sidebar with the text "Menu", and a page with a "Dashboard" heading
-- Show a loading message on the `services/` route while it loads
-- Show an error message with a button that retries the render when the `services/` route throws an error
-- Show a custom 404 message for URLs that do not exist — navigate to a non-existent URL and confirm it appears
-- Add any image renamed to `logo.png` inside `public/` and confirm it is accessible from the browser
-- Create a `.env` file with one server-only variable and one browser-exposed variable, then create a `.env.example` with the same keys but empty values
-- Start the development server and verify every route works correctly in the browser
+The purpose of this assignment is to create the project foundation and understand the basic project structure.
+
+Do not implement features that belong to later Next.js topics.
 
 ---
 
-## Assignment 2 — Pages Router Project Structure
+## Requirements
 
-**Title:** Create and Explore a Next.js Pages Router Project
+### 1. Create the Next.js Project
 
-**Implementation:**
+Create a new Next.js project with:
 
-- Create a new Next.js project with TypeScript, ESLint, Pages Router, and import alias enabled — without the `src/` directory
-- Inside `pages/`, create three route files: `about.tsx`, `services.tsx`, and `contact.tsx` — each returning a heading with that page's name
-- Inside `pages/`, create a `products/` folder containing `index.tsx` and `[id].tsx` — each returning a heading with that page's name
-- Create a `_app.tsx` file that imports `globals.css` and wraps the application component
-- Create a `_document.tsx` file with a basic custom document structure
-- Create a `404.tsx` file with a custom not-found message — navigate to a non-existent URL and confirm it appears
-- Add any image renamed to `banner.jpg` inside `public/images/` and confirm it is accessible directly by its path in the URL
-- Create a `.env` file with one server-only variable and one `NEXT_PUBLIC_` variable, then create a `.env.example` with the same keys but empty values
-- Start the development server and verify every route works correctly in the browser
+- TypeScript
+- ESLint
+- Tailwind CSS
+- App Router
+- `src/` directory
+- Import alias
+
+The project must use the App Router.
+
+---
+
+### 2. Organize the Project Structure
+
+Create the basic project structure required for the application.
+
+Inside `src/`, organize the project with:
+
+- `app/`
+- `components/`
+- `lib/`
+- `hooks/`
+- `types/`
+
+Create a `public/images/` directory for static assets.
+
+Keep these directories empty unless a file is required by the initial project setup.
+
+---
+
+### 3. Update the Home Page
+
+Update the default home page to represent the E-commerce Web App.
+
+The homepage should contain:
+
+- Store name
+- Short description
+- A simple hero section
+- A section representing featured products (Optional)
+
+The page does not need actual product data or product functionality.
+
+---
+
+### 4. Add a Static Asset
+
+Add a logo image for the E-commerce Web App inside the `public/images/` directory.
+
+Display the logo on the homepage.
+
+---
+
+### 5. Configure Environment Variables
+
+Create:
+
+- `.env.local`
+- `.env.example`
+
+Add environment variables representing:
+
+- Store name
+- Database URL
+- A browser-exposed store name
+
+The `.env.example` file must contain the required variable names without actual values.
+
+Do not expose any secret or private value through a `NEXT_PUBLIC_` variable.
+
+Do not connect the application to a database at this stage.
+
+---
+
+### 6. Verify the Project
+
+Start the development server and verify that:
+
+- The application runs successfully.
+- The homepage loads correctly.
+- The E-commerce content is displayed.
+- The logo is displayed.
+- The project uses the App Router.
+- The project structure follows the required organization.
+- No TypeScript or compilation errors are present.
+
+---
+
+## Expected Project Structure
+
+The project should have the following basic structure:
+
+```text
+ecommerce/
+├── src/
+│   ├── app/
+│   ├── components/
+│   ├── lib/
+│   └── hooks/
+│
+├── public/
+│   └── images/
+│
+├── next.config.ts
+├── package.json
+├── tsconfig.json
+├── .env.local
+└── .env.example
+```
+
+---
+
+## Restrictions
+
+Do not implement:
+
+- Layouts
+- Navigation functionality
+- Product routes
+- Dynamic routes
+- Product API
+- Database integration
+- Authentication
+- Cart functionality
+- State management
+- Server Actions
+- Custom React hooks
+- Advanced routing
+- Pages Router
+
+These concepts will be implemented in later assignments when their corresponding topics are taught.

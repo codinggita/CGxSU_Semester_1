@@ -371,15 +371,20 @@ switch (light) {
 ---
 
 ### 6. Ternary Operator (`? :`)
-
-A shorter way to write a simple `if...else` statement.
+A shorter way to write a simple `if...else` statement.  
+You can also nest ternary operators to handle `if…else if…else` logic (use carefully — keep it readable).
 
 **When to use:**  
-Only for simple true/false decisions (usually for assigning a value). Avoid nesting ternary operators.
+Only for simple true/false decisions (usually for assigning a value). Avoid deep nesting of ternary operators.
 
 **Syntax:**
 ```js
 condition ? valueIfTrue : valueIfFalse
+```
+
+**Nested syntax (if…else if…else):**
+```js
+condition1 ? value1 : condition2 ? value2 : value3
 ```
 
 #### Examples
@@ -408,10 +413,31 @@ let message = age >= 18 ? "Can Vote" : "Cannot Vote";
 console.log(message);
 ```
 
+**Example 4 (Nested Ternary – if…else if…else)**  
+**Problem:** Check whether a number is positive, negative, or zero.  
+```js
+let num = -7;
+let result = num > 0 ? "Positive" : num < 0 ? "Negative" : "Zero";
+console.log(result);   // Output: Negative
+```
+
+**Example 5 (Nested Ternary – if…else if…else)**  
+**Problem:** Check student result based on marks (≥ 35).  
+- Marks > 35 → “Passed”  
+- Marks === 35 → “Just Passed”  
+- Marks < 35 → “Failed”  
+```js
+let marks = 35;
+let result = marks > 35 ? "Passed" : marks === 35 ? "Just Passed" : "Failed";
+console.log(result);   // Output: Just Passed
+```
+
 #### Activity Time – Ternary Operator
 1. Check whether a number is positive or negative using ternary.
 2. Assign “Pass” or “Fail” based on marks (≥ 35).
 3. Find the minimum of two numbers using ternary operator.
+4. Check if a number is positive, negative, or zero using nested ternary.
+5. Based on marks, print “Passed”, “Just Passed” (exactly 35), or “Failed” using nested ternary.
 
 ---
 

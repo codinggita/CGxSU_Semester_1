@@ -1,25 +1,21 @@
 # Introduction to Next.js — Interview Questions
 
-1. What is Next.js, and what does it provide on top of React? Or what is the main difference between React and Next.js?
+1. What is Next.js, how is it related to React, and does Next.js replace React? Or what is the main difference between React and Next.js?
 
-2. Why is React considered a library while Next.js is considered a framework?
+2. What additional concerns do developers need to handle when building a large React SPA?
 
-3. What problems can arise when building a large application with a traditional React SPA?
+3. What is file-based routing in Next.js?
 
-4. Why would you choose Next.js over a traditional React SPA?
+4. What rendering strategies does Next.js support?
 
-5. What is file-based routing in Next.js?
+5. What built-in performance optimizations does Next.js provide?
 
-6. What rendering strategies does Next.js support?
+6. How does Next.js support SEO and metadata?
 
-7. What are Route Handlers in Next.js?
+7. What types of applications are well suited for Next.js?
 
-8. What built-in performance optimizations does Next.js provide?
+8. What is the difference between a library and a framework?
 
-9. How does Next.js support SEO and metadata?
+9. How can Next.js be used for full-stack development?
 
-10. What types of applications are well suited for Next.js?
-
-11. Does Next.js replace React? Explain the relationship between React and Next.js.
-
-12. Does a Next.js application necessarily require a separate backend project?
+10. Why is TypeScript commonly used with Next.js?

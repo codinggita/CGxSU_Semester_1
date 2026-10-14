@@ -326,9 +326,6 @@ Using absorption:
 
        A(A + B)
 
-3. Find the 1-minterms:
-
-       F(A,B) = Σm(1,2)
 
 ### Easy-Medium
 
@@ -389,25 +386,20 @@ Using absorption:
 
 15. Convert the truth table into both SOP and POS and verify that both expressions produce the same output.
 
-### Quick Revision
+16. Find the canonical POS expression:
 
-    SOP → Sum of Products
-    POS → Product of Sums
+F(A,B,C)=ΠM(0,2,6)
 
-    Minterms → Rows where F = 1
-    Maxterms → Rows where F = 0
 
-    SOP notation → Σm
-    POS notation → ΠM
 
-    Important laws:
+17.
 
-    A + AB = A
-    A(A + B) = A
-    A + A' = 1
-    AA' = 0
+F(A,B,C)=Σm(0,1,4,5,6,7)
 
-    De Morgan:
+Q18.
 
-    (A + B)' = A'B'
-    (AB)' = A' + B'
+F(A,B,C)=Σm(0,2,5,7)
+
+Q19.
+
+F(A,B,C)=Σm(1,2,3,6,7)

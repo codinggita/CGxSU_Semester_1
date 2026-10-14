@@ -1,21 +1,128 @@
-# Data Fetching & UI States — Assignments
+# Next.js E-commerce Web App
 
-## Assignment — Data Fetching and UI States
+## Assignment 06 — Data Fetching & UI States
 
-**Title:** Build a Product Store With Server and Client Data Fetching, Loading, Error, and Not-Found States
+Extend the existing e-commerce application by implementing a simple Express API and consuming it from Next.js while handling the major UI states for product pages.
 
-**Implementation:**
+### 1. Simple Express API Server
 
-- Create a new Next.js project with App Router and `src/` directory enabled
-- Create a `products/page.tsx` as a Server Component that fetches a list of products from `https://fakestoreapi.com/products` and renders each product's title and price
-- Add a `products/loading.tsx` that displays a loading message — confirm it appears while the page is loading
-- Add a `products/error.tsx` that displays an error message and a "Try again" button using the `reset` function — simulate an error by throwing inside the page and confirm the error UI appears
-- Create a `products/[id]/page.tsx` as a Server Component that reads the `id` from `params`, fetches a single product from `https://fakestoreapi.com/products/{id}`, and renders the product title, price, and description
-- Add a `products/[id]/not-found.tsx` with a "Product not found" message — call `notFound()` inside the page when the fetched product does not exist and confirm the not-found UI appears
-- Add a `products/[id]/error.tsx` that displays an error message and a "Try again" button
-- Create a `store/page.tsx` as a Server Component that fetches both products and categories from `https://fakestoreapi.com/products` and `https://fakestoreapi.com/products/categories` in parallel using `Promise.all` — render both lists on the page
-- Create a `search/page.tsx` as a Server Component that reads a `?category=` search parameter from the URL and fetches products from `https://fakestoreapi.com/products/category/{category}` when a category is provided, or all products when it is not — render the results on the page
-- Create a `components/LiveSearch.tsx` as a Client Component that uses `useState` and `useEffect` to fetch products from `https://fakestoreapi.com/products` after the component loads and renders them as a list — use an explicit TypeScript type for the state
-- Create a `dashboard/page.tsx` that uses `redirect("/login")` when a variable `isLoggedIn` is set to `false` — confirm the redirect works and confirm `redirect()` is not inside a `try/catch` block
-- Create a `login/page.tsx` with a heading "Login Page" to serve as the redirect destination
-- Wrap the slow product list section on the `store/page.tsx` inside a `<Suspense>` boundary with a fallback message — confirm the rest of the page renders before the slow section appears
+Create a small Express server to expose the existing `product.json` dataset through HTTP endpoints.
+
+- Use the provided product JSON file containing the existing 6,000+ product dataset.
+- Create the product listing endpoint:
+
+    `GET /products?category=electronics&subCategory=earphone`
+
+- Support filtering by `category` and `subCategory` through query parameters.
+- Add pagination support to the `/products` endpoint.
+- Return the products for the requested page along with pagination information required by the Next.js application.
+- Create the product detail endpoint:
+
+    `GET /products/:id`
+
+- Return the requested product when it exists.
+- Handle a product ID that does not exist appropriately so the Next.js application can display its not-found state.
+- Keep the Express server simple and limited to these two endpoints.
+
+### 2. Next.js Product Data Fetching
+
+- Update the existing product listing page to fetch product data from the Express API.
+- Update the existing product detail page to fetch the product from the Express API based on its dynamic route parameter.
+- Use the existing `Product` and `ProductVariant` types and product data structure.
+- Ensure product information displayed on the page comes from the API response.
+- Use query parameters on the product listing page to support category, subcategory, and pagination.
+- Keep initial product data fetching on the server where appropriate.
+
+### 3. Route-Level Loading UI
+
+- Add a `loading.tsx` file for the products section.
+- Provide a clear loading state while the products route is being prepared.
+- Add loading UI for the product detail route where appropriate.
+
+### 4. Suspense-Based Loading UI
+
+- Identify one slower or independently loaded section of the product page.
+- Place that section behind a Suspense boundary.
+- Provide a meaningful fallback UI for that section.
+- Ensure the rest of the page can be displayed independently of the slower section.
+
+### 5. Error Handling
+
+- Add route-level `error.tsx` handling for the products section.
+- Display a user-friendly error message when product data cannot be loaded.
+- Provide a retry action using the error boundary's reset functionality.
+- Ensure failed API requests result in the appropriate error state.
+
+### 6. Product Not Found
+
+- Handle requests for products that do not exist.
+- Trigger the appropriate not-found behavior when a requested product cannot be found.
+- Create a product-specific `not-found.tsx` UI.
+- Clearly communicate that the requested product does not exist.
+
+### 7. Redirect Based on a Server-Side Condition
+
+- Add a page or existing route where a server-side condition determines whether the user should continue.
+- Redirect the user to the appropriate route when the condition is not satisfied.
+- Keep the redirect behavior on the server.
+
+### 8. Complete UI State Handling
+
+Ensure the product experience handles these states appropriately:
+
+```text
+Request
+   ↓
+Loading
+   ↓
+Success
+   ├── Product displayed
+   │
+   ├── Slow section → Suspense fallback
+   │
+   ├── Request failure → Error UI
+   │
+   └── Product missing → Not Found UI
+```
+
+### 9. Verification
+
+Verify that:
+
+- The Express server starts successfully.
+- The `/products` endpoint returns the expected product data.
+- Category and subcategory filtering work correctly.
+- Pagination works correctly.
+- The `/products/:id` endpoint returns the correct product.
+- Invalid product IDs are handled appropriately.
+- The Next.js product listing fetches data from the Express API.
+- Product detail data is based on the dynamic route parameter and API response.
+- Query parameters affect the product listing appropriately.
+- Route-level loading UI appears while appropriate routes are loading.
+- Suspense displays fallback UI for the selected slow section.
+- Errors display the correct error UI.
+- The retry action works.
+- Invalid product IDs display the product not-found UI.
+- Redirect behavior works when its condition is not satisfied.
+- Existing navigation and layouts continue to work correctly.
+
+### Restrictions
+
+Do not implement:
+
+- Authentication
+- Authorization systems
+- Database integration
+- Server Actions
+- Cart persistence
+- Global state management
+- Checkout
+- Payments
+- Orders
+- Reviews functionality
+- Caching and revalidation
+- Advanced SEO or metadata
+- External data-fetching libraries
+- Additional Express API endpoints beyond the two required endpoints
+
+Use the concepts covered in this topic and the existing e-commerce project structure only.

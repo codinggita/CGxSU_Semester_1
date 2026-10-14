@@ -2,9 +2,9 @@
 
 1. What is a Server Component in the App Router?
 
-2. What is a Client Component, and what does `"use client"` do?
+2. What is a Client Component?
 
-3. Why can a Server Component import a Client Component, but not the other way around?
+3. What does `"use client"` do?
 
 4. Why does `"use client"` on one component not make the entire route client-side?
 
@@ -25,7 +25,3 @@
 12. When should you default to a Server Component instead of a Client Component?
 
 13. Why should Client Components stay as small as possible in the tree?
-
-14. A shared file exports both a helper and a Client Component with `"use client"`. What bundling risk appears for Server Components that import the helper?
-
-15. How does the App Router model differ from the Pages Router regarding server vs client rendering?

@@ -1,31 +1,27 @@
 # Layouts — Interview Questions
 
-1. What is a layout in the App Router, and how is it different from a page?
+1. What is a layout in the App Router, and how is it different from `page.tsx`?
 
-2. Why must the root layout include `<html>` and `<body>` tags?
+2. Why must the root layout include `<html>` and `<body>`?
 
-3. Why does a layout stay mounted when navigating between sibling routes under the same parent?
+3. What does the `children` prop represent in a layout?
 
-4. How do nested layouts share one root shell but give each section its own chrome?
+4. What happens to a layout when navigating between routes that share the same layout segment (for example, `/dashboard` to `/dashboard/settings`)?
 
-5. What is the difference between a layout and a template in Next.js?
+5. How does a nested layout hierarchy work from root layout down to the page?
 
-6. Why should page-specific UI not live inside a shared layout?
+6. What are route groups like `(marketing)`, and why do they not appear in the URL?
 
-7. When is creating extra layout files unnecessary overhead?
+7. Where should global UI (navbar, footer, global CSS) live versus section-specific UI (dashboard sidebar)?
 
-8. An interactive sidebar sits inside a Server Component layout. Why mark only the sidebar as `"use client"` instead of the whole layout?
+8. Why should UI that belongs to only one page stay in `page.tsx` instead of a shared layout?
 
-9. How can the same route tree use different layouts for admin and marketing without changing URLs?
+9. When is adding another nested layout file unnecessary?
 
-10. A team swaps a layout for a template to fix state surviving navigation. What side effect do templates add?
+10. A dashboard sidebar needs `useState`. Why keep the layout as a Server Component and mark only the sidebar as `"use client"`?
 
-11. Where should global navigation live versus section-specific sidebars?
+11. What is the purpose of the root layout, and what makes it different from a nested layout?
 
-12. Why extract repeated header/footer markup into components instead of duplicating it in every layout?
+12. If an application has a root layout, product layout, and product-detail page, in what order are they rendered?
 
-13. Can a layout fetch data on the server? Why is that useful for shared section UI?
-
-14. What happens to layout state when you navigate from `/dashboard` to `/dashboard/settings`?
-
-15. A layout wraps many pages but one page needs a completely different shell. What routing or layout pattern helps?
+13. Why is it generally better to keep a layout as a Server Component and move only interactive parts into Client Components?
