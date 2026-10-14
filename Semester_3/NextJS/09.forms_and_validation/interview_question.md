@@ -4,28 +4,26 @@
 
 2. Why is client-side validation alone not enough for production forms?
 
-3. Why must every `<input>` in a Server Action form have a `name` attribute?
+3. Why must every form field that should be submitted have a `name` attribute?
 
-4. What does `useFormStatus()` give you that local `useState` on submit does not?
+4. What does `useFormStatus()` help us do during form submission?
 
-5. How should server validation errors be returned so a form can show field-level messages?
+5. How should validation errors be structured so that the UI can display messages for individual fields?
 
-6. When is HTML5 validation useful, and when should you still validate on the server?
+6. When is HTML validation useful, and why is server-side validation still necessary?
 
-7. What is the difference between a generic form error and a field-level error?
+7. What is the difference between a generic form error and a field-level error? Which is more helpful to the user, and why?
 
-8. A form uses React Hook Form on the client and a Server Action on submit. Where must Zod run at minimum?
+8. If a form uses React Hook Form with Zod on the client and submits data to a Server Action, where must validation run to protect the application?
 
-9. Why use Zod instead of hand-written validation checks scattered across files?
+9. Why use Zod schemas instead of scattering manual validation checks throughout the application?
 
-10. When is React Hook Form worth adding instead of plain controlled inputs?
+10. When is React Hook Form useful, and when might a simple HTML form be sufficient?
 
-11. How do accessible form errors differ from only changing input border color?
+11. Why is changing an input's border color alone insufficient for accessible form validation?
 
-12. Why should labels be connected to inputs with `htmlFor` and `id`?
+12. Why should labels be associated with inputs using `htmlFor` and `id`?
 
-13. A submit button sits outside the `<form>` element. What attribute connects it correctly?
+13. Why should a form display a loading or disabled state while a submission is being processed?
 
-14. Why show loading/disabled state during form submission?
-
-15. A signup form validates only in the browser and shows one red banner on failure. What production problems remain?
+14. A signup form validates only in the browser and displays a single red error banner when submission fails. What problems remain, and how could the form provide better feedback?

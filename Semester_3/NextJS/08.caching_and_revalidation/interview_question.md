@@ -6,26 +6,26 @@
 
 3. How is request memoization different from the Data Cache?
 
-4. What is the Client Router Cache, and how can it show stale UI after server data was updated?
+4. What is the Client Router Cache, and why can it affect client-side navigation?
 
-5. Two Server Components in one request call the same `fetch()` with identical options. How many upstream requests happen?
+5. How does request memoization prevent duplicate requests when multiple Server Components request the same data during a render?
 
-6. What do `cache: "force-cache"`, `cache: "no-store"`, and `next: { revalidate: N }` mean for fetch?
+6. What do `cache: "force-cache"`, `cache: "no-store"`, and `next: { revalidate: N }` mean for `fetch()`?
 
-7. How does caching interact with static versus dynamic rendering?
+7. How does caching interact with static and dynamic rendering?
 
-8. When should you use `revalidatePath()` instead of `revalidateTag()`?
+8. What is the difference between time-based and on-demand revalidation?
 
-9. What is the difference between time-based and on-demand revalidation?
+9. When should you use `revalidatePath()` instead of `revalidateTag()`?
 
-10. Why are cache tags useful when one dataset appears on many pages?
+10. Why are cache tags useful when the same dataset appears on multiple pages?
 
-11. When would you choose `updateTag()` over `revalidateTag(tag, "max")` after a mutation?
+11. What happens conceptually when `revalidatePath()` is called for a route?
 
-12. A Server Action calls `revalidatePath()`, but a TanStack Query list on the client stays stale. Why can both be wrong at once?
+12. What happens conceptually when `revalidateTag()` is called for a tagged dataset?
 
-13. A fetch uses `cache: "no-store"`, but client navigation still shows old HTML. What other cache layer could be involved?
+13. A fetch uses `cache: "no-store"`, but navigating back to a page still shows previously received UI. Which other cache layer could be involved, and why?
 
 14. Why is choosing a very long revalidation time risky for semi-fresh content?
 
-15. You updated a product but the wrong page still looks cached. What revalidation mistakes should you check?
+15. You updated a product, but the wrong page still appears to contain old data. What caching or revalidation mistakes should you check?
