@@ -460,7 +460,7 @@ const registerUser = async (req, res) => {
   }
 };
 
-// Login user
+
 const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
