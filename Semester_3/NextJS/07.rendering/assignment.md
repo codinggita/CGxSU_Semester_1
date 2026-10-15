@@ -1,6 +1,6 @@
 # Next.js E-commerce Web App
 
-## Assignment 07 — Rendering in Next.js
+## Assignment 07 & 08 — Rendering in Next.js
 
 ### Objective
 
