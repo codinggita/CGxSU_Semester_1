@@ -502,15 +502,340 @@ Answer the following:
 ---
 
 
+## Section 8: Function Declaration Hoisting (5 Questions)
+
+### Q36.
+Predict the output:
+```js
+sayHello();
+function sayHello() {
+    console.log("Hello from CodingGita");
+}
+```
+Explain why this works even though the function is called before it is written.
+
+### Q37.
+What will be the output? Explain the difference from a normal `var` variable.
+```js
+display();
+function display() {
+    console.log("Function is hoisted completely");
+}
+```
+
+### Q38.
+Find and explain the issue (if any):
+```js
+greet();
+var greet = function() {
+    console.log("Hi");
+};
+```
+Why does this behave differently from a function declaration?
+
+### Q39.
+Predict the output:
+```js
+console.log(typeof myFunc);
+function myFunc() {
+    return "I am hoisted";
+}
+console.log(myFunc());
+```
+
+### Q40.
+Write a small program that:
+- Calls a function **before** its declaration.
+- The function prints a message using a global variable.
+- Demonstrates that the entire function (name + body) is available due to hoisting.
+
+---
+
+## Section 9: Scope Chain (5 Questions)
+
+### Q41.
+Predict the output and explain the lookup process:
+```js
+var institute = "CodingGita";
+function department() {
+    var dept = "CSE";
+    function batch() {
+        var year = 2025;
+        console.log(year);
+        console.log(dept);
+        console.log(institute);
+    }
+    batch();
+}
+department();
+```
+
+### Q42.
+What will happen when this code runs? Explain using the scope chain.
+```js
+var globalVar = "I am global";
+function outer() {
+    var outerVar = "I am outer";
+    function inner() {
+        console.log(globalVar);
+        console.log(outerVar);
+        console.log(innerVar); // this line
+    }
+    inner();
+}
+outer();
+```
+
+### Q43.
+Identify which variables are accessible inside `deep()` and which are not:
+```js
+var a = 1;
+function level1() {
+    var b = 2;
+    function level2() {
+        var c = 3;
+        function deep() {
+            console.log(a, b, c);
+        }
+        deep();
+    }
+    level2();
+}
+level1();
+```
+
+### Q44.
+Predict the output:
+```js
+var x = "global";
+function first() {
+    var x = "first";
+    function second() {
+        console.log(x);
+    }
+    second();
+}
+first();
+console.log(x);
+```
+Explain why the value of `x` changes depending on the location of `console.log`.
+
+### Q45.
+Write a nested function structure (at least 3 levels) that prints:
+- A variable from the innermost function
+- A variable from the middle function
+- A variable from the outermost function / global scope  
+Demonstrate the scope chain clearly.
+
+---
+
+## Section 10: Variable Shadowing (5 Questions)
+
+### Q46.
+Predict the output:
+```js
+var score = 50;
+function test() {
+    var score = 90;
+    console.log(score);
+}
+test();
+console.log(score);
+```
+Explain what “shadowing” means in this example.
+
+### Q47.
+What will be printed?
+```js
+var name = "Global Name";
+function show() {
+    var name = "Local Name";
+    console.log(name);
+}
+show();
+console.log(name);
+```
+Does the local variable permanently change the global one? Why or why not?
+
+### Q48.
+Find the output and explain:
+```js
+var value = 10;
+function update() {
+    value = 20;          // no var
+    console.log(value);
+}
+update();
+console.log(value);
+```
+Compare this with the previous questions (where `var` was used inside the function).
+
+### Q49.
+Predict the complete output:
+```js
+var color = "Blue";
+function changeColor() {
+    var color = "Red";
+    console.log("Inside:", color);
+}
+changeColor();
+console.log("Outside:", color);
+```
+
+### Q50.
+Write a program that demonstrates variable shadowing:
+- Declare a global variable `marks = 70`.
+- Inside a function, declare another variable `marks = 95`.
+- Print both values (inside and outside the function) so the difference is clear.
+
+---
+
+## Section 11: Nested Functions (5 Questions)
+
+### Q51.
+Predict the output:
+```js
+function outer() {
+    var teacher = "Kartik Sir";
+    function inner() {
+        var student = "Jenil";
+        console.log(student);
+        console.log(teacher);
+    }
+    inner();
+}
+outer();
+```
+Can you access `teacher` or `student` outside `outer()`? Explain.
+
+### Q52.
+What will this code print? Explain the accessibility of each variable.
+```js
+function parent() {
+    var a = "Parent";
+    function child() {
+        var b = "Child";
+        function grandchild() {
+            var c = "Grandchild";
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+        grandchild();
+    }
+    child();
+}
+parent();
+```
+
+### Q53.
+Find the error(s):
+```js
+function outer() {
+    var secret = "Hidden";
+    function inner() {
+        console.log(secret);
+    }
+}
+inner();
+outer();
+```
+Why does the order and placement of the function call matter?
+
+### Q54.
+Predict the output:
+```js
+function createMessage() {
+    var greeting = "Hello";
+    function show() {
+        console.log(greeting + " students");
+    }
+    return show;
+}
+var messageFunc = createMessage();
+messageFunc();
+```
+Explain how the inner function still has access to `greeting`.
+
+### Q55.
+Write a function named `studentInfo()` that:
+- Declares a local variable `name`
+- Declares a local variable `course`
+- Contains an inner function `display()` that prints both variables
+- Calls the inner function from the outer function  
+(This is the mini-assignment style question from the notes.)
+
+---
+
+## Section 12: Common Errors with `var` (5 Questions)
+
+### Q56.
+What is the problem in this code?
+```js
+function test() {
+    x = 100; // missing var
+}
+test();
+console.log(x);
+```
+Explain the unintended side effect.
+
+### Q57.
+Predict the output and explain the misconception:
+```js
+if (true) {
+    var x = 20;
+}
+console.log(x);
+```
+Why do beginners often expect an error here?
+
+### Q58.
+What happens here?
+```js
+console.log(a);
+var a = 10;
+```
+Explain why there is no `ReferenceError` and what value is printed.
+
+### Q59.
+Find the issue:
+```js
+var x = 10;
+var x = 20;
+console.log(x);
+```
+Is this allowed with `var`? Why can it become confusing?
+
+### Q60.
+Rewrite the following code to avoid the common error of accidentally creating a global variable, and also make the variable properly scoped:
+```js
+function calculate() {
+    total = 0;
+    for (var i = 1; i <= 5; i++) {
+        total = total + i;
+    }
+    console.log(total);
+}
+calculate();
+console.log(total); // currently works, but should not
+```
+
+---
+
 ## Submission Instructions
 
 1. Write your answers in a notebook or a JavaScript file.
-2. For output-based questions, write the complete output.
-3. For error-based questions, identify the error and explain its cause.
-4. For coding questions, write the complete working program.
-5. For questions asking you to explain a concept, provide a short explanation in your own words.
+2. For output-based questions, write the **complete output**.
+3. For error-based questions, clearly identify the error and explain its cause.
+4. For coding questions, write the **complete working program**.
+5. For explanation questions, write a short answer in your own words.
+6. Try predicting the output **before** running the code.
+
+---
 
 **Important:** This assignment covers `"var"` and function declaration hoisting. Questions involving `"let"` and `"const"` are included only where needed to compare block scope with `"var"`.
 
-**Tip:** Try predicting the output before running your code. This will help you understand JavaScript scope and hoisting more effectively.
-```
+**Tip1:** Try predicting the output before running your code. This will help you understand JavaScript scope and hoisting more effectively.
+
+**Tip2:** Focus on understanding *why* the scope chain works the way it does and how shadowing + hoisting interact. These concepts are the foundation for closures later.
