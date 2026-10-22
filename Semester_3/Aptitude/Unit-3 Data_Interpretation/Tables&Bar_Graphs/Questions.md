@@ -1,12 +1,6 @@
+## Table 1 — Books Sold by a Store\
 
-### Table 1: Books Sold by a Store
-
-| Month | Fiction | Science | History |
-|---|---:|---:|---:|
-| January | 120 | 80 | 100 |
-| February | 150 | 90 | 110 |
-| March | 130 | 100 | 120 |
-| April | 160 | 110 | 130 |
+![](graphs/graph_01_books.png)
 
 **Q1.** How many books were sold in total in January?
 
@@ -50,14 +44,11 @@ b) 28.6%
 c) 30%  
 d) 35%
 
-### Table 2: Monthly Production of Three Factories
+---
 
-| Month | Factory A | Factory B | Factory C |
-|---|---:|---:|---:|
-| May | 200 | 180 | 220 |
-| June | 240 | 200 | 260 |
-| July | 280 | 240 | 280 |
-| August | 300 | 280 | 320 |
+## Table 2 — Monthly Production of Three Factories
+
+![](graphs/graph_02_factory_production.png)
 
 **Q7.** What was Factory B's total production over the four months?
 
@@ -103,19 +94,11 @@ d) 66⅔%
 
 ---
 
-## Set 2: Simple Bar Graph Questions
+## Simple Bar Graph — Students Enrolled in Five Courses
 
-### Bar Graph 1: Students Enrolled in Five Courses
+![Bar graph: students enrolled in five courses](graphs/graph_03_course_enrolment.png)
 
-Each block `█` represents **10 students**.
-
-```text
-Web Development   ████████████  120
-Data Analytics    ████████       80
-Cybersecurity     ██████████    100
-Cloud Computing   ██████         60
-UI/UX Design      █████████      90
-```
+Each value is the number of students enrolled.
 
 **Q13.** Which course has the highest enrolment?
 
@@ -161,18 +144,11 @@ d) 5 : 4
 
 ---
 
-## Set 3: Double Bar Graph Questions
+## Double Bar Graph — Sales of Two Shops
 
-### Bar Graph 2: Sales of Two Shops
+![Double bar graph: monthly sales of two shops](graphs/graph_04_two_shops_sales.png)
 
 Values show the number of items sold.
-
-| Month | Shop A | Shop B |
-|---|---:|---:|
-| January | 80 | 70 |
-| February | 100 | 90 |
-| March | 90 | 110 |
-| April | 120 | 100 |
 
 **Q19.** What was Shop A's total sales over the four months?
 
@@ -218,19 +194,11 @@ d) 60%
 
 ---
 
-## Set 4: Stacked Bar Graph / Combined Data
+## Stacked Bar Graph — Daily Deliveries by Two Teams
 
-### Table 3: Daily Deliveries by Two Teams
+![Stacked bar graph: daily deliveries by two teams](graphs/graph_05_team_deliveries_stacked.png)
 
-Each row gives the two parts that can be shown as one stacked bar.
-
-| Day | Team X | Team Y |
-|---|---:|---:|
-| Monday | 30 | 20 |
-| Tuesday | 40 | 25 |
-| Wednesday | 35 | 30 |
-| Thursday | 45 | 35 |
-| Friday | 50 | 40 |
+Each bar's total height is the combined deliveries by Team X and Team Y.
 
 **Q25.** What was the total number of deliveries on Thursday?
 
@@ -280,31 +248,31 @@ d) 80%
 
 1. **b) 300** 
 2. **c) 560** 
-3. **b) 95**
+3. **b) 95** 
 4. **a) 10 : 13** 
 5. **c) 33⅓%** 
-6. **b) 28.6%**
+6. **b) 28.6%** 
 7. **c) 900** 
-8. **d) August** 
+8. **d) August**
 9. **c) 120**
 10. **c) 255** 
 11. **a) 17 : 18** 
 12. **b) 55.6%** 
-13. **a) Web Development** 
+13. **a) Web Development**
 14. **c) 450** 
 15. **c) 60** 
 16. **c) 90** 
 17. **b) 22.2%** 
-18. **a) 8 : 9**
+18. **a) 8 : 9** 
 19. **c) 390** 
 20. **b) March only** 
 21. **c) 190** 
 22. **b) 20** 
 23. **b) 92.5** 
-24. **c) 50%** 
+24. **c) 50%**
 25. **c) 80** 
-26. **d) Friday**
+26. **d) Friday** 
 27. **c) 200** 
-28. **b) 44.4%** 
-29. **a) 4 : 3** 
-30. **d) 80%** 
+28. **b) 44.4%**
+29. **a) 4 : 3**
+30. **d) 80%**
