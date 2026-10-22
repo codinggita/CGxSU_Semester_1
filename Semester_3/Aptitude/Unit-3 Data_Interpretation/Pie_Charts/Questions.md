@@ -4,7 +4,10 @@
 
 **Q1.** What percentage of monthly income is spent on food?
 
-A) 20%   B) 25%   C) 30%   D) 35%
+A) 20%   
+B) 25%  
+C) 30% 
+D) 35%
 
 **Q2.** Which category accounts for the second-largest share?
 
