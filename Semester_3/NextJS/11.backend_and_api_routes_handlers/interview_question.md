@@ -1,22 +1,22 @@
-# Backend & API Route Handlers — Interview Questions
+# 11. Backend & API Route Handlers --- Interview Questions
 
-1. What is the App Router file convention for an API endpoint at `/api/products`?
+1.  In the Next.js App Router, which file defines the `/api/products` endpoint, and how does its URL map to the folder structure?
 
-2. How do Route Handlers map HTTP methods like GET and POST to exported functions?
+2.  How does a Route Handler use named exports such as `GET` and `POST` to handle HTTP methods?
 
-3. How does a Route Handler differ from a Server Action for the same create-product flow?
+3.  What is the difference between a `page.tsx` file and a `route.ts` file?
 
-4. Why should Route Handlers stay thin instead of containing all business logic?
+4.  How do you read a query parameter such as `category` from a Route Handler's request URL?
 
-5. In the App Router, why is `context.params` a Promise in Route Handlers?
+5.  A request is sent to `/api/products/123`. How can the handler read the dynamic `id` parameter in a modern Next.js App Router project?
 
-6. What is the difference between Web `Request`/`Response` and Express `req`/`res`?
+6.  Why must `request.json()` be awaited, and what can happen if the request body contains invalid JSON?
 
-7. A webhook from Stripe hits your app. Why is a Route Handler usually the right entry point?
+7.  Why is parsing a JSON request body not enough to ensure that the submitted product data is valid?
 
-8. A mobile app needs the same backend as your Next.js site. Which backend pattern fits best?
+8.  A mobile app needs the same backend as your Next.js site. Which backend pattern fits best?
 
-9. Where should shared validation and database logic live if both Route Handlers and Server Actions exist?
+9.  Where should shared validation and database logic live if both Route Handlers and Server Actions exist?
 
 10. What HTTP status codes should a create endpoint return for success, validation failure, and auth failure?
 
