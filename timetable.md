@@ -1,4 +1,24 @@
-## 24 October 
+## 27 October
+
+| Time        | CG LAB 1                 | Time        | CG LAB 2                  |
+| ----------- | ------------------------ | ----------- | ------------------------- |
+| 9:00–10:30  | Next js (Satyajeet Sir)  | 9:00–10:30  | DBMS (Adil Sir)           |
+| 10:30–12:00 | DBMS (Adil Sir)          | 10:30–12:00 | Next js (Satyajeet Sir)   |
+| 12:00–1:00  | Break                    | 12:00–1:00  | Break                     |
+| 1:00–2:30   | React Native (Ranjan Sir)| 1:00–2:30   | Aptitude (Divyam Sir)     |
+| 2:30–4:00   | Aptitude (Divyam Sir)    | 2:30–4:00   | React Native (Ranjan Sir) |
+
+## 26 October
+
+| Time        | CG LAB 1                 | Time        | CG LAB 2                  |
+| ----------- | ------------------------ | ----------- | ------------------------- |
+| 9:00–10:30  | Next js (Satyajeet Sir)  | 9:00–10:30  | DBMS (Adil Sir)           |
+| 10:30–12:00 | DBMS (Adil Sir)          | 10:30–12:00 | Next js (Satyajeet Sir)   |
+| 12:00–1:00  | Break                    | 12:00–1:00  | Break                     |
+| 1:00–2:30   | React Native (Ranjan Sir)| 1:00–2:30   | Aptitude (Divyam Sir)     |
+| 2:30–4:00   | Aptitude (Divyam Sir)    | 2:30–4:00   | React Native (Ranjan Sir) |
+
+## 24 October
 
 | Time        | CG LAB 1                 | Time        | CG LAB 2                  |
 | ----------- | ------------------------ | ----------- | ------------------------- |
@@ -7,11 +27,8 @@
 | 12:00–1:00  | Break                    | 12:00–1:00  | Break                     |
 | 1:00–2:30   | React Native (Ranjan Sir)| 1:00–2:30   | Aptitude (Divyam Sir)     |
 | 2:30–4:00   | Aptitude (Divyam Sir)    | 2:30–4:00   | React Native (Ranjan Sir) |
-| 4:00–4:15   | Break                    | 4:00–4:15   | Break                     |
-| 4:15–5:15   | Industry Readiness 07    | 4:15–5:15   | Industry Readiness 07     |
-| 5:15–6:00   | Industry Readiness 08    | 5:15–6:00   | Industry Readiness 08     |
 
-## 23 October 
+## 23 October
 
 | Time        | CG LAB 1                  | Time        | CG LAB 2                  |
 | ----------- | ------------------------- | ----------- | ------------------------- |
