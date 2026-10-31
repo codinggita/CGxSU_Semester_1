@@ -1,7 +1,4 @@
-
-
 # JavaScript Conditional Statements
-
 ---
 
 Conditional statements are the backbone of decision-making in programming. They allow your code to make choices based on different conditions — just like how you make decisions in real life.
