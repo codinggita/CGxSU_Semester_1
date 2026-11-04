@@ -1,6 +1,6 @@
 # Next.js Portfolio-Showcase-Level Projects
 
-Students must select **one** project and build a complete, functional web application using Next.js. These projects are designed to build real-world applications that they can proudly showcase in their portfolios and discuss during technical interviews.
+Students must select **one** project and build a complete, functional web application using Next.js. These projects are designed to build real-world applications that you can proudly showcase in your portfolios and discuss during technical interviews.
 
 ## Common Technology Guidelines
 
