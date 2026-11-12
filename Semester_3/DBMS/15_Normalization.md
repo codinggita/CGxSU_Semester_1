@@ -1149,86 +1149,382 @@ Now each table stores facts about only one entity.
 
 ---
 
-# Boyce-Codd Normal Form (BCNF)
+# BCNF (Boyce-Codd Normal Form)
 
-BCNF is a stricter version of 3NF.
+## What is BCNF?
 
-Rule
+**BCNF (Boyce-Codd Normal Form)** is a stronger version of **3NF (Third Normal Form)**.
 
-For every dependency
+### Definition
 
-```
-A → B
-```
+> A relation is in BCNF if, for every non-trivial functional dependency `X → Y`, `X` is a **super key**.
 
-A must be a candidate key.
+In simple words:
 
-Example
-
-```
-Teacher
-Course
-Room
-```
-
-One teacher teaches one course.
-
-One room is assigned to one course.
-
-Certain dependencies may violate BCNF even if the table satisfies 3NF. Splitting the table based on candidate keys resolves the issue.
+> **Every determinant must be a super key.**
 
 ---
 
-# Fourth Normal Form (4NF)
+## What is a Determinant?
 
-Removes multi-valued dependencies.
+In a functional dependency:
 
-Example
+```text
+X → Y
+```
 
-Wrong
+`X` is called the **determinant**.
 
-|Student|Language|Hobby|
-|--------|--------|-----|
-|Adil|English|Cricket|
-|Adil|English|Chess|
-|Adil|Hindi|Cricket|
-|Adil|Hindi|Chess|
+Example:
+
+```text
+Student_ID → Student_Name
+```
 
 Here:
 
-```
-Languages
-```
+* `Student_ID` = Determinant
+* `Student_Name` = Dependent attribute
 
-and
+BCNF asks:
 
-```
-Hobbies
-```
+> Is `Student_ID` a super key?
 
-are independent.
-
-Split into
-
-StudentLanguages
-
-|Student|Language|
-
-StudentHobbies
-
-|Student|Hobby|
+If yes → BCNF condition is satisfied.
 
 ---
 
-# Fifth Normal Form (5NF)
+# BCNF Rule
 
-Removes join dependency.
+For every functional dependency:
 
-Rarely used in normal business applications.
+```text
+X → Y
+```
 
-Mostly appears in advanced database design.
+`X` must be a **super key**.
+
+### Example
+
+```text
+Student_ID → Student_Name
+```
+
+If `Student_ID` is a super key:
+
+```text
+BCNF ✅
+```
+
+If `Student_ID` is not a super key:
+
+```text
+BCNF ❌
+```
 
 ---
+
+# BCNF vs 3NF
+
+### 3NF
+
+For every functional dependency:
+
+```text
+X → A
+```
+
+At least one of these must be true:
+
+1. `X` is a super key
+2. `A` is a prime attribute
+
+### BCNF
+
+For every functional dependency:
+
+```text
+X → Y
+```
+
+`X` **must be a super key**.
+
+Therefore:
+
+```text
+BCNF is stricter than 3NF.
+```
+
+---
+
+# Example of BCNF Violation
+
+Consider:
+
+| Student_ID | Course_ID | Instructor |
+| ---------- | --------- | ---------- |
+| S1         | C1        | Ali        |
+| S2         | C1        | Ali        |
+| S3         | C2        | Ahmed      |
+
+Functional dependencies:
+
+```text
+(Student_ID, Course_ID) → Instructor
+Instructor → Course_ID
+```
+
+Suppose the candidate keys are:
+
+```text
+(Student_ID, Course_ID)
+(Student_ID, Instructor)
+```
+
+Therefore, all three attributes are prime attributes:
+
+```text
+Student_ID
+Course_ID
+Instructor
+```
+
+---
+
+## Check BCNF
+
+Consider:
+
+```text
+Instructor → Course_ID
+```
+
+Ask:
+
+> Is `Instructor` a super key?
+
+No.
+
+For example:
+
+```text
+Ali → C1
+```
+
+but Ali appears for multiple students.
+
+Therefore:
+
+```text
+Instructor is NOT a super key
+```
+
+So:
+
+```text
+Instructor → Course_ID
+```
+
+violates BCNF.
+
+### Result
+
+```text
+Relation is NOT in BCNF ❌
+```
+
+---
+
+# Why can it be in 3NF but not BCNF?
+
+This is an important interview concept.
+
+3NF allows:
+
+```text
+X → A
+```
+
+when `A` is a **prime attribute**, even if `X` is not a super key.
+
+In our example:
+
+```text
+Instructor → Course_ID
+```
+
+`Course_ID` is a prime attribute.
+
+Therefore, 3NF can allow this dependency.
+
+But BCNF says:
+
+> The determinant itself must be a super key.
+
+Since `Instructor` is not a super key:
+
+```text
+BCNF ❌
+```
+
+So a relation can be:
+
+```text
+3NF ✅
+BCNF ❌
+```
+
+---
+
+# Decomposition to BCNF
+
+We can decompose the original relation into two relations.
+
+### Instructor_Course
+
+| Instructor | Course_ID |
+| ---------- | --------- |
+| Ali        | C1        |
+| Ahmed      | C2        |
+
+Functional dependency:
+
+```text
+Instructor → Course_ID
+```
+
+Here `Instructor` is a key.
+
+Therefore:
+
+```text
+BCNF ✅
+```
+
+---
+
+### Student_Instructor
+
+| Student_ID | Instructor |
+| ---------- | ---------- |
+| S1         | Ali        |
+| S2         | Ali        |
+| S3         | Ahmed      |
+
+Candidate key:
+
+```text
+(Student_ID, Instructor)
+```
+
+This relation can satisfy BCNF.
+
+---
+
+# How to Solve BCNF Questions
+
+Follow these steps:
+
+### Step 1: Find Functional Dependencies
+
+Example:
+
+```text
+A → B
+B → C
+```
+
+### Step 2: Find Candidate Keys
+
+Determine which attributes can uniquely identify the complete tuple.
+
+### Step 3: Check Every Functional Dependency
+
+For every:
+
+```text
+X → Y
+```
+
+ask:
+
+> Is `X` a super key?
+
+### Step 4: Decide
+
+If every determinant is a super key:
+
+```text
+BCNF ✅
+```
+
+If even one determinant is not a super key:
+
+```text
+BCNF ❌
+```
+
+### Step 5: Decompose
+
+If there is a violation, decompose the relation using the violating functional dependency.
+
+---
+
+# Quick Comparison
+
+| Normal Form | Main Rule                                             |
+| ----------- | ----------------------------------------------------- |
+| 1NF         | Atomic values                                         |
+| 2NF         | No partial dependency                                 |
+| 3NF         | No transitive dependency / satisfies 3NF FD condition |
+| BCNF        | Every determinant must be a super key                 |
+
+---
+
+# Remember
+
+The easiest way to remember BCNF:
+
+> **"Left side of every functional dependency must be a super key."**
+
+Example:
+
+```text
+Student_ID → Student_Name
+```
+
+If:
+
+```text
+Student_ID = Super Key
+```
+
+Then:
+
+```text
+BCNF ✅
+```
+
+But:
+
+```text
+Instructor → Course_ID
+```
+
+If:
+
+```text
+Instructor ≠ Super Key
+```
+
+Then:
+
+```text
+BCNF ❌
+```
+
+
+
 
 # Denormalization
 
