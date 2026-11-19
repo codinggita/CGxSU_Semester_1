@@ -127,29 +127,6 @@ These expressions are obtained by identifying the active inputs for which each o
 
 ---
 
-## 5. Priority Encoder
-
-A **Priority Encoder** assigns priority to inputs when more than one input is active.
-
-The highest-priority active input determines the output.
-
-For example, suppose `D3` has the highest priority and `D0` has the lowest priority.
-
-If:
-
-`D3 = 1, D2 = 1`
-
-The output represents `D3`, because it has higher priority.
-
-### Encoder vs Priority Encoder
-
-| Feature | Basic Encoder | Priority Encoder |
-|---|---|---|
-| Multiple active inputs | Ambiguous output | Highest-priority input is encoded |
-| Priority | Not supported | Supported |
-| Typical use | Simple code conversion | Interrupt handling |
-
----
 
 ## 6. Applications of Encoders
 
@@ -216,22 +193,7 @@ All other outputs remain 0.
 
 `Y3 = A1A0`
 
-### Logic Circuit
 
-The circuit can be constructed using:
-
-- 2 NOT gates
-- 4 AND gates
-
-```text
-A1 ── NOT ── A1'
-A0 ── NOT ── A0'
-
-Y0 = A1' AND A0'
-Y1 = A1' AND A0
-Y2 = A1  AND A0'
-Y3 = A1  AND A0
-```
 
 ---
 
@@ -284,28 +246,8 @@ Each output represents one unique minterm of the three input variables.
 
 ---
 
-## 10. Decoder with Enable Input
 
-Some decoders have an additional input called **Enable (E)**.
-
-- When `E = 1`, the decoder operates normally.
-- When `E = 0`, all outputs remain 0.
-
-For an enabled 2-to-4 decoder:
-
-`Y0 = EA1'A0'`
-
-`Y1 = EA1'A0`
-
-`Y2 = EA1A0'`
-
-`Y3 = EA1A0`
-
-The enable input controls whether decoding is active.
-
----
-
-## 11. Applications of Decoders
+## 10. Applications of Decoders
 
 Decoders are used in:
 
@@ -318,7 +260,7 @@ Decoders are used in:
 
 ---
 
-## 12. Encoder vs Decoder
+## 11. Encoder vs Decoder
 
 | Feature | Encoder | Decoder |
 |---|---|---|
@@ -331,40 +273,5 @@ Decoders are used in:
 
 ---
 
-## 13. Practice Problems
-
-### Easy
-
-1. Define an Encoder.
-2. Define a Decoder.
-3. How many output lines does a 4-to-2 Encoder have?
-4. How many output lines does a 3-to-8 Decoder have?
-5. Why can a basic encoder produce an ambiguous output if multiple inputs are active?
-6. What is the purpose of an enable input in a decoder?
-
-### Medium
-
-7. Construct the truth table of a 4-to-2 Encoder.
-8. Derive the Boolean expressions for a 4-to-2 Encoder.
-9. Construct the truth table of a 2-to-4 Decoder.
-10. Write the Boolean expressions for a 2-to-4 Decoder.
-11. Construct the truth table of an 8-to-3 Encoder.
-12. Write the Boolean expressions for a 3-to-8 Decoder.
-13. Differentiate between an Encoder and a Decoder.
-14. Explain how a Priority Encoder works.
-15. Explain three applications of Encoders and Decoders.
-
----
-
-## 14. Quick Revision
-
-- An Encoder converts an active input line into a binary code.
-- A Decoder converts a binary code into an active output line.
-- A 4-to-2 Encoder has 4 inputs and 2 outputs.
-- An 8-to-3 Encoder has 8 inputs and 3 outputs.
-- A 2-to-4 Decoder has 2 inputs and 4 outputs.
-- A 3-to-8 Decoder has 3 inputs and 8 outputs.
-- A basic encoder assumes only one input is active at a time.
-- A Priority Encoder handles multiple active inputs using priority.
-- An enable input controls whether a decoder operates.
+decoder operates.
 - Encoders reduce the number of bits needed to represent an active input; decoders perform the reverse type of conversion.
