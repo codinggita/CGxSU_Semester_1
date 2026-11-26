@@ -73,7 +73,7 @@ the built-in `replace()` method.
 
 **Example:**\
 Input: `mississippi`, `s`\
-Output: `miippi`
+Output: `miiippi`
 
 ## 8. Convert a Decimal Number to Binary
 
