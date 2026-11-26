@@ -328,10 +328,10 @@ console.log("Area: " + area + ", Type: " + typeof area);
 | String    | `"hello"`, `'world'`           | Textual data                           |
 | Boolean   | `true`, `false`                | Logical values                         |
 | Undefined | `undefined`                    | Variable declared but not assigned     |
-| Null      | `null`                         | Intentional empty value                |
+| object    | `null`                         | Intentional empty value                |
 | Symbol    | `Symbol('id')`                 | Unique value                           |
 | BigInt    | `123n`                         | Very large integers                    |
 | Object    | `{ name: "John" }`             | Collection of key–value pairs          |
-| Array     | `[1, 2, 3]`                    | Ordered list of values                 |
+| object    | `[1, 2, 3]`                    | Ordered list of values                 |
 | Function  | `function() {}`                | Reusable block of code (callable)      |
 
