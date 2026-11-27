@@ -13,7 +13,7 @@ rightmost digit as position 1.
 **Example:**\
 Input: `583246`\
 Output: `12`\
-(The digits at even positions from the right are `4`, `2`, and `8`.)
+(The digits at even positions from the right are `4`, `3`, and `5`.)
 
 ## 2. Reverse a Number Without Converting It to a String
 
