@@ -3,11 +3,11 @@
 
 | Time        | CG LAB 1                  | Time        | CG LAB 2                  |
 | ----------- | ------------------------- | ----------- | ------------------------- |
-| 9:00–10:30  | Next.js (Satyajeet Sir)   | 9:00–10:30  | DBMS (Adil Sir)           |
-| 10:30–12:00 | DSA (Vikas Sir)           | 10:30–12:00 | Next.js (Satyajeet Sir)   |
+| 9:00–10:30  | DBMS (Adil Sir)           | 9:00–10:30  | React Native (Ranjan Sir) |
+| 10:30–12:00 | React Native (Ranjan Sir) | 10:30–12:00 | DBMS (Adil Sir)           |
 | 12:00–1:00  | Break                     | 12:00–1:00  | Break                     |
-| 1:00–2:30   | React Native (Ranjan Sir) | 1:00–2:30   | DSA (Vikas Sir)           |
-| 2:30–4:00   | DBMS (Adil Sir)           | 2:30–4:00   | React Native (Ranjan Sir) |
+| 1:00–2:30   | DSA (Vikas Sir)           | 1:00–2:30   | Aptitude (Divyam Sir)     |
+| 2:30–4:00   | Aptitude (Divyam Sir)     | 2:30–4:00   | DSA (Vikas Sir)           |
 | 4:00–4:15   | Break                     | 4:00–4:15   | Break                     |
 | 4:15–5:15   | Industry Readiness 07     | 4:15–5:15   | Industry Readiness 07     |
 | 5:15–6:00   | Industry Readiness 08     | 5:15–6:00   | Industry Readiness 08     |
@@ -16,11 +16,11 @@
 
 | Time        | CG LAB 1                  | Time        | CG LAB 2                  |
 | ----------- | ------------------------- | ----------- | ------------------------- |
-| 9:00–10:30  | Next.js (Satyajeet Sir)   | 9:00–10:30  | DBMS (Adil Sir)           |
-| 10:30–12:00 | DSA (Vikas Sir)           | 10:30–12:00 | Next.js (Satyajeet Sir)   |
+| 9:00–10:30  | DBMS (Adil Sir)           | 9:00–10:30  | React Native (Ranjan Sir) |
+| 10:30–12:00 | React Native (Ranjan Sir) | 10:30–12:00 | DBMS (Adil Sir)           |
 | 12:00–1:00  | Break                     | 12:00–1:00  | Break                     |
-| 1:00–2:30   | React Native (Ranjan Sir) | 1:00–2:30   | DSA (Vikas Sir)           |
-| 2:30–4:00   | DBMS (Adil Sir)           | 2:30–4:00   | React Native (Ranjan Sir) |
+| 1:00–2:30   | DSA (Vikas Sir)           | 1:00–2:30   | Aptitude (Divyam Sir)     |
+| 2:30–4:00   | Aptitude (Divyam Sir)     | 2:30–4:00   | DSA (Vikas Sir)           |
 | 4:00–4:15   | Break                     | 4:00–4:15   | Break                     |
 | 4:15–5:15   | Industry Readiness 07     | 4:15–5:15   | Industry Readiness 07     |
 | 5:15–6:00   | Industry Readiness 08     | 5:15–6:00   | Industry Readiness 08     |
