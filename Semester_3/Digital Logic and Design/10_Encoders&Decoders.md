@@ -2,24 +2,50 @@
 
 ## 1. Introduction
 
-Encoders and decoders are **combinational circuits** used to convert information from one representation into another.
+**Encoder aur Decoder dono combinational circuits hain.**
+
+Combinational circuit ka output **sirf present input** par depend karta hai. Isme previous state ya memory nahi hoti.
+
+Encoder aur Decoder ka main kaam hai **information ko ek form se doosri form mein convert karna**.
 
 Main circuits:
 
 - Encoder
 - Decoder
 
-An **Encoder** converts an active input line into a binary code.
+### Encoder
 
-A **Decoder** converts a binary input code into one of multiple output lines.
+**Encoder ek active input line ko uske corresponding binary code mein convert karta hai.**
+
+Example:
+
+Agar 4 inputs hain aur `D2` active hai, to encoder output dega:
+
+`D2 → 10`
+
+### Decoder
+
+**Decoder binary input code ko multiple output lines mein convert karta hai.**
+
+Example:
+
+Agar decoder ka input `10` hai, to corresponding output `Y2` active hoga.
+
+### Easy way to remember
+
+**Encoder:**  
+Many inputs → Fewer binary outputs
+
+**Decoder:**  
+Binary inputs → Many outputs
 
 ---
 
-## 2. Encoder
+# 2. Encoder
 
-An **Encoder** is a combinational circuit that converts one of its active input lines into a binary output code.
+An **Encoder** ek combinational circuit hai jo **active input line ko binary output code mein convert karta hai.**
 
-For a basic encoder with \(2^n\) input lines, there are `n` output lines.
+Agar encoder mein \(2^n\) input lines hain, to uske **n output lines** hote hain.
 
 ### Number of Inputs and Outputs
 
@@ -29,18 +55,34 @@ For a basic encoder with \(2^n\) input lines, there are `n` output lines.
 | 8-to-3 Encoder | 8 | 3 |
 | 16-to-4 Encoder | 16 | 4 |
 
-For a basic encoder, only one input should be active at a time.
+### Simple Example
+
+4-to-2 encoder mein 4 input hain:
+
+`D0, D1, D2, D3`
+
+Aur 2 outputs hain:
+
+`Y1, Y0`
+
+Agar `D2 = 1` hai, to output:
+
+`Y1Y0 = 10`
+
+Matlab encoder **input number ko binary mein represent karta hai.**
+
+**Important:** Basic encoder mein normally ek time par **sirf ek input active** hona chahiye.
 
 ---
 
-## 3. 4-to-2 Encoder
+# 3. 4-to-2 Encoder
 
-A **4-to-2 Encoder** has:
+**4-to-2 Encoder** mein:
 
 - 4 input lines: `D0`, `D1`, `D2`, `D3`
 - 2 output lines: `Y1`, `Y0`
 
-When an input is active, the output gives its corresponding binary code.
+Jis input ki value `1` hoti hai, encoder us input ka **binary code output** karta hai.
 
 ### Truth Table
 
@@ -53,26 +95,92 @@ When an input is active, the output gives its corresponding binary code.
 
 ### Working
 
-1. If `D0 = 1`, output is `00`.
-2. If `D1 = 1`, output is `01`.
-3. If `D2 = 1`, output is `10`.
-4. If `D3 = 1`, output is `11`.
+### Case 1: `D0 = 1`
 
-All other input lines are assumed to be 0.
+Input:
 
-### Boolean Expressions
+`0001`
 
-From the truth table:
+Output:
+
+`00`
+
+So,
+
+`D0 → 00`
+
+---
+
+### Case 2: `D1 = 1`
+
+Input:
+
+`0010`
+
+Output:
+
+`01`
+
+So,
+
+`D1 → 01`
+
+---
+
+### Case 3: `D2 = 1`
+
+Input:
+
+`0100`
+
+Output:
+
+`10`
+
+So,
+
+`D2 → 10`
+
+---
+
+### Case 4: `D3 = 1`
+
+Input:
+
+`1000`
+
+Output:
+
+`11`
+
+So,
+
+`D3 → 11`
+
+### Easy trick
+
+Input ka number hi uska binary output ban jaata hai:
+
+```text
+D0 → 0  → 00
+D1 → 1  → 01
+D2 → 2  → 10
+D3 → 3  → 11
+```
+
+---
+
+## Boolean Expressions
+
+Truth table se:
 
 `Y1 = D2 + D3`
 
 `Y0 = D1 + D3`
 
-Here, `+` represents the OR operation.
+Yahan `+` ka matlab **OR operation** hai.
 
 ### Logic Circuit
-
-The circuit requires two OR gates.
 
 ```text
 D2 ─────┐
@@ -84,21 +192,34 @@ D1 ─────┐
 D3 ─────┘
 ```
 
-**Important:** A basic encoder cannot uniquely identify the active input if multiple inputs are 1 simultaneously.
+Isliye basic 4-to-2 encoder ko implement karne ke liye **2 OR gates** use kiye ja sakte hain.
+
+### Important
+
+Agar ek se zyada inputs simultaneously `1` ho jaayein, to basic encoder properly identify nahi kar paayega ki kaunsa input active tha.
+
+Example:
+
+```text
+D2 = 1
+D3 = 1
+```
+
+Dono active hain, isliye output uniquely determine nahi hoga.
 
 ---
 
-## 4. 8-to-3 Encoder
+# 4. 8-to-3 Encoder
 
-An **8-to-3 Encoder** converts eight input lines into a three-bit binary output.
+**8-to-3 Encoder** 8 input lines ko 3-bit binary output mein convert karta hai.
 
 Inputs:
 
-- `D0` to `D7`
+`D0` to `D7`
 
 Outputs:
 
-- `Y2`, `Y1`, `Y0`
+`Y2, Y1, Y0`
 
 ### Truth Table
 
@@ -113,7 +234,32 @@ Outputs:
 | D6 | 1 | 1 | 0 |
 | D7 | 1 | 1 | 1 |
 
-Only one input is assumed to be active at a time.
+### Easy Example
+
+Agar:
+
+`D5 = 1`
+
+to output hoga:
+
+`Y2Y1Y0 = 101`
+
+Kyuki:
+
+`5 = 101₂`
+
+Similarly:
+
+```text
+D0 → 000
+D1 → 001
+D2 → 010
+D3 → 011
+D4 → 100
+D5 → 101
+D6 → 110
+D7 → 111
+```
 
 ### Boolean Expressions
 
@@ -123,28 +269,59 @@ Only one input is assumed to be active at a time.
 
 `Y0 = D1 + D3 + D5 + D7`
 
-These expressions are obtained by identifying the active inputs for which each output bit is 1.
+Ye expressions truth table se milti hain.
+
+Har output bit ke liye hum dekhte hain ki **kin inputs ke active hone par woh bit `1` hoti hai.**
 
 ---
 
+# 5. Applications of Encoders
 
-## 6. Applications of Encoders
-
-Encoders are used in:
+Encoders ka use hota hai:
 
 - Keyboard encoding
 - Digital communication
 - Interrupt handling in processors
-- Data compression into binary codes
-- Converting input signals into binary representations
+- Data ko binary code mein convert karna
+- Input signals ko binary representation mein convert karna
+
+### Example
+
+Keyboard mein bahut saari keys hoti hain, lekin computer ko unhe efficiently **coded/binary form** mein process karna hota hai. Encoder is type ke conversion mein useful hota hai.
 
 ---
 
-## 7. Decoder
+# 6. Decoder
 
-A **Decoder** is a combinational circuit that converts an `n`-bit binary input into one of up to \(2^n\) output lines.
+**Decoder ek combinational circuit hai jo binary input code ko multiple output lines mein convert karta hai.**
 
-For each valid input code, the corresponding output becomes 1 while the other outputs remain 0.
+Agar decoder mein `n` input lines hain, to maximum:
+
+\[
+2^n
+\]
+
+output lines ho sakti hain.
+
+Har valid input combination par **corresponding output `1`** hota hai aur baaki outputs `0` hote hain.
+
+### Simple Example
+
+Agar 2-to-4 decoder ka input hai:
+
+`10`
+
+to:
+
+`Y2 = 1`
+
+aur baaki:
+
+`Y0 = 0`
+
+`Y1 = 0`
+
+`Y3 = 0`
 
 ### Number of Inputs and Outputs
 
@@ -156,14 +333,20 @@ For each valid input code, the corresponding output becomes 1 while the other ou
 
 ---
 
-## 8. 2-to-4 Decoder
+# 7. 2-to-4 Decoder
 
-A **2-to-4 Decoder** has:
+**2-to-4 Decoder** mein:
 
 - 2 input lines: `A1`, `A0`
 - 4 output lines: `Y0`, `Y1`, `Y2`, `Y3`
 
-Each binary input combination activates one output.
+2 input bits ki total combinations:
+
+\[
+2^2 = 4
+\]
+
+Isliye 4 possible outputs hain.
 
 ### Truth Table
 
@@ -176,14 +359,78 @@ Each binary input combination activates one output.
 
 ### Working
 
-1. If `A1A0 = 00`, output `Y0 = 1`.
-2. If `A1A0 = 01`, output `Y1 = 1`.
-3. If `A1A0 = 10`, output `Y2 = 1`.
-4. If `A1A0 = 11`, output `Y3 = 1`.
+### Case 1: `A1A0 = 00`
 
-All other outputs remain 0.
+Output:
 
-### Boolean Expressions
+`Y0 = 1`
+
+Baaki outputs:
+
+`Y1 = Y2 = Y3 = 0`
+
+So:
+
+```text
+00 → Y0
+```
+
+---
+
+### Case 2: `A1A0 = 01`
+
+Output:
+
+`Y1 = 1`
+
+So:
+
+```text
+01 → Y1
+```
+
+---
+
+### Case 3: `A1A0 = 10`
+
+Output:
+
+`Y2 = 1`
+
+So:
+
+```text
+10 → Y2
+```
+
+---
+
+### Case 4: `A1A0 = 11`
+
+Output:
+
+`Y3 = 1`
+
+So:
+
+```text
+11 → Y3
+```
+
+### Easy Trick
+
+Decoder mein **binary input number batata hai ki kaunsa output active hoga.**
+
+```text
+00 → Y0
+01 → Y1
+10 → Y2
+11 → Y3
+```
+
+---
+
+## Boolean Expressions
 
 `Y0 = A1'A0'`
 
@@ -193,21 +440,33 @@ All other outputs remain 0.
 
 `Y3 = A1A0`
 
+Yahan `'` ka matlab **NOT operation** hai.
 
+Example:
+
+`A1'` means NOT A1.
 
 ---
 
-## 9. 3-to-8 Decoder
+# 8. 3-to-8 Decoder
 
-A **3-to-8 Decoder** converts a three-bit binary input into eight output lines.
+**3-to-8 Decoder** ek 3-bit binary input ko 8 different output lines mein convert karta hai.
 
 Inputs:
 
-- `A2`, `A1`, `A0`
+`A2, A1, A0`
 
 Outputs:
 
-- `Y0` to `Y7`
+`Y0` to `Y7`
+
+3 input bits ki total combinations:
+
+\[
+2^3 = 8
+\]
+
+Isliye 8 outputs hain.
 
 ### Truth Table
 
@@ -222,7 +481,34 @@ Outputs:
 | 1 | 1 | 0 | Y6 |
 | 1 | 1 | 1 | Y7 |
 
-Only the output corresponding to the binary input becomes 1.
+### Easy Example
+
+Agar input hai:
+
+`A2A1A0 = 101`
+
+Binary `101` ka decimal value `5` hai.
+
+Isliye:
+
+`Y5 = 1`
+
+Aur baaki sab outputs:
+
+`0`
+
+Similarly:
+
+```text
+000 → Y0
+001 → Y1
+010 → Y2
+011 → Y3
+100 → Y4
+101 → Y5
+110 → Y6
+111 → Y7
+```
 
 ### Boolean Expressions
 
@@ -242,36 +528,93 @@ Only the output corresponding to the binary input becomes 1.
 
 `Y7 = A2A1A0`
 
-Each output represents one unique minterm of the three input variables.
+Har output ek **unique input combination** ko represent karta hai.
 
 ---
 
+# 9. Applications of Decoders
 
-## 10. Applications of Decoders
-
-Decoders are used in:
+Decoders ka use hota hai:
 
 - Memory address decoding
-- Selecting registers in a processor
+- Processor mein registers select karne ke liye
 - Seven-segment display systems
 - Instruction decoding
 - Digital control circuits
-- Selecting one device from several devices
+- Multiple devices mein se ek device select karne ke liye
+
+### Simple Example
+
+Agar ek system mein multiple devices hain aur humein **sirf ek device select** karna hai, to decoder binary input ke basis par corresponding output ko active kar sakta hai.
 
 ---
 
-## 11. Encoder vs Decoder
+# 10. Encoder vs Decoder
 
 | Feature | Encoder | Decoder |
 |---|---|---|
-| Main function | Converts active input into a binary code | Converts binary code into an active output |
-| Input lines | Multiple | Binary input lines |
-| Output lines | Fewer than input lines | Usually more than input lines |
+| Main function | Active input ko binary code mein convert karta hai | Binary code ko active output mein convert karta hai |
+| Input lines | Multiple input lines | Binary input lines |
+| Output lines | Fewer | More |
 | Example | 4-to-2 Encoder | 2-to-4 Decoder |
 | Basic operation | Many-to-fewer | Fewer-to-many |
 | Application | Keyboard encoding | Memory selection |
 
 ---
 
-decoder operates.
-- Encoders reduce the number of bits needed to represent an active input; decoders perform the reverse type of conversion.
+# 11. Easy Way to Remember
+
+### Encoder
+
+**Input → Binary Code**
+
+```text
+D2 active
+   ↓
+Encoder
+   ↓
+10
+```
+
+Matlab encoder pooch raha hai:
+
+**"Kaunsa input active hai?"**
+
+Aur uska binary code output karta hai.
+
+---
+
+### Decoder
+
+**Binary Code → Output**
+
+```text
+10
+ ↓
+Decoder
+ ↓
+Y2 = 1
+```
+
+Matlab decoder pooch raha hai:
+
+**"Is binary code ke corresponding kaunsa output activate karna hai?"**
+
+---
+
+## One-Line Difference
+
+**Encoder:** Active input ko binary code mein convert karta hai.
+
+**Decoder:** Binary code ko corresponding active output mein convert karta hai.
+
+### Short Trick
+
+```text
+ENCODER  → Encode → Binary Code
+DECODER  → Decode → Specific Output
+```
+
+**Encoder = Many → Few**
+
+**Decoder = Few → Many**
