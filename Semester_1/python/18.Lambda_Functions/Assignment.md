@@ -1,6 +1,6 @@
 # Python Assignment: Lambda Functions
 
-**Level:** Beginner\
+
 **Total Questions:** 10
 
 ## Instructions
