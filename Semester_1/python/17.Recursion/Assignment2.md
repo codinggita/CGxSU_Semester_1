@@ -82,7 +82,7 @@ and returns its binary representation as a string. Do not use `bin()`.
 
 **Example:**\
 Input: `13`\
-Output: `1101`
+Output: `1011`
 
 ## 9. Check Whether a String Contains Only Digits
 
